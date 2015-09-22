@@ -22,18 +22,48 @@ public class BasicServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 
 		String[] pathElements = request.getRequestURI().split("/");
-		if (isLastPathElementQuestionnaires(pathElements)) {
+		if (isLastPathElementQuestionnairesId(pathElements)) {
+		
+			long id = Long.parseLong(pathElements[pathElements.length-1]);
+			handleQuestionnairesIdRequest(request, response, id);
+		}
+		else if (isLastPathElementQuestionnaires(pathElements)) {
 			handleQuestionnairesRequest(request, response);
 		} else {
 			handleIndexRequest(request, response);
 		}
 	}
 
+	private boolean isLastPathElementQuestionnairesId(String[] pathElements) {
+		String last = pathElements[pathElements.length-1];
+		return last.matches("[0-9]+");
+	}
+	
 	private boolean isLastPathElementQuestionnaires(String[] pathElements) {
 		String last = pathElements[pathElements.length-1];
 		return last.equals("questionnaires");
 	}
 
+	private void handleQuestionnairesIdRequest(HttpServletRequest request,
+			HttpServletResponse response, long id) throws IOException {
+		List<Questionnaire> questionnaires = QuestionnaireRepository.getInstance().findAll();
+		PrintWriter writer = response.getWriter();
+		writer.append("<html><head><title>Excample</title></head><body>");
+		writer.append("<h3>Questionnaire</h3>");
+		
+//		writer.append(q.getDescription());
+		for (Questionnaire questionnaire : questionnaires) {
+			if (questionnaire.getId() == id) {
+				writer.append("<p><a>" + questionnaire.getTitle() + "</a></p>");
+				writer.append("<p><a>" + questionnaire.getDescription() + "</a></p>");
+			}
+			String url = request.getContextPath()+request.getServletPath();
+			url = url + "/questionnaires/" + questionnaire.getId().toString();
+			writer.append("<p><a href='" + response.encodeURL(url) +"'>" + questionnaire.getTitle() + "</a></p>");
+		}
+		writer.append("</body></html>");
+	}
+	
 	private void handleQuestionnairesRequest(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
 		List<Questionnaire> questionnaires = QuestionnaireRepository.getInstance().findAll();

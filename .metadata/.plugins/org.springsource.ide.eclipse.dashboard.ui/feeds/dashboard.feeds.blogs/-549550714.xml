@@ -5,7 +5,30 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-09-20T19:40:53Z</updated>
+  <updated>2015-09-22T14:53:17Z</updated>
+  <entry>
+    <title>This Week in Spring - September 22nd, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/09/22/this-week-in-spring-september-22nd-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-09-22:2239</id>
+    <updated>2015-09-22T14:53:17Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week, fresh after an &lt;em&gt;incredible&lt;/em&gt; SpringOne2GX 2015, I&amp;rsquo;m.. a little burnt if I&amp;rsquo;m honest! :D BUT, Spring endures and I&amp;rsquo;m this week in Amsterdam &lt;a href="http://twitter.com/mdeinum"&gt;with our pal Martin Deinum&lt;/a&gt; helping a large group of developers make the cloud native journey with Spring Boot, Spring Cloud and Cloud Foundry.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Boot co-lead Phillip Webb &lt;a href="http://spring.io/blog/2015/09/20/spring-boot-1-2-6-released"&gt;announced that Spring Boot 1.2.6 is now available!&lt;/a&gt;. Also interesting: this release was done &lt;em&gt;live&lt;/em&gt; on stage at SpringOne2GX 2015! (Thanks JFrog!)&lt;/li&gt;
+  &lt;li&gt;our pal Matti Tahvonen has just posted guest blog on the Spring IO blog on how to use &lt;a href="http://spring.io/blog/2015/09/17/single-page-web-apps-with-vaadin-spring-1-0"&gt;the recently 1.0 Spring Boot &amp;amp; Vaadin integration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the first Spring Cloud Brixton milestone is &lt;a href="http://spring.io/blog/2015/09/16/first-milestone-of-spring-cloud-brixton-release-train-is-available"&gt;now available complete with support for Zookeeper Discovery, Consul Discovery, Lattice Discovery, cluster leadership election and locks, and distributed tracing support&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Niklas Heidloff has put together a post on deploying &lt;a href="http://heidloff.net/nh/home.nsf/article.xsp?id=17.09.2015103506NHEC42.htm"&gt;a Spring Boot application to Bluemix using Docker in 20 minutes&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Heroku have updated their article &lt;a href="https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku"&gt;on deploying Spring Boot applications to their PaaS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Mr. Haki blog has a great post &lt;a href="http://mrhaki.blogspot.nl/2015/09/spring-sweets-reload-classes-spring.html"&gt;on reloading Java classes using Spring Loaded&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Mr. Haki blog has another post on reporting the applied &lt;a href="http://mrhaki.blogspot.nl/2015/09/spring-sweets-report-applied-auto.html"&gt;auto-configuration with the Spring Boot Actuator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Dataflow product manager Sabby Anandan put together a nice &lt;a href="http://blog.pivotal.io/pivotal-cloud-foundry/products/introducing-spring-cloud-data-flow"&gt;post on the new Spring Cloud Dataflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Biju Kunjummen has a nice post &lt;a href="https://dzone.com/articles/spring-cloud-sidecar"&gt;on the rarely talked-about Spring Cloud Sidecar&lt;/a&gt; which lets other languages and technologies connect to Spring Cloud infrastructure&lt;/li&gt;
+  &lt;li&gt;Jakub Narloch put together a nice &lt;a href="https://jmnarloch.wordpress.com/2015/09/16/spring-cloud-zuul-error-handling/"&gt;post on error handling Spring Cloud and Zuul&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Boot 1.2.6 released</title>
     <link rel="alternate" href="https://spring.io/blog/2015/09/20/spring-boot-1-2-6-released" />
@@ -2266,29 +2289,5 @@ Whenever you work with Spring Data REST, the &lt;strong&gt;self&lt;/strong&gt; l
 &lt;/div&gt;&#xD;
 &lt;/div&gt;&#xD;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - August 25th, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/08/25/this-week-in-spring-august-25th-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-08-25:2219</id>
-    <updated>2015-08-25T21:22:14Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m in Rio de Janeiro, Brazil for the lovely QCon Rio conference, and then I&amp;rsquo;m off to Tokyo, Japan for a &lt;em&gt;Spring in Summer&lt;/em&gt; conference for local Spring users!&lt;/p&gt;&lt;p&gt;The team is abuzz with excitement leading up to this year&amp;rsquo;s SpringOne2GX 2016, the biggest and best SpringOne2GX, ever! This year, you&amp;rsquo;re going to see us do &lt;em&gt;WAY&lt;/em&gt; more with &lt;em&gt;WAY&lt;/em&gt; less and get it to production, to boot! This is exciting for everyone of us and it will be for audience members, as well!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;our pal Kenny Bastani put together a followup post &lt;a href="http://www.kennybastani.com/2015/08/polyglot-persistence-spring-cloud-docker.html"&gt;in his series on Spring Cloud about polyglot persistence with Spring Cloud&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2015/08/20/spring-for-apache-hadoop-2-3-milestone-2-released"&gt;Spring for Hadoop lead Thomas Risberg just announced 2.3M2&lt;/a&gt;, complete with support for running batch tasklets, improved Spring Boot integration, and improved YARN support&lt;/li&gt;
-  &lt;li&gt;Singaporean Guest bloggers Han Lim and Tony Nguyen have written up a &lt;em&gt;very&lt;/em&gt; cool blog on &lt;a href="https://spring.io/blog/2015/08/19/migrating-a-spring-web-mvc-application-from-jsp-to-angularjs"&gt;migrating from &lt;code&gt;.jsp&lt;/code&gt;-based applications to Angular.js&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;John Thompson has a nice &lt;a href="https://dzone.com/articles/spring-boot-example-of-spring-integration-and-acti"&gt;post on using Spring Boot with ActiveMQ over on DZone&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Saravanan Subramanian has a &lt;a href="https://dzone.com/articles/getting-started-with-rabbitmq-cloud-based-message"&gt;nice post on getting started with RabbitMQ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Kathy Thomas has a written up and shared a presentation on building a &lt;a href="https://dzone.com/articles/building-your-own-cloud-with-suse-openstack-and-st"&gt;custom PaaS with SUSE OpenStack and Stackato Cloud Foundry &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Our pal Nicolas Frankel has a nice &lt;a href="http://blog.frankel.ch/more-devops-for-spring-boot"&gt;post on introducting more devops-friendly features with Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this blog on &lt;a href="https://dzone.com/articles/set-up-a-springdata-project-using-apache-cassandra"&gt;using Spring Data Cassandra&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This is a good French language post on &lt;a href="http://soat.developpez.com/tutoriels/spring/automatiser-execution-tache-scheduler/"&gt;using Spring Batch to run jobs, in lieu of CRON&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Neo4j have just announced &lt;a href="http://neo4j.com/blog/spring-data-neo4j-4-0-0-rc2-release/"&gt;Spring Data Neo4j 4.0.0.RC2 is available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Make sure you didn&amp;rsquo;t &lt;a href="https://www.youtube.com/watch?v=A1UbUNcveik&amp;feature=youtu.be"&gt;miss the latest installment of &lt;em&gt;Cloud Foundry After Dark&lt;/em&gt;&lt;/a&gt;!&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>
