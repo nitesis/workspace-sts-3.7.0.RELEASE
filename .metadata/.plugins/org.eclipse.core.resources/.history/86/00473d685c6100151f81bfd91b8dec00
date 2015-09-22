@@ -56,9 +56,9 @@ public class BasicServlet extends HttpServlet {
 				writer.append("<p><a>" + questionnaire.getTitle() + "</a></p>");
 				writer.append("<p><a>" + questionnaire.getDescription() + "</a></p>");
 			}
-//			String url = request.getContextPath() + request.getServletPath();
-//			url = url + "/questionnaires/" + questionnaire.getId().toString();
-//			writer.append("<p><a href='" + response.encodeURL(url) + "'>" + questionnaire.getTitle() + "</a></p>");
+			String url = request.getContextPath() + request.getServletPath();
+			url = url + "/questionnaires/" + questionnaire.getId().toString();
+			writer.append("<p><a href='" + response.encodeURL(url) + "'>" + questionnaire.getTitle() + "</a></p>");
 		}
 		writer.append("</body></html>");
 	}
