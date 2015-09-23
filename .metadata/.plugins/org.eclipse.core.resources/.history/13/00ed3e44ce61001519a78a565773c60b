@@ -39,6 +39,6 @@
 	</listener>
 	<context-param>
    		<param-name>mode</param-name>
-   		<param-value>bla</param-value>
+   		<param-value>test</param-value>
 	</context-param>
 </web-app>

@@ -34,11 +34,8 @@
 			<servlet-name>Basic Servlet</servlet-name> 
 	</filter-mapping>
 	
-	<listener> 
-	<listener-class>ch.fhnw.webfr.flashcard.web.BasicListener</listener-class>
-	</listener>
 	<context-param>
    		<param-name>mode</param-name>
-   		<param-value>bla</param-value>
+   		<param-value>test</param-value>
 	</context-param>
 </web-app>
