@@ -49,28 +49,7 @@
    		<param-name>mode</param-name>
    		<param-value>test</param-value>
 	</context-param>
-	
-	
-	<filter>
-		<filter-name>Language Filter</filter-name> 
-		<filter-class>ch.fhnw.webfr.flashcard.web.LanguageFilter</filter-class> 
-		<init-param> 
-			<param-name>loglevel</param-name>
-			<param-value>10</param-value> 
-		</init-param>
-	</filter>
-	
-	<filter-mapping>
-		<filter-name>Language Filter</filter-name>
-		<url-pattern>*.do</url-pattern> 
-	</filter-mapping>
-	
-		<filter-mapping>
-			<filter-name>Language Filter</filter-name>
-			<servlet-name>Language Servlet</servlet-name> 
-	</filter-mapping>
 
-	
 	
 	
 </web-app>

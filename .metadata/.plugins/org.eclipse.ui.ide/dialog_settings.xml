@@ -144,6 +144,7 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 03/flashcard-basic-ab4.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 01/basic.zip"/>
 		</list>
 	</section>
@@ -151,7 +152,7 @@
 		<item value="525" key="DIALOG_WIDTH"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 		<item value="529" key="DIALOG_HEIGHT"/>
-		<item value="277" key="DIALOG_X_ORIGIN"/>
+		<item value="353" key="DIALOG_X_ORIGIN"/>
 		<item value="22" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
