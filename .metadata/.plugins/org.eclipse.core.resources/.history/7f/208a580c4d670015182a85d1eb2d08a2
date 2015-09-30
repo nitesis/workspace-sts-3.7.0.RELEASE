@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "questionnaires") //name muss übereinstimmen mit import.sql (ist der Tabellenname)
+@Table(name = "questionnaires")
 public class Questionnaire {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
