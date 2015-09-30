@@ -1,0 +1,25 @@
+package ch.fhnw.webfr.flashcard.web;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+import ch.fhnw.webfr.flashcard.util.QuestionnaireInitializer;
+
+public class LanguageListener implements ServletContextListener{
+
+	@Override
+	public void contextInitialized(ServletContextEvent sce) {
+		if(sce.getServletContext().getInitParameter("filename").equals("languageListing.txt")){
+			//wenn context-param den Wert "test" hat, dann werden die Fragebögen erstellt
+			QuestionnaireInitializer.createQuestionnaires();
+		}
+		
+	}
+
+	@Override
+	public void contextDestroyed(ServletContextEvent sce) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

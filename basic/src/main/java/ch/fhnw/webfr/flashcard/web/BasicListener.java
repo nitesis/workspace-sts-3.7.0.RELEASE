@@ -3,10 +3,14 @@ package ch.fhnw.webfr.flashcard.web;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
+import org.apache.log4j.Logger;
+
+import ch.fhnw.webfr.flashcard.persistence.QuestionnaireRepository;
 import ch.fhnw.webfr.flashcard.util.QuestionnaireInitializer;
 
 public class BasicListener implements ServletContextListener{
 
+	private Logger logger = Logger.getLogger(this.getClass().getName());
 	
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
@@ -15,8 +19,19 @@ public class BasicListener implements ServletContextListener{
 			//wenn context-param den Wert "test" hat, dann werden die Fragebögen erstellt
 			QuestionnaireInitializer.createQuestionnaires();
 		}
-		
-		
+//		Variante Maurice:
+//		 ServletContext servletContext = sce.getServletContext();
+//        String mode = servletContext.getInitParameter("mode");
+//
+//        switch (mode) {
+//            case "test":
+//                QuestionnaireInitializer.createQuestionnaires();
+//                logger.debug("Questionnaire initialized in mode: " + mode);
+//                break;
+//            default:
+//                logger.error("Unknown questionnaire repo: " + mode);
+//                break;
+//        }
 	}
 
 	@Override

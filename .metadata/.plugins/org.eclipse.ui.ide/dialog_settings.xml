@@ -7,7 +7,7 @@
 		<item value="org.cloudfoundry.ide.eclipse.server:1.8.3.201506161740-RELEASE"/>
 		<item value="org.eclipse.aether.maven.feature:3.1.0.20140706-2237"/>
 		<item value="org.eclipse.ajdt:2.2.4.e45x-20150610-1700"/>
-		<item value="org.eclipse.buildship:1.0.3.v20150917-1110"/>
+		<item value="org.eclipse.buildship:1.0.5.v20150922-2202"/>
 		<item value="org.eclipse.datatools.common.doc.user:1.12.0.v201405281819-26-311A16321A3557"/>
 		<item value="org.eclipse.datatools.connectivity.doc.user:1.12.0.v201405281819-37D-7733L3D753L7BBF"/>
 		<item value="org.eclipse.datatools.connectivity.feature:1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8"/>
@@ -146,5 +146,12 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 01/basic.zip"/>
 		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+		<item value="529" key="DIALOG_HEIGHT"/>
+		<item value="277" key="DIALOG_X_ORIGIN"/>
+		<item value="22" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

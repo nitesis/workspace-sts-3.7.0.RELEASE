@@ -5,7 +5,468 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-09-22T16:05:00Z</updated>
+  <updated>2015-09-30T05:21:00Z</updated>
+  <entry>
+    <title>This Week in Spring - September 29, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/09/30/this-week-in-spring-september-29-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-09-30:2244</id>
+    <updated>2015-09-30T05:21:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! To those of you reading from the US, let me be the first to wish you a &lt;a href="https://twitter.com/search?q=national+coffee+day&amp;ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Esearch"&gt;very happy national coffee day&lt;/a&gt;! As usual, we&amp;rsquo;ve got a lot to cover so let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;have you been checking &lt;a href="http://www.annotatedspring.com/"&gt;out the Annotated Spring site&lt;/a&gt;? It&amp;rsquo;s &lt;em&gt;wonderful&lt;/em&gt;! Packed with easily digsted screencasts on getting started with Spring (sort of like the Rails Casts of yore)&lt;/li&gt;
+  &lt;li&gt;our pal Greg Turnquist is at it again, with part 3 of his &lt;a href="http://spring.io/blog/2015/09/29/react-js-and-spring-data-rest-part-3-conditional-operations"&gt;epic React.js and Spring Data REST tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;not one to relax, Greg &lt;em&gt;also&lt;/em&gt; posted an awesome new guide on building &lt;a href="http://spring.io/blog/2015/09/28/check-out-the-new-creating-crud-ui-with-vaadin-guide"&gt;CRUD applications with Vaadin and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja &lt;a href="http://spring.io/blog/2015/09/22/spring-for-apache-hadoop-2-3-milestone-3-released"&gt;Thomas Risberg has just announced Spring for Apache Hadoop 2.3 M3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Integration Java Config DSL lead Artem Bilan just announced the 1.1 GA release! &lt;a href="http://spring.io/blog/2015/09/22/java-dsl-for-spring-integration-1-1-ga-is-available"&gt;This is a &lt;em&gt;huge&lt;/em&gt; release with lots of good stuff, so check it out&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I just noticed this book by Geoffroy Warin, &lt;a href="http://www.amazon.fr/Mastering-Spring-MVC-Geoffroy-Warin-ebook/dp/B00ZCECXPY"&gt;&lt;em&gt;Mastering Spring MVC 4&lt;/em&gt;&lt;/a&gt;, is now available&lt;/li&gt;
+  &lt;li&gt;our pal Nicolas Frankel has put together &lt;a href="https://blog.frankel.ch/going-the-microservices-way-part-1"&gt;a first look at understandig microservices&lt;/a&gt; with Spring Boot&lt;/li&gt;
+  &lt;li&gt;check out this 9 minute video clip &lt;a href="http://www.informit.com/articles/article.aspx?p=2437436"&gt;on monitoring microservices from Phil Webb and my training video, &lt;em&gt;Building Microservices with Spring Boot&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Rob Hinds has put together an introductory post &lt;a href="https://dzone.com/articles/spring-boot-netflix-oss-an-adventure-into-microser-1"&gt;to the Netflix OSS stack with Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.oakdalesoft.com/2015/09/spring-boot-with-jsfprimefaces/"&gt;Want to get JSF running on Spring Boot&lt;/a&gt;?&lt;/li&gt;
+  &lt;li&gt;Boyko Dimitrov put together a nice post on using &lt;a href="http://blog.dreamix.eu/webothers/configuring-google-as-oauth2-authorization-provider-in-spring-boot"&gt;Spring Boot&amp;rsquo;s OAuth2 support with Google as a provider&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Patrick Grimard has a &lt;em&gt;wonderful&lt;/em&gt; post on using Spring MVC&amp;rsquo;s new server-side &lt;a href="http://patrickgrimard.com/2015/09/27/ejs-script-templates-with-spring-boot/"&gt;JavaScript view renderer to render EJS script templates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Christophe Labouisse is back with a &lt;a href="http://www.labouisse.com/how-to/2015/09/23/elk-docker-and-spring-boot/"&gt;post on managing Spring Boot logs with ELK and Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>React.js and Spring Data REST: Part 3 - Conditional Operations</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/09/29/react-js-and-spring-data-rest-part-3-conditional-operations" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2015-09-29:2243</id>
+    <updated>2015-09-29T12:00:06Z</updated>
+    <content type="html">&lt;div id="preamble"&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In the &lt;a href="https://spring.io/blog/2015/09/15/react-js-and-spring-data-rest-part-2-hypermedia"&gt;previous session&lt;/a&gt;, you found out how to turn on Spring Data REST&amp;#8217;s hypermedia controls, have the UI navigate by paging, and dynamically resize based on changing the page size. You added the ability to create and delete employees and have the pages adjust. But no solution is complete with taking into consideration updates made by other users on the same bit of data you are currently editing.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Feel free to &lt;a href="https://github.com/gregturn/react-and-spring-data-rest/tree/master/conditional"&gt;grab the code&lt;/a&gt; from this repository and follow along. This session is based on the previous session&amp;#8217;s app with extra things added.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_to_put_or_not_to_put_that_is_the_question"&gt;To PUT or not to PUT, that is the question&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;When you fetch a resource, there is risk is that it might go stale if someone else updates it. To deal with this, Spring Data REST integrates two technologies: versioning of resources and ETags.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;By versioning resources on the backend and using ETags in the frontend, it is possible to conditially PUT a change. In other words, you can detect if a resource has changed and prevent a PUT (or a PATCH) from stomping on someone else&amp;#8217;s update. Let&amp;#8217;s check it out.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_versioning_rest_resources"&gt;Versioning REST resources&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;To support versioning of resources, define a version attribute for your domain objects that need this type of protection.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="listingblock"&gt;&#xD;
+&lt;div class="title"&gt;src/main/java/com/greglturnquist/payroll/Employee.java&lt;/div&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Data&#xD;
+@Entity&#xD;
+public class Employee {&#xD;
+&#xD;
+	private @Id @GeneratedValue Long id;&#xD;
+	private String firstName;&#xD;
+	private String lastName;&#xD;
+	private String description;&#xD;
+&#xD;
+	private @Version @JsonIgnore Long version;&#xD;
+&#xD;
+	private Employee() {}&#xD;
+&#xD;
+	public Employee(String firstName, String lastName, String description) {&#xD;
+		this.firstName = firstName;&#xD;
+		this.lastName = lastName;&#xD;
+		this.description = description;&#xD;
+	}&#xD;
+}&lt;/code&gt;&lt;/pre&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="ulist"&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;&#xD;
+&lt;p&gt;The &lt;strong&gt;version&lt;/strong&gt; field is annoated with &lt;code&gt;javax.persistence.Version&lt;/code&gt;. It causes a value to be automatically stored and updated everytime a row is inserted and updated.&lt;/p&gt;&#xD;
+&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;When fetching an individual resource (not a collection resource), Spring Data REST will automatically add an &lt;a href="http://tools.ietf.org/html/rfc7232#section-2.3"&gt;ETag response header&lt;/a&gt; with the value of this field.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_fetching_individual_resources_and_their_headers"&gt;Fetching individual resources and their headers&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In the &lt;a href="https://spring.io/blog/2015/09/15/react-js-and-spring-data-rest-part-2-hypermedia"&gt;previous session&lt;/a&gt; you used the collection resource to gather data and populate the UI&amp;#8217;s HTML table. With Spring Data REST, the &lt;strong&gt;_embedded&lt;/strong&gt; data set is considered a preview of data. While useful for glancing at data, to get headers like ETags, you need to fetch each resource individually.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In this version, &lt;code&gt;loadFromServer&lt;/code&gt; is updated to fetch the collection and then use the URIs to retrieve each individual resource.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="listingblock"&gt;&#xD;
+&lt;div class="title"&gt;src/main/resources/static/app.jsx - Fetching each resource&lt;/div&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;loadFromServer: function (pageSize) {&#xD;
+    follow(client, root, [&#xD;
+        {rel: 'employees', params: {size: pageSize}}]&#xD;
+    ).then(employeeCollection =&amp;gt; {&#xD;
+        return client({&#xD;
+            method: 'GET',&#xD;
+            path: employeeCollection.entity._links.profile.href,&#xD;
+            headers: {'Accept': 'application/schema+json'}&#xD;
+        }).then(schema =&amp;gt; {&#xD;
+            this.schema = schema.entity;&#xD;
+            this.links = employeeCollection.entity._links;&#xD;
+            return employeeCollection;&#xD;
+        });&#xD;
+    }).then(employeeCollection =&amp;gt; {&#xD;
+        return employeeCollection.entity._embedded.employees.map(employee =&amp;gt;&#xD;
+                client({&#xD;
+                    method: 'GET',&#xD;
+                    path: employee._links.self.href&#xD;
+                })&#xD;
+        );&#xD;
+    }).then(employeePromises =&amp;gt; {&#xD;
+        return when.all(employeePromises);&#xD;
+    }).done(employees =&amp;gt; {&#xD;
+        this.setState({&#xD;
+            employees: employees,&#xD;
+            attributes: Object.keys(this.schema.properties),&#xD;
+            pageSize: pageSize,&#xD;
+            links: this.links&#xD;
+        });&#xD;
+    });&#xD;
+},&lt;/code&gt;&lt;/pre&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="olist arabic"&gt;&#xD;
+&lt;ol class="arabic"&gt;&#xD;
+&lt;li&gt;&#xD;
+The &lt;code&gt;follow()&lt;/code&gt; function goes to the &lt;strong&gt;employees&lt;/strong&gt; collection resource.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+The &lt;code&gt;then(employeeCollection &amp;#8658; &amp;#8230;&amp;#8203;)&lt;/code&gt; clause creates a call to fetch JSON Schema data. This has a sub-then clause to store the metadata and navigational links in the &lt;code&gt;&amp;lt;App/&amp;gt;&lt;/code&gt; component.&#xD;
+&lt;div class="ulist"&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;&#xD;
+Notice that this embedded promise returns the employeeCollection. That way, the collection can be passed onto the next call while letting you grab the metadata along the way.&#xD;
+&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+The second &lt;code&gt;then(employeeCollection &amp;#8658; &amp;#8230;&amp;#8203;)&lt;/code&gt; clause converts the collection of employees into an array of GET promises to fetch each individual resource. &lt;strong&gt;This is what you need to fetch an ETag header for each employee.&lt;/strong&gt;&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+The &lt;code&gt;then(employeePromises &amp;#8658; &amp;#8230;&amp;#8203;)&lt;/code&gt; clause takes the array of GET promises and merges them into a single promise with &lt;code&gt;when.all()&lt;/code&gt;, resolved when all the GET promises are resolved.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+&lt;code&gt;loadFromServer&lt;/code&gt; wraps up with &lt;code&gt;done(employees &amp;#8658; &amp;#8230;&amp;#8203;)&lt;/code&gt; where the UI state is updated using this amalgamation of data.&#xD;
+&lt;/li&gt;&#xD;
+&lt;/ol&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This chain is implemented in other places as well. For example, &lt;code&gt;onNavigate()&lt;/code&gt;, which is used to jump to different pages, has been updated to fetch individual resources. Since it&amp;#8217;s mostly the same as what&amp;#8217;s shown above, it&amp;#8217;s been left out of this session.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_updating_existing_resources"&gt;Updating existing resources&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In this session, you are adding an &lt;code&gt;UpdateDialog&lt;/code&gt; React component to edit existing employee records.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="listingblock"&gt;&#xD;
+&lt;div class="title"&gt;src/main/resources/static/app.jsx - UpdateDialog component&lt;/div&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;var UpdateDialog = React.createClass({&#xD;
+&#xD;
+    handleSubmit: function (e) {&#xD;
+        e.preventDefault();&#xD;
+        var updatedEmployee = {};&#xD;
+        this.props.attributes.forEach(attribute =&amp;gt; {&#xD;
+            updatedEmployee[attribute] = React.findDOMNode(this.refs[attribute]).value.trim();&#xD;
+        });&#xD;
+        this.props.onUpdate(this.props.employee, updatedEmployee);&#xD;
+        window.location = "#";&#xD;
+    },&#xD;
+&#xD;
+    render: function () {&#xD;
+        var inputs = this.props.attributes.map(attribute =&amp;gt;&#xD;
+                &amp;lt;p key={this.props.employee.entity[attribute]}&amp;gt;&#xD;
+                    &amp;lt;input type="text" placeholder={attribute}&#xD;
+                           defaultValue={this.props.employee.entity[attribute]}&#xD;
+                           ref={attribute} className="field" /&amp;gt;&#xD;
+                &amp;lt;/p&amp;gt;&#xD;
+        );&#xD;
+&#xD;
+        var dialogId = "updateEmployee-" + this.props.employee.entity._links.self.href;&#xD;
+&#xD;
+        return (&#xD;
+            &amp;lt;div key={this.props.employee.entity._links.self.href}&amp;gt;&#xD;
+                &amp;lt;a href={"#" + dialogId}&amp;gt;Update&amp;lt;/a&amp;gt;&#xD;
+                &amp;lt;div id={dialogId} className="modalDialog"&amp;gt;&#xD;
+                    &amp;lt;div&amp;gt;&#xD;
+                        &amp;lt;a href="#" title="Close" className="close"&amp;gt;X&amp;lt;/a&amp;gt;&#xD;
+&#xD;
+                        &amp;lt;h2&amp;gt;Update an employee&amp;lt;/h2&amp;gt;&#xD;
+&#xD;
+                        &amp;lt;form&amp;gt;&#xD;
+                            {inputs}&#xD;
+                            &amp;lt;button onClick={this.handleSubmit}&amp;gt;Update&amp;lt;/button&amp;gt;&#xD;
+                        &amp;lt;/form&amp;gt;&#xD;
+                    &amp;lt;/div&amp;gt;&#xD;
+                &amp;lt;/div&amp;gt;&#xD;
+            &amp;lt;/div&amp;gt;&#xD;
+        )&#xD;
+    }&#xD;
+&#xD;
+});&lt;/code&gt;&lt;/pre&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This new component has both a &lt;code&gt;handleSubmit()&lt;/code&gt; function as well as the expected &lt;code&gt;render()&lt;/code&gt; function, similar to the &lt;code&gt;&amp;lt;CreateDialog /&amp;gt;&lt;/code&gt; component.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Let&amp;#8217;s dig into these functions in reverse order, and first look at the &lt;code&gt;render()&lt;/code&gt; function.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="sect2"&gt;&#xD;
+&lt;h3 id="_rendering"&gt;Rendering&lt;/h3&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This component uses the same CSS/HTML tactics to show and hide the dialog as the &lt;code&gt;&amp;lt;CreateDialog /&amp;gt;&lt;/code&gt; from the previous session.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;It converts the array of JSON Schema attributes into an array of HTML inputs, wrapped in paragraph elements for styling. This is also the same as the &lt;code&gt;&amp;lt;CreateDialog /&amp;gt;&lt;/code&gt; with one difference: the fields are loaded with &lt;strong&gt;this.props.employee&lt;/strong&gt;. In the CreateDialog component, the fields are empty.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The &lt;strong&gt;id&lt;/strong&gt; field is built differently. There is only one CreateDialog link on the entire UI, but a separate UpdateDialog link for every row displayed. Hence, the &lt;strong&gt;id&lt;/strong&gt; field is based on the &lt;strong&gt;self&lt;/strong&gt; link&amp;#8217;s URI. This is used in both the &amp;lt;div&amp;gt; element&amp;#8217;s React &lt;strong&gt;key&lt;/strong&gt; as well as the HTML anchor tag and the hidden pop-up.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="sect2"&gt;&#xD;
+&lt;h3 id="_handling_user_input"&gt;Handling user input&lt;/h3&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The submit button is linked to the component&amp;#8217;s &lt;code&gt;handleSubmit()&lt;/code&gt; function. This handily uses &lt;code&gt;React.findDOMNode()&lt;/code&gt; to extract the details of the pop-up using &lt;a href="http://facebook.github.io/react/docs/more-about-refs.html"&gt;React refs&lt;/a&gt;.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;After the input values are extracted and loaded into the &lt;code&gt;updatedEmployee&lt;/code&gt; object, the top-level &lt;code&gt;onUpdate()&lt;/code&gt; method is invoked. This continues React&amp;#8217;s style of one-way binding where the functions to call are pushed from upper level components into the lower level ones. This way, state is still managed at the top.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_conditional_put"&gt;Conditional PUT&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;So you&amp;#8217;ve gone to all this effort to embed versioning in the data model. Spring Data REST has served up that value as an ETag response header. Here is where you get to put it to good use!&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="listingblock"&gt;&#xD;
+&lt;div class="title"&gt;src/main/resources/static/app.jsx - onUpdate function&lt;/div&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;onUpdate: function (employee, updatedEmployee) {&#xD;
+    client({&#xD;
+        method: 'PUT',&#xD;
+        path: employee.entity._links.self.href,&#xD;
+        entity: updatedEmployee,&#xD;
+        headers: {&#xD;
+            'Content-Type': 'application/json',&#xD;
+            'If-Match': employee.headers.Etag&#xD;
+        }&#xD;
+    }).done(response =&amp;gt; {&#xD;
+        this.loadFromServer(this.state.pageSize);&#xD;
+    }, response =&amp;gt; {&#xD;
+        if (response.status.code === 412) {&#xD;
+            alert('DENIED: Unable to update ' +&#xD;
+                employee.entity._links.self.href + '. Your copy is stale.');&#xD;
+        }&#xD;
+    });&#xD;
+},&lt;/code&gt;&lt;/pre&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;PUT with an &lt;a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24"&gt;If-Match request header&lt;/a&gt; causes Spring Data REST to check the value against the current version. If the incoming &lt;strong&gt;If-Match&lt;/strong&gt; value doesn&amp;#8217;t match the data store&amp;#8217;s version value, Spring Data REST will fail with an &lt;strong&gt;HTTP 412 Precondition Failed&lt;/strong&gt;.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="admonitionblock note"&gt;&#xD;
+&lt;table&gt;&#xD;
+&lt;tr&gt;&#xD;
+&lt;td class="icon"&gt;&#xD;
+&lt;div class="title"&gt;Note&lt;/div&gt;&#xD;
+&lt;/td&gt;&#xD;
+&lt;td class="content"&gt;&#xD;
+The spec for &lt;a href="https://promisesaplus.com/"&gt;Promises/A+&lt;/a&gt; actually defines their API as &lt;code&gt;then(successFunction, errorFunction)&lt;/code&gt;. So far, you&amp;#8217;ve only seen it used with success functions. In the code fragment above, there are two functions. The success function invokes &lt;code&gt;loadFromServer&lt;/code&gt; while the error function displays a browser alert about the stale data.&#xD;
+&lt;/td&gt;&#xD;
+&lt;/tr&gt;&#xD;
+&lt;/table&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_putting_it_all_together"&gt;Putting it all together&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;With your &lt;code&gt;UpdateDialog&lt;/code&gt; React component defined and nicely linked to the top-level &lt;code&gt;onUpdate&lt;/code&gt; function, the last step is to wire it into the existing layout of components.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The &lt;code&gt;CreateDialog&lt;/code&gt; created in the previous session was put at the top of the &lt;code&gt;EmployeeList&lt;/code&gt; because there is only one instance. However, &lt;code&gt;UpdateDialog&lt;/code&gt; is tied directly to specific employees. So you can see it plugged in below in the &lt;code&gt;Employee&lt;/code&gt; React component:&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="listingblock"&gt;&#xD;
+&lt;div class="title"&gt;src/main/resources/static/app.jsx - Employee with UpdateDialog&lt;/div&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;var Employee = React.createClass({&#xD;
+    handleDelete: function () {&#xD;
+        this.props.onDelete(this.props.employee);&#xD;
+    },&#xD;
+    render: function () {&#xD;
+        return (&#xD;
+            &amp;lt;tr&amp;gt;&#xD;
+                &amp;lt;td&amp;gt;{this.props.employee.entity.firstName}&amp;lt;/td&amp;gt;&#xD;
+                &amp;lt;td&amp;gt;{this.props.employee.entity.lastName}&amp;lt;/td&amp;gt;&#xD;
+                &amp;lt;td&amp;gt;{this.props.employee.entity.description}&amp;lt;/td&amp;gt;&#xD;
+                &amp;lt;td&amp;gt;&#xD;
+                    &amp;lt;UpdateDialog employee={this.props.employee}&#xD;
+                                  attributes={this.props.attributes}&#xD;
+                                  onUpdate={this.props.onUpdate}/&amp;gt;&#xD;
+                &amp;lt;/td&amp;gt;&#xD;
+                &amp;lt;td&amp;gt;&#xD;
+                    &amp;lt;button onClick={this.handleDelete}&amp;gt;Delete&amp;lt;/button&amp;gt;&#xD;
+                &amp;lt;/td&amp;gt;&#xD;
+            &amp;lt;/tr&amp;gt;&#xD;
+        )&#xD;
+    }&#xD;
+})&lt;/code&gt;&lt;/pre&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In this session, you switch from using the collection resource to individual resources. The fields for an employee record are now found at &lt;code&gt;this.props.employee.entity&lt;/code&gt;. It gives us access to &lt;code&gt;this.props.employee.headers&lt;/code&gt; where we can find ETags.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;There are other headers supported by Spring Data REST (like &lt;a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.29"&gt;Last-Modified&lt;/a&gt;) which aren&amp;#8217;t part of this series. So structuring your data this way is handy.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="admonitionblock important"&gt;&#xD;
+&lt;table&gt;&#xD;
+&lt;tr&gt;&#xD;
+&lt;td class="icon"&gt;&#xD;
+&lt;div class="title"&gt;Important&lt;/div&gt;&#xD;
+&lt;/td&gt;&#xD;
+&lt;td class="content"&gt;&#xD;
+The structure of &lt;code&gt;.entity&lt;/code&gt; and &lt;code&gt;.headers&lt;/code&gt; is only pertinent when using &lt;a href="https://github.com/cujojs/rest"&gt;rest.js&lt;/a&gt; as the REST library of choice. If you use a different library, you will have to adapt as necessary.&#xD;
+&lt;/td&gt;&#xD;
+&lt;/tr&gt;&#xD;
+&lt;/table&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_seeing_things_in_action"&gt;Seeing things in action&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="olist arabic"&gt;&#xD;
+&lt;ol class="arabic"&gt;&#xD;
+&lt;li&gt;&#xD;
+Start up the app (&lt;code&gt;./mvnw spring-boot:run&lt;/code&gt;).&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+Open up a tab and navigate to &lt;a href="http://localhost:8080" class="bare"&gt;http://localhost:8080&lt;/a&gt;.&#xD;
+&lt;div class="imageblock"&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;img src="https://github.com/gregturn/react-and-spring-data-rest/raw/master/conditional/images/conditional-1.png" alt="conditional 1"&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+Pull up the edit dialog for Frodo.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+Open another tab in your browser and pull up the same record.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+Make a change to the record in the first tab.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+Try to make a change in the second tab.&#xD;
+&lt;div class="imageblock"&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;img src="https://github.com/gregturn/react-and-spring-data-rest/raw/master/conditional/images/conditional-2.png" alt="conditional 2"&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/li&gt;&#xD;
+&lt;/ol&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="imageblock"&gt;&#xD;
+&lt;div class="content"&gt;&#xD;
+&lt;img src="https://github.com/gregturn/react-and-spring-data-rest/raw/master/conditional/images/conditional-3.png" alt="conditional 3"&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;With these mods, you have increased data integrity by avoiding collisions.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;&#xD;
+&lt;h2 id="_review"&gt;Review&lt;/h2&gt;&#xD;
+&lt;div class="sectionbody"&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In this session:&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="ulist"&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;&#xD;
+You configured your domain model with an &lt;code&gt;@Version&lt;/code&gt; field for JPA-based optimistic locking.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+You adjusted the frontend to fetch individual resources.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+You plugged the ETag header from an individual resource into an &lt;strong&gt;If-Match&lt;/strong&gt; request header to make PUTs conditional.&#xD;
+&lt;/li&gt;&#xD;
+&lt;li&gt;&#xD;
+You coded a new UpdateDialog for each employee shown on the list.&#xD;
+&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;With this plugged in, it&amp;#8217;s easy to avoid colliding with other users, or simply overwriting their edits.&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Issues?&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;It&amp;#8217;s certainly nice to know when you&amp;#8217;re editing a bad record. But is it best to wait until you click "Submit" to find out?&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The logic to fetch resources is very similar in both &lt;code&gt;loadFromServer&lt;/code&gt; and &lt;code&gt;onNavigate&lt;/code&gt;. Do you see ways to avoid duplicate code?&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;You put the JSON Schema metadata to good use in building up the &lt;code&gt;CreateDialog&lt;/code&gt; and the &lt;code&gt;UpdateDialog&lt;/code&gt; inputs. Do you see other places to use the metadata to makes things more generic? Imagine you wanted to add five more fields to &lt;code&gt;Employee.java&lt;/code&gt;. What would it take to update the UI?&lt;/p&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;&#xD;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Check out the new "Creating CRUD UI with Vaadin" guide</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/09/28/check-out-the-new-creating-crud-ui-with-vaadin-guide" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2015-09-28:2242</id>
+    <updated>2015-09-28T16:15:58Z</updated>
+    <content type="html">&lt;p&gt;Greetings Spring community,&lt;/p&gt;&lt;p&gt;Today we have published a new guide: &lt;a href="https://spring.io/guides/gs/crud-with-vaadin/"&gt;Creating CRUD UI with Vaadin&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This guide, written by the Vaadin team, shows how to nicely build a UI that taps into Spring Data, but doesn&amp;rsquo;t require writing a single line of JavaScript or HTML code.&lt;/p&gt;&lt;p&gt;Vaadin is real cool:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Comes with its own Spring Boot starter&lt;/li&gt;
+  &lt;li&gt;Works nicely with constructor injection&lt;/li&gt;
+  &lt;li&gt;Makes it dirt simple to plugin persistence solutions like Spring Data&lt;/li&gt;
+  &lt;li&gt;Is armed with an arsenal of plugins to grow into real applications&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Check out this newly minted guide and have fun!&lt;/p&gt;&lt;h4&gt;&lt;a href="#more-guides-coming" class="anchor" name="more-guides-coming"&gt;&lt;/a&gt;More guides coming&lt;/h4&gt;&lt;p&gt;As a follow up to SpringOne 2GX, we have identified some more guides that need to be written. The story of cloud native is sweeping the development community, and people are asking for more solutions. Our job shouldn&amp;rsquo;t be racking and stacking servers or building infrastructure. Instead, we should focus on smooth and easy solutions. Coding things &lt;strong&gt;cloud native&lt;/strong&gt; makes that possible. With Spring Boot and Spring Cloud this has become easier than ever.&lt;/p&gt;&lt;p&gt;Stay tuned!&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring for Apache Hadoop 2.3 Milestone 3 released</title>
     <link rel="alternate" href="https://spring.io/blog/2015/09/22/spring-for-apache-hadoop-2-3-milestone-3-released" />
@@ -48,7 +509,7 @@
      &amp;lt;artifactId&amp;gt;spring-integration-java-dsl&amp;lt;/artifactId&amp;gt;&#xD;
      &amp;lt;version&amp;gt;1.1.0.RELEASE&amp;lt;/version&amp;gt;&#xD;
 &amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;First of all a big thanks to everyone who visited my &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/spring_integration_java_dsl.html"&gt;talk&lt;/a&gt; at the SpringOne 2GX 2015 last week. An addition thanks to any feedback for the Framework through any available public channel.&lt;/p&gt;&lt;p&gt;Having that we were be able to add some minor fixes in between GA and previous &lt;a href="https://spring.io/blog/2015/09/10/spring-integration-java-dsl-1-1-m2-is-available"&gt;Milestone&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;And as I promised on my talk we added the DSL definition for simple adapters from the Spring Integration Core module.&lt;/p&gt;&lt;p&gt;Let me demonstrate it here one more time and explain on what the solution is based to share some hooks for future contributors:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;First of all a big thanks to everyone who visited my &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/spring_integration_java_dsl.html"&gt;talk&lt;/a&gt; at the SpringOne 2GX 2015 last week. An additional thanks for all the feedback we have received.&lt;/p&gt;&lt;p&gt;Thanks to that we were able to add some minor fixes between GA and previous &lt;a href="https://spring.io/blog/2015/09/10/spring-integration-java-dsl-1-1-m2-is-available"&gt;Milestone&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;And as I promised on my talk we added the DSL definition for simple adapters from the Spring Integration Core module.&lt;/p&gt;&lt;p&gt;Let me demonstrate it here one more time and explain on what the solution is based to share some hooks for future contributors:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="prettyprint java"&gt;@Bean&#xD;
 public IntegrationFlow feedFlow() {&#xD;
 return IntegrationFlows&#xD;
@@ -1458,97 +1919,5 @@ interface UserRepository extends CrudRepository&amp;lt;User, String&amp;gt; {&#x
     <id>tag:spring.io,2015-09-01:2225</id>
     <updated>2015-09-01T14:18:00Z</updated>
     <content type="html">&lt;p&gt;A minor maintenance release of Spring Web Flow is now available for use. The release addresses compatibility issues against Spring Security 4.0 and the Mojarra and Apache MyFaces JSF implementations. For a list of the addressed issues see the &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10050&amp;version=14796"&gt;release notes&lt;/a&gt; JIRA report.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Statemachine 1.0.0.RC1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/01/spring-statemachine-1-0-0-rc1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Janne Valkealahti</name>
-    </author>
-    <id>tag:spring.io,2015-08-31:2221</id>
-    <updated>2015-09-01T12:31:39Z</updated>
-    <content type="html">&lt;p&gt;We’re pleased to announce a first release candicate of &lt;a href="http://projects.spring.io/spring-statemachine/"&gt;Spring Statemachine&lt;/a&gt; 1.0.0.RC1.&lt;/p&gt;&lt;p&gt;Focus of this release is to get core framework more stable and finally add jepsen tests for a distributed state machine. We also added a first version of a testing support. Resolved github tickets can be found from &lt;a href="https://github.com/spring-projects/spring-statemachine/issues?q=milestone%3A1.0.0.RC1+is%3Aclosed"&gt;RC1 issues&lt;/a&gt;. We&amp;rsquo;re relatively close to issue a release version, meaning if nothing major pop-up, next release will be a &lt;code&gt;1.0.0.RELEASE&lt;/code&gt;. If something urgent turns up we will do &lt;code&gt;1.0.0.RC2&lt;/code&gt; prior to a release.&lt;/p&gt;&lt;p&gt;Now that we&amp;rsquo;re here, let&amp;rsquo;s crack it and see what new features we have in this release.&lt;/p&gt;&lt;p&gt;Beyond usual bug fixes here is a list of main new features:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Testing support&lt;/li&gt;
-  &lt;li&gt;Jepsen tests for a Distributed State Machine&lt;/li&gt;
-&lt;/ul&gt;&lt;h1&gt;&lt;a href="#testing-support" class="anchor" name="testing-support"&gt;&lt;/a&gt;Testing support&lt;/h1&gt;&lt;p&gt;Testing a state machine is not easiest task to accomplish and thus we&amp;rsquo;re introcuding new &lt;code&gt;spring-statemachine-test&lt;/code&gt; module which will ease a process of making unit tests for a Spring Statemachine. Due to dependencies it&amp;rsquo;s not used in a core system but what comes for a &lt;code&gt;recipes&lt;/code&gt; and a &lt;code&gt;Zookeeper&lt;/code&gt; integration it is already used to test those modules.&lt;/p&gt;&lt;p&gt;Testing a simple state machine in a tests will look simple as:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;StateMachine&amp;lt;String, String&amp;gt; machine = buildMachine();&#xD;
-StateMachineTestPlan&amp;lt;String, String&amp;gt; plan =&#xD;
-  StateMachineTestPlanBuilder.&amp;lt;String, String&amp;gt;builder()&#xD;
-    .defaultAwaitTime(2)&#xD;
-    .stateMachine(machine)&#xD;
-    .step()&#xD;
-      .expectStates(&amp;quot;SI&amp;quot;)&#xD;
-      .and()&#xD;
-    .step()&#xD;
-      .sendEvent(&amp;quot;E1&amp;quot;)&#xD;
-      .expectStateChanged(1)&#xD;
-      .expectStates(&amp;quot;S1&amp;quot;)&#xD;
-      .and()&#xD;
-    .build();&#xD;
-plan.test();&#xD;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;if having a state machine defined as:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;StateMachine&amp;lt;String, String&amp;gt; buildMachine()&#xD;
-    throws Exception {&#xD;
-  StateMachineBuilder.Builder&amp;lt;String, String&amp;gt; builder =&#xD;
-    StateMachineBuilder.builder();&#xD;
-&#xD;
-  builder.configureConfiguration()&#xD;
-    .withConfiguration()&#xD;
-      .taskExecutor(new SyncTaskExecutor())&#xD;
-      .autoStartup(true);&#xD;
-&#xD;
-  builder.configureStates()&#xD;
-    .withStates()&#xD;
-      .initial(&amp;quot;SI&amp;quot;)&#xD;
-      .state(&amp;quot;S1&amp;quot;);&#xD;
-&#xD;
-  builder.configureTransitions()&#xD;
-    .withExternal()&#xD;
-      .source(&amp;quot;SI&amp;quot;).target(&amp;quot;S1&amp;quot;)&#xD;
-      .event(&amp;quot;E1&amp;quot;);&#xD;
-&#xD;
-   return builder.build();&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;&lt;a href="#jepsen-tests" class="anchor" name="jepsen-tests"&gt;&lt;/a&gt;Jepsen tests&lt;/h1&gt;&lt;p&gt;Our support for using distributed states with a Zookeeker turned out to be relatively difficult to test with a normal set of unit tests and thus we hit a wall with a test coverage. I&amp;rsquo;d like to use this moment to tell something about testing distributed systems with jepsen.&lt;/p&gt;&lt;p&gt;&lt;a href="https://github.com/aphyr/jepsen"&gt;Jepsen&lt;/a&gt; testing framework by Kyle Kingsbury (aka &lt;a href="https://twitter.com/aphyr"&gt;@aphyr&lt;/a&gt;) is a system what can be used to test distibuted systems and have a features like synchronizing events sent into a nodes and causing a brain splits on a network. Jepsen will be a core of our system to make sure that our distributed support will do what it it supposed to do. This is a first class system to test Spring Distributed Statemachine backed by a &lt;code&gt;Zookeeper&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;There&amp;rsquo;s going to be a separate blog post for this but preliminary results can be found from our reference docs &lt;a href="http://docs.spring.io/spring-statemachine/docs/1.0.0.RC1/reference/htmlsingle/#appendices-zookeeper"&gt;Distributed State Machine Technical Paper&lt;/a&gt;. Stay stuned about that blog post!&lt;/p&gt;&lt;p&gt;In here we take a peek from our jepsen tests to show what happens when a cluster suffers a split which is causing a zookeeper ensemble to totally break and what happes when a network is break and healed.&lt;/p&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/spring-statemachine/docs/1.0.0.RC1/reference/htmlsingle/images/sm-tech-partition-half-2.png" alt="Zookeeper Sample" /&gt;&lt;/p&gt;&lt;p&gt;In above graph we have a 5 node cluster sharing a same state machine configuration backed by a &lt;code&gt;Zookeeper&lt;/code&gt; ensemble where each node is connecting to its own local instance. First an event &lt;code&gt;C&lt;/code&gt; is sent into all machines(only one will handle a distributed state change) which will initiate distributed transition from state &lt;code&gt;S21&lt;/code&gt; into &lt;code&gt;S211&lt;/code&gt;. Network is then break and graph is showing how each machine eventually will end up into an error state. When network and &lt;code&gt;Zookeeper&lt;/code&gt; ensemble is later healed, all machines will re-join an ensemble and sync their states. Finally event &lt;code&gt;K&lt;/code&gt; is send, again to all machines, to show that all machines are working properly after network problems has been healed.&lt;/p&gt;&lt;p&gt;As mentioned in our documentation, if existing zookeer leader is kept in minority all instances are disconnected from ensemble, thus causing all state machines to enter into an error state. This situation is then resolved automatically later when network is healed and zookeeper emsemble fixes itself and state machines connected to it can reset their own states.&lt;/p&gt;&lt;h1&gt;&lt;a href="#springone-2gx-2015-is-around-the-corner" class="anchor" name="springone-2gx-2015-is-around-the-corner"&gt;&lt;/a&gt;SpringOne 2GX 2015 is around the corner!&lt;/h1&gt;&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com"&gt;SpringOne2GX in Washington, DC soon&lt;/a&gt;. It&amp;rsquo;s simply the best opportunity to find out first hand all that&amp;rsquo;s going on and to provide direct feedback.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 4.2.1 Available Now</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/01/spring-framework-4-2-1-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2015-09-01:2224</id>
-    <updated>2015-09-01T12:25:00Z</updated>
-    <content type="html">&lt;p&gt;It is my pleasure to announce that Spring Framework 4.2.1 is available from repo.spring.io and Maven Central. This first maintenance release in the 4.2 line contains &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=15226"&gt;a wide range of fixes for regressions and other issues&lt;/a&gt; reported against 4.2 GA.&lt;/p&gt;&lt;p&gt;4.2.1 also contains minor enhancements: refinement of our Jackson support (see &lt;a href="https://spring.io/blog/2014/12/02/latest-jackson-integration-improvements-in-spring"&gt;Sébastien&amp;rsquo;s updated blog post&lt;/a&gt;), meta-annotation processing improvements (&lt;code&gt;@AliasFor&lt;/code&gt;), third-party dependencies alignment (including Hibernate 5.0 GA).&lt;/p&gt;&lt;p&gt;We strongly recommend an immediate upgrade to 4.2.1 for all 4.x users. The Spring Framework team is now working towards Spring Framework 4.2.2 in early October, which will be the foundation for the upcoming Spring Boot 1.3 GA release. We will also release 4.1.8 at the same time: if there is anything you’d like to get fixed in the 4.1.x branch still, now is the time to raise it!&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SPR"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Join Sam Brannen and Nicolas Fränkel to discover &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/get_the_most_out_of_testing_with_spring_4_2.html"&gt;what&amp;rsquo;s new in Spring Framework 4.2&amp;rsquo;s testing support&lt;/a&gt; at SpringOne2GX in Washington in two weeks. It&amp;rsquo;s not too late to get a ticket if you want to learn about all of the latest and greatest first hand.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - September 1, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/01/this-week-in-spring-september-1-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-09-01:2223</id>
-    <updated>2015-09-01T12:08:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! The Spring team is hard at work on all the latest and greatest ahead of the SpringOne2GX event in Washington DC! Time is &lt;em&gt;really&lt;/em&gt; flying! I can&amp;rsquo;t &lt;em&gt;beleive&lt;/em&gt; what we&amp;rsquo;re staring down September already! This week I&amp;rsquo;m in Tokyo, Japan, participating in the Spring User Group&amp;rsquo;s &lt;em&gt;huge&lt;/em&gt; &lt;em&gt;Spring in Summer&lt;/em&gt; event where &lt;a href="https://speakerdeck.com/joshlong/the-macro-of-microservices"&gt;I gave a keynote&lt;/a&gt; and two talks, on Spring Boot and Spring Cloud. The one day event attracted some of the company&amp;rsquo;s largest websites and was a &lt;em&gt;lot&lt;/em&gt; of fun!&lt;/p&gt;&lt;p&gt;Anyway, without further ado, let&amp;rsquo;s get to it!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2015/09/01/spring-data-release-train-gosling-goes-ga"&gt;Spring Data Gosling goes GA!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring ninja Greg Turnquist just announced the first installment of &lt;a href="https://spring.io/blog/2015/09/01/react-js-and-spring-data-rest-part-1-basic-features"&gt;his tutorial on using Spring with React.js&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Erik, of the &lt;em&gt;Programming with Erik&lt;/em&gt; blog, has put together &lt;a href="http://www.programwitherik.com/trying-out-spring-boot-with-ember-and-a-site-update/"&gt;an interesting post on using Spring Boot with Ember.js&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I dig this blog that answers the question, &lt;a href="https://www.openprogrammer.info/2015/08/25/why-jhipster-angularjs-spring-boot-liquibase-mongodb-elasticsearch/"&gt;&lt;em&gt;Why JHipster?&lt;/em&gt;&lt;/a&gt; (JHipster is a &lt;code&gt;yeoman&lt;/code&gt; code-generator for Angular.js frontends and Spring Boot backends)&lt;/li&gt;
-  &lt;li&gt;The Kotan code blog has a &lt;a href="http://www.kotancode.com/2015/08/26/securing-a-spring-boot-microservice/"&gt;nice post on securing Spring Boot webservices&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This Russian-language post looks at &lt;a href="http://habrahabr.ru/post/265511/"&gt;how to use Java FX and Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This blog looks at &lt;a href="http://samchu.logdown.com/posts/292630-use-springcloud-to-synchronize-all-nodes-configuration"&gt;the Spring Cloud configuration server&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Biju Kunjummen has a nice post on using &lt;a href="https://dzone.com/articles/spring-boot-static-web-resource-handling-w-yeoman"&gt;Spring Boot static web resource handling with Yeoman for single page applications&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Springfox - not associated with any project from Pivotal - &lt;a href="http://springfox.github.io/springfox/docs/snapshot/"&gt;is an evolution of the Spring MVC and Swagger integration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Endy Muhardin has published a video &lt;a href="https://www.youtube.com/watch?v=Ptf1JdD-9jg"&gt;on using Spring Boot support for JPA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Krishna Srinivasan has put together &lt;a href="http://www.javabeat.net/spring-boot-actuator/"&gt;a nice guide on using the Spring Boot Actuator framework&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Toolsuite Lead Martin Lippert&amp;rsquo;s entry into the Eclipse newsletter &lt;a href="http://www.eclipse.org/community/eclipse_newsletter/2015/august/article2.php"&gt;on the value of STS for Spring is a pretty good, succinct, read&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Our pal, Shin Tanimoto, has put together &lt;a href="http://www.slideshare.net/shintanimoto/spring-boot10"&gt;an &lt;em&gt;amazing&lt;/em&gt; Japanese-language slidedeck on using Spring Boot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

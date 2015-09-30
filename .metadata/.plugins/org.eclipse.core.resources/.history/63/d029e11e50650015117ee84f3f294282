@@ -1,0 +1,32 @@
+package ch.fhnw.webfr.flashcard.web;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+import org.apache.log4j.Logger;
+
+import ch.fhnw.webfr.flashcard.persistence.QuestionnaireRepository;
+import ch.fhnw.webfr.flashcard.util.QuestionnaireInitializer;
+
+public class BasicListener implements ServletContextListener{
+
+	private Logger logger = Logger.getLogger(this.getClass());
+	
+	@Override
+	public void contextInitialized(ServletContextEvent sce) {
+		//schaut, was unter context-param im web.xml steht und vergleicht, ob es "test" ist
+		if(sce.getServletContext().getInitParameter("mode").equals("test")){
+			//wenn context-param den Wert "test" hat, dann werden die Fragebögen erstellt
+			QuestionnaireInitializer.createQuestionnaires();
+		}
+//		String mode = (String) sce.getServletContext().getInitParameter("mode");
+//		sce.getServletContext().setAttribute("questionnaireRepository", QuestionnaireRepository.getInstance());
+//		if ()
+	}
+
+	@Override
+	public void contextDestroyed(ServletContextEvent sce) {
+		// TODO Auto-generated method stub
+		
+	}
+}

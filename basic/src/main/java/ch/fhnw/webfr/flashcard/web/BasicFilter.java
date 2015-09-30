@@ -21,6 +21,7 @@ public class BasicFilter implements javax.servlet.Filter{
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
+		//Was macht das hier eigentlich genau???
 		logger.debug("Test");
 		
 	}

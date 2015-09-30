@@ -4461,3 +4461,508 @@ Binding(ALT+COMMAND+C,
 
 !ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-09-23 10:03:07.068
 !MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+!SESSION 2015-09-27 21:30:11.363 -----------------------------------------------
+eclipse.buildId=3.7.0.201506290652-RELEASE-e45
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-09-27 21:30:23.499
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-09-27 21:30:23.499
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44b5b54,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e8f97dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-09-27 21:30:24.087
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-09-27 21:30:54.485
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/Enide/eclipse-p2-composite-repository/master/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-09-27 21:31:01.105
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-09-27 21:31:29.747
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-09-27 21:31:29.747
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.archetype.common,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.discovery,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor.xml,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.launching,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.lifecyclemapping.defaults,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.appender,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.configuration,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.indexer,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime.slf4j.simple,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.model.edit,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.refactoring,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.scm,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.feature,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.747
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.logback.feature,1.6.2.20150902-0002
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-09-27 21:31:29.749
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-09-27 21:31:29.749
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.archetype.common,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.discovery,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor.xml,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.launching,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.lifecyclemapping.defaults,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.appender,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.configuration,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.indexer,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime.slf4j.simple,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.model.edit,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.refactoring,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.scm,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.feature,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-27 21:31:29.749
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.logback.feature,1.6.2.20150902-0002
+!SESSION 2015-09-29 14:36:13.036 -----------------------------------------------
+eclipse.buildId=3.7.0.201506290652-RELEASE-e45
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-09-29 14:36:24.890
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-09-29 14:36:24.890
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34907a49,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b8c9729,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-09-29 14:36:25.454
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-09-29 14:36:58.191
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/Enide/eclipse-p2-composite-repository/master/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-09-29 14:37:03.598
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-09-29 14:37:31.344
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-09-29 14:37:31.344
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.archetype.common,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.discovery,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor.xml,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.launching,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.lifecyclemapping.defaults,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.appender,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.configuration,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.indexer,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime.slf4j.simple,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.model.edit,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.refactoring,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.scm,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.344
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.feature,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.345
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.logback.feature,1.6.2.20150902-0002
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-09-29 14:37:31.346
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-09-29 14:37:31.346
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.archetype.common,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.discovery,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor.xml,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.launching,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.lifecyclemapping.defaults,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.appender,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.configuration,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.indexer,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime.slf4j.simple,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.model.edit,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.refactoring,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.scm,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.feature,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-29 14:37:31.346
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.logback.feature,1.6.2.20150902-0002
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2015-09-29 16:36:34.563
+!MESSAGE Connection to http://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com: unknown error. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1255)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2015-09-29 16:36:35.066
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io: unknown error. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1255)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2015-09-29 19:19:41.224
+!MESSAGE Connection to http://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com: unknown error. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1255)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2015-09-29 19:19:41.225
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io: unknown error. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1255)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-09-30 08:20:55.602 -----------------------------------------------
+eclipse.buildId=3.7.0.201506290652-RELEASE-e45
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-09-30 08:21:12.125
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-09-30 08:21:12.125
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a233d33,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7da0587a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-09-30 08:21:12.710
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-09-30 08:21:48.159
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/Enide/eclipse-p2-composite-repository/master/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-09-30 08:21:54.415
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-09-30 08:22:17.592
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-09-30 08:22:17.592
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.archetype.common,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.discovery,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor.xml,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.launching,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.lifecyclemapping.defaults,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.appender,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.configuration,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.indexer,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime.slf4j.simple,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.model.edit,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.refactoring,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.scm,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.feature,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.592
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.logback.feature,1.6.2.20150902-0002
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-09-30 08:22:17.593
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-09-30 08:22:17.593
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.archetype.common,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.core.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.discovery,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.editor.xml,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.jdt.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.launching,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.lifecyclemapping.defaults,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.appender,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.logback.configuration,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.indexer,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.maven.runtime.slf4j.simple,1.6.2.20150902-0001
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.model.edit,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.core,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.593
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.profiles.ui,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.594
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.refactoring,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.594
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.m2e.scm,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.594
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.feature,1.6.2.20150902-0002
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-09-30 08:22:17.594
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.m2e.logback.feature,1.6.2.20150902-0002
