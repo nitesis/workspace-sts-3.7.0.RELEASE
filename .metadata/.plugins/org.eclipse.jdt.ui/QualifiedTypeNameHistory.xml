@@ -15,4 +15,5 @@
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.EnableAutoConfiguration"/>
 <fullyQualifiedTypeName name="ch.fhnw.webfr.flashcard.domain.Questionnaire"/>
 <fullyQualifiedTypeName name="ch.fhnw.webfr.flashcard.persistence.QuestionnaireRepository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>
