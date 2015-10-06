@@ -12,13 +12,13 @@ import ch.fhnw.webfr.flashcard.domain.Questionnaire;
 @RequestMapping("/questionnaires")
 public class QuestionnaireController {
 	
-//	@Controller
-//	public class HelloWorldController {
-//	@RequestMapping(method = RequestMethod.GET) 
-//	@ResponseBody public String sayHello(@RequestParam("name") String name) { 
-//		return "Hello World to " + name;
-//		} 
-//	}
+	@Controller
+	public class HelloWorldController {
+	@RequestMapping(method = RequestMethod.GET) 
+	@ResponseBody public String sayHello(@RequestParam("name") String name) { 
+		return "Hello World to " + name;
+		} 
+	}
 	
 	@RequestMapping(method = RequestMethod.POST)
     public String create_NewQuestionnaire(Model model) {
