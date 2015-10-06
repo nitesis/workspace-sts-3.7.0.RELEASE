@@ -94,9 +94,7 @@ public class QuestionnaireControllerTest {
                 .param("description", "MyDescription 1")
                 .param("title", "MyTitle 1")
         )
-       	.andExpect(status().is3xxRedirection())
-    	.andExpect(view().name("redirect:/questionnaires"))
-    	.andExpect(model().attributeExists("questionnaire"));
-
+        	.andExpect(status().is3xxRedirection())
+        	.andExpect(view().name("redirect:questionnaires"));
 	}
 }

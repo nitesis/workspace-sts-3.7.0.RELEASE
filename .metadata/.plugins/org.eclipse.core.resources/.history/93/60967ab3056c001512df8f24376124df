@@ -1,0 +1,8 @@
+package ch.fhnw.webfr.flashcard.web;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class QuestionnaireController {
+
+}
