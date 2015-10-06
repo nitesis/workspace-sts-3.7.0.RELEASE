@@ -1,4 +1,2 @@
 #Tomcat publish data
-#Fri Oct 02 08:16:18 CEST 2015
-org.eclipse.jst.jee.server\:/binary\:/Users/nitesis/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.23/839167a26dec5dcef85fb19e2e429878b7215293/tomcat-embed-websocket-8.0.23.jar=WEB-INF/lib/tomcat-embed-websocket-8.0.23.jar
-org.eclipse.jst.jee.server\:/binary\:/Users/nitesis/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.7.RELEASE/2d9245006b788d7d6afeec85a43e4bfe2e46340a/spring-web-4.1.7.RELEASE.jar=WEB-INF/lib/spring-web-4.1.7.RELEASE.jar
+#Tue Oct 06 10:27:07 CEST 2015

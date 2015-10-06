@@ -8673,3 +8673,321 @@ java.lang.Exception: Debug stacktrace
 !MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit.mylyn,4.1.0.201509280440-r
 !SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-03 13:31:21.438
 !MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit,4.1.0.201509280440-r
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-03 13:40:34.907
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-03 13:40:34.908
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-03 13:40:43.665
+!MESSAGE Could not publish server configuration for Tomcat v8.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-10-03 13:40:43.665
+!MESSAGE Multiple Contexts have a path of "/flashcard-basic".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-03 13:40:58.063
+!MESSAGE Could not publish server configuration for Tomcat v8.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-10-03 13:40:58.063
+!MESSAGE Multiple Contexts have a path of "/flashcard-basic".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-03 13:45:32.691
+!MESSAGE Could not publish server configuration for Tomcat v8.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-10-03 13:45:32.691
+!MESSAGE Multiple Contexts have a path of "/flashcard-basic".
+!SESSION 2015-10-05 01:00:51.742 -----------------------------------------------
+eclipse.buildId=3.7.0.201506290652-RELEASE-e45
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-10-05 01:01:03.928
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-05 01:01:03.928
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5481f204,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@171b0d3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-10-05 01:01:04.472
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-10-05 01:01:38.912
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/Enide/eclipse-p2-composite-repository/master/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-10-05 01:01:44.563
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-10-05 01:02:12.084
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-10-05 01:02:12.084
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.core,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.doc,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.mylyn.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit.archive,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit.mylyn,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.084
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit,4.1.0.201509280440-r
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-10-05 01:02:12.085
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-10-05 01:02:12.085
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.085
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.085
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.core,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.085
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.doc,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.085
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.mylyn.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.085
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.086
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.086
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit.archive,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.086
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.086
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit.mylyn,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-05 01:02:12.086
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit,4.1.0.201509280440-r
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-05 01:02:25.615
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-05 01:02:25.615
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2015-10-05 01:02:26.876
+!MESSAGE Exception while initializing all containers
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/flashcard-basic-bendjus' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:140)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.touch(Resource.java:1797)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1306)
+	at org.eclipse.wst.jsdt.internal.core.SetContainerOperation.execute(SetContainerOperation.java:122)
+	at org.eclipse.wst.jsdt.core.JavaScriptCore.setJsGlobalScopeContainer(JavaScriptCore.java:3918)
+	at org.eclipse.wst.jsdt.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:48)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2216)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$6.run(JavaModelManager.java:2146)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2162)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager.getJsGlobalScopeContainer(JavaModelManager.java:1536)
+	at org.eclipse.wst.jsdt.core.JavaScriptCore.getJsGlobalScopeContainer(JavaScriptCore.java:1336)
+	at org.eclipse.wst.jsdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2747)
+	at org.eclipse.wst.jsdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2026)
+	at org.eclipse.wst.jsdt.core.JavaScriptCore.initializeAfterLoad(JavaScriptCore.java:2672)
+	at org.eclipse.wst.jsdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:32)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-10-05 01:02:26.878
+!MESSAGE Resource '/flashcard-basic-bendjus' does not exist.
+!SESSION 2015-10-06 10:15:36.063 -----------------------------------------------
+eclipse.buildId=3.7.0.201506290652-RELEASE-e45
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2015-10-06 10:15:45.531
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-06 10:15:45.531
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b8c9729,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ae26c59,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2015-10-06 10:15:46.158
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2015-10-06 10:21:03.480
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Communication with repository at http://download.eclipse.org/technology/m2e/releases/1.5/1.5.2.20150413-2215 failed.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:202)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:151)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:129)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:259)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.repository 4 1002 2015-10-06 10:21:03.481
+!MESSAGE Communication with repository at http://download.eclipse.org/technology/m2e/releases/1.5/1.5.2.20150413-2215 failed.
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:259)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-10-06 10:22:24.411
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/Enide/eclipse-p2-composite-repository/master/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-10-06 10:23:01.012
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-10-06 10:24:36.318
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-10-06 10:24:36.318
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.core,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.doc,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.mylyn.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit.archive,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit.mylyn,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.318
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit,4.1.0.201509280440-r
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-10-06 10:24:36.319
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-10-06 10:24:36.319
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.core,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.doc,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.mylyn.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.ui,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit.archive,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit.mylyn,4.1.0.201509280440-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2015-10-06 10:24:36.319
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit,4.1.0.201509280440-r
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-06 10:26:35.445
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-06 10:26:35.446
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-06 10:26:43.230
+!MESSAGE Could not publish server configuration for Tomcat v8.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-10-06 10:26:43.230
+!MESSAGE Multiple Contexts have a path of "/flashcard-basic".

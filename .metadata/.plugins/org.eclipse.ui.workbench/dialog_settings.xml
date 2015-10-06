@@ -30,6 +30,8 @@
 	</section>
 	<section name="ZipFileImportWizard">
 	</section>
+	<section name="FileSystemImportWizard">
+	</section>
 	<section name="ZipFileExportWizard">
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
