@@ -5,7 +5,30 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-06T15:37:38Z</updated>
+  <updated>2015-10-07T05:25:54Z</updated>
+  <entry>
+    <title>This Week in Spring - October 6th, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/07/this-week-in-spring-october-6th-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-10-07:2249</id>
+    <updated>2015-10-07T05:25:54Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! As usual we&amp;rsquo;ve got a lot to cover this week so let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I love the &lt;a href="http://start.spring.io"&gt;new Spring Initializr&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Spring Tool Suite &lt;a href="http://spring.io/blog/2015/10/06/spring-tool-suite-3-7-1-released"&gt;lead Martin Lippert just announced STS 3.7.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring framework lead Juergen Hoeller has put together a lovely post that speaks &lt;a href="http://spring.io/blog/2015/10/06/a-brief-update-on-java-ee-7-adoption"&gt;to how to read claimed Java EE 7 proliferation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Jaime Lopez - who was in some of my talks at Spring I/O in Barcelona, Spain, earlier this year - &lt;a href="http://blog.mimacom.com/introduction-to-spring-boot/"&gt;wrote an &lt;em&gt;amazing&lt;/em&gt; introduction to Spring Boot&lt;/a&gt; - check it out!&lt;/li&gt;
+  &lt;li&gt;This blog nicely introduces using Spring&amp;rsquo;s &lt;code&gt;AbstractFeedView&lt;/code&gt;, powered by the ROME RSS and Atom library, &lt;a href="http://kielczewski.eu/2015/10/adding-rss-to-spring-boot-application-with-rome/"&gt;to build feeds for a web application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Want to run Spring Boot &lt;a href="https://www.voxxed.com/blog/2015/10/creating-rest-web-services-with-spring-boot-hosted-on-payara-micro/"&gt;on the Glassfish-powered Payara Micro&lt;/a&gt;?&lt;/li&gt;
+  &lt;li&gt;Hey, the &lt;em&gt;ProgrammingFree&lt;/em&gt; YouTube video channel has a nice post &lt;a href="https://www.youtube.com/watch?v=XO-OdIXNU_o&amp;feature=youtu.be"&gt;on using Spring Security and Spring to build a simple application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the &lt;a href="https://www.youtube.com/watch?v=iJjXQJ4IXpI"&gt;4cats.io YouTube channel&lt;/a&gt; has all manner of cool Chinese-language videos on Spring Boot!&lt;/li&gt;
+  &lt;li&gt;David Parish put together a nice &lt;a href="https://bp3.zendesk.com/hc/en-us/articles/210443048"&gt;post on running Spring Boot applications on Websphere&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Alberto Souza put together a nice Portguese-language &lt;a href="https://domineospring.wordpress.com/2015/10/02/primeiros-passos-com-o-spring-integration/"&gt;post on using Spring Integration&lt;/a&gt;&lt;br/&gt;-&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>A brief update on Java EE 7 adoption</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/06/a-brief-update-on-java-ee-7-adoption" />
@@ -1736,193 +1759,5 @@ Streams.wrap(this.publisher)&#xD;
   &lt;li&gt;Tomasz Nurkiewicz has put together a really cool &lt;a href="http://www.nurkiewicz.com/2015/09/displaying-progress-of-spring.html"&gt;blog on monitoring the startup progress of a Spring Boot application&lt;/a&gt;. Of course Spring Boot applications typically take less than three seconds from &lt;code&gt;java -jar ..&lt;/code&gt; to handling requests, as he points out, but it can be helpful to get visibility into this progress!&lt;/li&gt;
   &lt;li&gt;This video on &lt;a href="https://www.youtube.com/watch?v=pgQ9Bs-6l2k"&gt;Spring Boot web looked pretty interesting&lt;/a&gt;!&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>What's New In Spring Data Release Gosling?</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/04/what-s-new-in-spring-data-release-gosling" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Christoph Strobl</name>
-    </author>
-    <id>tag:spring.io,2015-09-02:2227</id>
-    <updated>2015-09-04T08:01:00Z</updated>
-    <content type="html">&lt;p&gt;Over 300 issues fixed across 12 projects makes it pretty hard to keep track on what has happened since the last release. So here&amp;rsquo;s a more detailed excerpt of some of the new features we&amp;rsquo;ve been cooking during the last iteration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#ad-hoc-jpa-fetch-graphs" class="anchor" name="ad-hoc-jpa-fetch-graphs"&gt;&lt;/a&gt;Ad-hoc JPA fetch graphs.&lt;/h2&gt;&lt;p&gt;Since the Dijkstra release train we have been able to refer to the named entity graph declared on the entity through the &lt;code&gt;@EntityGraph&lt;/code&gt; annotation in JPA-backed repositories. In the example below this forces firstname and lastname to be loaded eagerly, while all others remain lazily loaded.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Entity&#xD;
-@NamedEntityGraphs(&#xD;
-  @NamedEntityGraph(name = &amp;quot;with-tags&amp;quot;,&#xD;
-    attributeNodes = { @NamedAttributeNode(&amp;quot;tags&amp;quot;) }))&#xD;
-class Product {&#xD;
-&#xD;
-  @ManyToMany&#xD;
-  Set&amp;lt;Tag&amp;gt; tags;&#xD;
-&#xD;
-  // other properties omitted&#xD;
-}&#xD;
-&#xD;
-interface ProductRepository extends Repository&amp;lt;Customer, Long&amp;gt; {&#xD;
-&#xD;
-  @EntityGraph(&amp;quot;with-tags&amp;quot;)&#xD;
-  Product findOneById(Long id);&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The Gosling release now takes our JPA 2.1 story one step forward, extending it to ad-hoc fetch graph definitions. By explicitly specifying properties via &lt;code&gt;@EntityGraph(attributePaths = …)&lt;/code&gt; on the query method you don&amp;rsquo;t need to have the &lt;code&gt;NamedEntityGraph&lt;/code&gt; annotation on your entity.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Entity&#xD;
-class Product {&#xD;
-&#xD;
-  @ManyToMany&#xD;
-  Set&amp;lt;Tag&amp;gt; tags;&#xD;
-&#xD;
-  // other properties omitted&#xD;
-}&#xD;
-&#xD;
-interface ProductRepository extends Repository&amp;lt;Customer, Long&amp;gt; {&#xD;
-&#xD;
-  @EntityGraph(attributePaths = {&amp;quot;tags&amp;quot;})&#xD;
-  Product findOneById(Long id);&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#querydsl-web-support" class="anchor" name="querydsl-web-support"&gt;&lt;/a&gt;Querydsl web support&lt;/h2&gt;&lt;p&gt;The Spring Data web support already lets you declare parameters of type &lt;code&gt;Pageable&lt;/code&gt; in your controller handler methods. The newly introduced Querydsl integration extends that to allow you to receive a ready to use &lt;code&gt;Predicate&lt;/code&gt; derived directly from the HTTP request&amp;rsquo;s query string. The feature is automatically enabled when &lt;code&gt;@EnableSpringDataWebSupport&lt;/code&gt; is configured and Querydsl is found on the classpath.&lt;/p&gt;&lt;p&gt;If &lt;code&gt;Predicate&lt;/code&gt; is used without further configuration we&amp;rsquo;ll try to resolve the root type for &lt;code&gt;Predicate&lt;/code&gt; resolution from the method&amp;rsquo;s return type, although in most cases it might be better to explicitly declare the desired type reference via &lt;code&gt;@QuerydslPredicate(root = …)&lt;/code&gt;. Having that in place, query string attributes are bound to matching properties of the type which creates e.g.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;QUser.user.firstname.eq(&amp;quot;Dave&amp;quot;).and(QUser.user.lastname.eq(&amp;quot;Matthews&amp;quot;)) 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;from &lt;code&gt;?firstname=Dave&amp;amp;lastname=Matthews&lt;/code&gt; using the default property type dependent binding.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
-public class Application {&#xD;
-&#xD;
-  public static void main(String[] args) {&#xD;
-    SpringApplication.run(Application.class, args);&#xD;
-  }&#xD;
-&#xD;
-  @Controller&#xD;
-  @RequiredArgsConstructor(onConstructor = @__(@Autowired))&#xD;
-  static class UserController {&#xD;
-&#xD;
-    private final UserRepository repository;&#xD;
-&#xD;
-    @RequestMapping(value = &amp;quot;/&amp;quot;, method = RequestMethod.GET)&#xD;
-    String index(Model model,&#xD;
-                 @QuerydslPredicate(root = User.class) Predicate predicate,&#xD;
-                 Pageable pageable) {&#xD;
-&#xD;
-      model.addAttribute(&amp;quot;users&amp;quot;, repository.findAll(predicate, pageable));&#xD;
-      return &amp;quot;index&amp;quot;;&#xD;
-    }&#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now it does not always make sense to use the default (equals) binding, but rather a dedicated binding per property or a type specific one. To achieve this just override the defaults by providing a &lt;code&gt;QuerydslBinderCustomizer&lt;/code&gt; that can either be registered via &lt;code&gt;@QuerydslPredicate(bindings = …)&lt;/code&gt; or is simply implemented by to the repository.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;interface UserRepository extends CrudRepository&amp;lt;User, String&amp;gt;,&#xD;
-    QueryDslPredicateExecutor&amp;lt;User&amp;gt;,&#xD;
-    QuerydslBinderCustomizer&amp;lt;QUser&amp;gt; {&#xD;
-&#xD;
-  // Query methods go here&#xD;
-&#xD;
-  @Override&#xD;
-  default public void customize(QuerydslBindings bindings, QUser user) {&#xD;
-&#xD;
-    bindings.bind(user.nationality).first(&#xD;
-      (path, value) -&amp;gt; path.equalsIgnoreCase(value)); // 1&#xD;
-    bindings.bind(String.class).first(&#xD;
-      (StringPath path, String value) -&amp;gt; path.containsIgnoreCase(value)); // 2&#xD;
-    bindings.excluding(user.password);&#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see we leverage Java 8 lambdas along side Querydsl&amp;rsquo;s type-safe property references to define the binding for a dedicated property (1) or for all properties of a given type (2). Using &lt;code&gt;QuerydslBindings.excluding&lt;/code&gt; allows you remove paths from being queryable.&lt;/p&gt;&lt;p&gt;Find a complete working example in the &lt;a href="https://github.com/spring-projects/spring-data-examples/tree/master/web/querydsl"&gt;Spring Data examples repository&lt;/a&gt; and check out the &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.9.0.RELEASE/reference/html/#core.web.type-safe"&gt;reference documentation&lt;/a&gt; for details.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-data-rest" class="anchor" name="spring-data-rest"&gt;&lt;/a&gt;Spring Data REST&lt;/h2&gt;&lt;h3&gt;&lt;a href="#querydsl-support" class="anchor" name="querydsl-support"&gt;&lt;/a&gt;Querydsl support&lt;/h3&gt;&lt;p&gt;The Querydsl support introduced in Spring Data Commons (see &lt;a href="#querydsl-web-support"&gt;above&lt;/a&gt;) has been integrated into Spring Data REST. That means that you can filter your collection resources by appending simple property query parameters to the request URI.&lt;/p&gt;&lt;p&gt;In the Spring Data REST example exposing Starbucks store locations, note how StoreRepository now implements both &lt;code&gt;QueryDslPredicateExecutor&lt;/code&gt; as well as &lt;code&gt;QuerydslBinderCustomizer&amp;lt;QStore&amp;gt;&lt;/code&gt; just as described above.&lt;/p&gt;&lt;p&gt;The collection resource for stores exposed by Spring Data REST will let you then issue requests like these:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint bash"&gt;$ http :8080/api/stores?address.city=York&#xD;
-&#xD;
-{&#xD;
-    &amp;quot;_embedded&amp;quot;: {&#xD;
-        &amp;quot;stores&amp;quot;: [&#xD;
-            {&#xD;
-                &amp;quot;_links&amp;quot;: {&#xD;
-                    …&#xD;
-                }, &#xD;
-                &amp;quot;address&amp;quot;: {&#xD;
-                    &amp;quot;city&amp;quot;: &amp;quot;New York&amp;quot;, &#xD;
-                    &amp;quot;location&amp;quot;: { &amp;quot;x&amp;quot;: -73.938421, &amp;quot;y&amp;quot;: 40.851 }, &#xD;
-                    &amp;quot;street&amp;quot;: &amp;quot;803 W 181st St&amp;quot;, &#xD;
-                    &amp;quot;zip&amp;quot;: &amp;quot;10033-4516&amp;quot;&#xD;
-                }, &#xD;
-                &amp;quot;name&amp;quot;: &amp;quot;Washington Hgts/181st St&amp;quot;&#xD;
-            }, &#xD;
-            {&#xD;
-                &amp;quot;_links&amp;quot;: {&#xD;
-                    …&#xD;
-                }, &#xD;
-                &amp;quot;address&amp;quot;: {&#xD;
-                    &amp;quot;city&amp;quot;: &amp;quot;New York&amp;quot;, &#xD;
-                    &amp;quot;location&amp;quot;: { &amp;quot;x&amp;quot;: -73.939822, &amp;quot;y&amp;quot;: 40.84135 }, &#xD;
-                    &amp;quot;street&amp;quot;: &amp;quot;4001 Broadway&amp;quot;, &#xD;
-                    &amp;quot;zip&amp;quot;: &amp;quot;10032-1508&amp;quot;&#xD;
-                }, &#xD;
-                &amp;quot;name&amp;quot;: &amp;quot;168th &amp;amp; Broadway&amp;quot;&#xD;
-            }, &#xD;
-            …&#xD;
-        ]&#xD;
-    }, &#xD;
-    &amp;quot;_links&amp;quot;: {&#xD;
-        …&#xD;
-    }, &#xD;
-    &amp;quot;page&amp;quot;: {&#xD;
-        &amp;quot;number&amp;quot;: 0, &#xD;
-        &amp;quot;size&amp;quot;: 20, &#xD;
-        &amp;quot;totalElements&amp;quot;: 209, &#xD;
-        &amp;quot;totalPages&amp;quot;: 11&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note how only returns stores whose city ends with &amp;ldquo;York&amp;rdquo;, just as defined in the implementation of &lt;code&gt;QuerydslBinderCustomizer&lt;/code&gt; in &lt;code&gt;StoresRepository&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;We&amp;rsquo;re currently looking into options to advertise this querying mechanism more obviously, e.g. using template variables and even provide advanced mapping facilities to customize the request parameter names to be used.&lt;/p&gt;&lt;h3&gt;&lt;a href="#custom-hal-browser" class="anchor" name="custom-hal-browser"&gt;&lt;/a&gt;Custom HAL Browser&lt;/h3&gt;&lt;p&gt;The Gosling release of Spring Data REST ships with an additional module that wraps Mike Kelly&amp;rsquo;s &lt;a href="https://github.com/mikekelly/hal-browser"&gt;HAL browser&lt;/a&gt; and tweaks it with a few customizations to leverage the API metadata we expose. To use the browser with your application simply add the &lt;code&gt;spring-data-rest-hal-browser&lt;/code&gt; module to your project and your API root will serve the browser for requests accepting &lt;code&gt;text/html&lt;/code&gt;. The standard HAL responses are of course still served by default or if you use a JSON based &lt;code&gt;Accept&lt;/code&gt; header.&lt;/p&gt;&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/spring-projects/spring-data-docs/master/whats-new-in-spring-data-gosling/hal-browser.png?token=AAH2Qd7efEBIcN92b1sItqsWewiO8-SOks5V8n76wA%3D%3D"&gt;&lt;br/&gt;&lt;img src="https://raw.githubusercontent.com/spring-projects/spring-data-docs/master/whats-new-in-spring-data-gosling/hal-browser.png?token=AAH2Qd7efEBIcN92b1sItqsWewiO8-SOks5V8n76wA%3D%3D" alt="HAL browser" title="HAL browser" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style="text-align: center; font-size: 0.9em"&gt;Fig 1. - HAL Browser (click to enlarge)&lt;/p&gt;&lt;p&gt;While the Spring Data REST module makes it easy to add the browser to your app, it also tweaks the browser slightly. When you click the button to trigger a non-&lt;code&gt;GET&lt;/code&gt; request, the browser would normally open a modal dialogue that expects some raw JSON input. While that&amp;rsquo;s of course great if you know what you&amp;rsquo;re doing, it&amp;rsquo;s a bit error prone and not really convenient, as you have to know about the data structure the server expects.&lt;/p&gt;&lt;p&gt;Spring Data REST exposes JSON schema documents for the types exposed by the system leveraging the &lt;code&gt;profile&lt;/code&gt; link relation which makes the schema generically discoverable without tying the discovery logic to Spring Data REST itself. The browser instance we ship will lookup that schema metadata and – if it can find some – hand this to JSON Editor to replace the default dialogue with a form completely derived from the JSON Schema.&lt;/p&gt;&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/spring-projects/spring-data-docs/master/whats-new-in-spring-data-gosling/json-editor-post-form.png?token=AAH2QeqM7VMT-M7dDkod9Tmp1EtKrAgVks5V8n_lwA%3D%3D"&gt;&lt;br/&gt;&lt;img src="https://raw.githubusercontent.com/spring-projects/spring-data-docs/master/whats-new-in-spring-data-gosling/json-editor-post-form.png?token=AAH2QeqM7VMT-M7dDkod9Tmp1EtKrAgVks5V8n_lwA%3D%3D" alt="JSON Editor based POST form" title="JSON Editor based POST form" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style="text-align: center; font-size: 0.9em"&gt;Fig 2. - JSON Editor based POST for (click to enlarge)&lt;/p&gt;&lt;p&gt;See how the form allows adding line items as the schema exposes it to be an array. The price and order date fields are marked as read-only, the location field allows choosing values from an enumeration with internationalized values.&lt;/p&gt;&lt;p&gt;The sample project can be found &lt;a href="https://github.com/olivergierke/spring-restbucks"&gt;on GitHub&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#internationalizing-links-and-enums" class="anchor" name="internationalizing-links-and-enums"&gt;&lt;/a&gt;Internationalizing links and enums&lt;/h3&gt;&lt;p&gt;As you could see in the screenshots above the &lt;code&gt;restbucks:orders&lt;/code&gt; link was accompanied by a human readable description. The descriptions are pulled from an optional resource bundle &lt;code&gt;rest-messages&lt;/code&gt; using &lt;code&gt;_links.$rel.title&lt;/code&gt; keys to define a readable value. The sample uses a &lt;code&gt;rest-messages.properties&lt;/code&gt; as a fallback resource bundle but also contains a &lt;code&gt;rest-messages_de.properties&lt;/code&gt; to return German labels for clients that send an &lt;code&gt;Accept-Language&lt;/code&gt; header set to &lt;code&gt;de&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;The same resource bundle can be used to internationalize enum values so that they can be used on the client in a human readable manner. To not break existing applications, this has to be explicitly activated via &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.4.0.RELEASE/api/org/springframework/data/rest/core/config/RepositoryRestConfiguration.html#setEnableEnumTranslation-boolean-"&gt;&lt;code&gt;RepositoryRestConfiguration.setEnableEnumTranslation(…)&lt;/code&gt;&lt;/a&gt;. Details about the translation can be configured on &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.4.0.RELEASE/api/org/springframework/data/rest/core/config/EnumTranslationConfiguration.html"&gt;&lt;code&gt;EnumTranslationConfiguration&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-data-gemfire-amp-apache-geode" class="anchor" name="spring-data-gemfire-amp-apache-geode"&gt;&lt;/a&gt;Spring Data GemFire &amp;amp; Apache Geode&lt;/h2&gt;&lt;p&gt;Support for Pivotal GemFire 8.1 and Apache Geode are the most notable additions to Spring Data GemFire 1.7. Pivotal GemFire was submitted to the &lt;a href="https://wiki.apache.org/incubator/GeodeProposal"&gt;Apache Incubator&lt;/a&gt; earlier this year and the Spring Data team responded quickly to include &lt;a href="https://spring.io/blog/2015/06/12/spring-data-gemfire-supports-apache-geode"&gt;support&lt;/a&gt; in Spring Data GemFire.&lt;/p&gt;&lt;p&gt;In addition, several other features were added to simplify the development of GemFire and Apache Geode applications using Spring. For instance, developers can now define application domain object specific expiration policies using annotations:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@TimeToLiveExpiration(&#xD;
-  timeout = &amp;quot;@expirationSettings[&amp;#39;spel.defined.timeout&amp;#39;]&amp;quot; action=&amp;quot;DESTROY&amp;quot;)&#xD;
-@IdleTimeoutExpiration(&#xD;
-  timeout = &amp;quot;1800&amp;quot; action=&amp;quot;${property.placeholder.defined.action}&amp;quot;)&#xD;
-class ApplicationDomainObject { … }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The expiration-based annotations support both &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#expressions"&gt;SpEL&lt;/a&gt; and Spring &lt;a href="http://docs.spring.io/spring/docs/1.7.0.RELEASE/spring-framework-reference/htmlsingle/#beans-factory-placeholderconfigurer"&gt;Property Placeholder&lt;/a&gt; values. To enable annotation-based expiration policies, you only need configure Spring Data GemFire&amp;rsquo;s &lt;a href="http://gemfire.docs.pivotal.io/latest/javadocs/japi/com/gemstone/gemfire/cache/CustomExpiry.html"&gt;CustomExpiry&lt;/a&gt; implementation, &lt;a href="http://docs.spring.io/spring-data-gemfire/docs/1.7.0.RELEASE/api/org/springframework/data/gemfire/support/AnnotationBasedExpiration.html"&gt;AnnotationBasedExpiration&lt;/a&gt;, on your GemFire regions for either, or both, TTL and TTI:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;gfe:partitioned-region id=&amp;quot;Example&amp;quot; persistent=&amp;quot;false&amp;quot; …&amp;gt;&#xD;
-  &amp;lt;gfe:custom-entry-ttl&amp;gt;&#xD;
-    &amp;lt;bean class=&amp;quot;….gemfire.support.AnnotationBasedExpiration&amp;quot; factory-method=&amp;quot;forTimeToLive&amp;quot;/&amp;gt;&#xD;
-  &amp;lt;/gfe:custom-entry-ttl&amp;gt;&#xD;
-  &amp;lt;gfe:custom-entry-tti ref=&amp;quot;ttiExpiration&amp;quot;/&amp;gt;&#xD;
-&amp;lt;/gfe:partitioned-region&amp;gt;&#xD;
-&#xD;
-&amp;lt;bean id=&amp;quot;ttiExpiration&amp;quot; class=&amp;quot;….gemfire.support.AnnotationBasedExpiration&amp;quot; factory-method=&amp;quot;forIdleTimeout&amp;quot;&amp;gt;&#xD;
-  &amp;lt;constructor-arg ref=&amp;quot;defaultExpirationAttributes&amp;quot;/&amp;gt;&#xD;
-&amp;lt;/bean&amp;gt;&#xD;
-&#xD;
-&amp;lt;bean id=&amp;quot;defaultExpirationAttributes&amp;quot; class=&amp;quot;….ExpirationAttributes&amp;quot;&amp;gt;&#xD;
-  &amp;lt;constructor-arg value=&amp;quot;600&amp;quot;/&amp;gt;&#xD;
-  &amp;lt;constructor-arg value=&amp;quot;#{T(….ExpirationAction).DESTROY}&amp;quot;/&amp;gt;&#xD;
-&amp;lt;/bean&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;See the reference guide to &lt;a href="http://docs.spring.io/spring-data-gemfire/docs/1.7.0.RELEASE/reference/html/#bootstrap:region:expiration"&gt;learn more&lt;/a&gt;. Next, support was added for repository query method OQL extensions via annotations:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;interface CustomerRepository implements CrudRepository&amp;lt;Cutomer, Long&amp;gt; {&#xD;
-&#xD;
-  @Trace&#xD;
-  @Limit(25)&#xD;
-  @Import(&amp;quot;org.exmple.Customer&amp;quot;)&#xD;
-  @Hint(&amp;quot;CustomerLastNameIdx&amp;quot;)&#xD;
-  List&amp;lt;Customer&amp;gt; findByLastNameOrderByLastNameAsc(String lastName);&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;@Trace&lt;/code&gt; enables individual OQL statement debugging. &lt;code&gt;@Limit&lt;/code&gt; restrains the number of results in the query result set and &lt;code&gt;@Import&lt;/code&gt; enables applications to distinguish between similarly named object types. For example, your application might define both &lt;code&gt;org.example.app.core.Customer&lt;/code&gt; and &lt;code&gt;org.example.app.vendor.xyz.Customer&lt;/code&gt; types. See GemFire&amp;rsquo;s &lt;a href="http://gemfire81.docs.pivotal.io/latest/userguide/index.html#developing/query_select/the_import_statement.html#concept_2E9F15B2FE9041238B54736103396BF7"&gt;doc&lt;/a&gt; for more details. &lt;code&gt;@Hint&lt;/code&gt; enables the use of OQL hints to identify indexes applicable to the query. Learn more about OQL extensions &lt;a href="http://docs.spring.io/spring-data-gemfire/docs/1.7.0.RELEASE/reference/html/#gemfire-repositories.oql-extension"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Finally, Spring Data GemFire offers support for GemFire &lt;a href="http://gemfire81.docs.pivotal.io/latest/userguide/index.html#managing/cache_snapshots/chapter_overview.html"&gt;Cache and Region Snapshots&lt;/a&gt; using the Spring Data GemFire XML Data Namespace:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;gfe:partitioned-region id=&amp;quot;Example&amp;quot; persistent=&amp;quot;false&amp;quot; … /&amp;gt;&#xD;
-&#xD;
-&amp;lt;gfe-data:snapshot-service id=&amp;quot;exampleRegionSnapshotService&amp;quot; region-ref=&amp;quot;Example&amp;quot;&amp;gt;&#xD;
-  &amp;lt;gfe-data:snapshot-import location=&amp;quot;/path/to/import/example.snapshot&amp;quot;/&amp;gt;&#xD;
-  &amp;lt;gfe-data:snapshot-export locator=&amp;quot;/path/to/export/example.snapshot&amp;quot;/&amp;gt;&#xD;
-&amp;lt;/gfe-data:snapshot-service&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can learn more about how Spring Data GemFire supports ZIP files on import, the use of Spring &lt;code&gt;ApplicationEvents&lt;/code&gt; to trigger import and export snapshots as well as how to appropriately filter data imported and exported &lt;a href="http://docs.spring.io/spring-data-gemfire/docs/1.7.0.RELEASE/reference/html/#bootstrap:snapshot"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;!--&#xD;
-That is all on the GemFire side for now.  See the [changelog](https://github.com/spring-projects/spring-data-gemfire/blob/master/docs/src/info/changelog.txt) for more specifics. As always, contributions and feedback are welcomed on GitHub ([PR](https://github.com/spring-projects/spring-data-gemfire/pulls)), in [JIRA](https://jira.spring.io/browse/SGF) and on the [forums](http://stackoverflow.com/questions/tagged/spring-data-gemfire).&#xD;
---&gt;&lt;h2&gt;&lt;a href="#spring-data-keyvalue-amp-map-based-repositories" class="anchor" name="spring-data-keyvalue-amp-map-based-repositories"&gt;&lt;/a&gt;Spring Data KeyValue &amp;amp; Map based repositories&lt;/h2&gt;&lt;p&gt;It&amp;rsquo;s been quite a long time since we&amp;rsquo;ve been asked to provide a very simple &lt;code&gt;Map&lt;/code&gt; based implementation for Spring Data repositories for various – mostly testing – purposes. The requests eventually concluded in revitalizing the &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.0.0.RELEASE/reference/html/"&gt;KeyValue module&lt;/a&gt; in a slightly different way than it existed in before.&lt;/p&gt;&lt;p&gt;Spring Data KeyValue now consists of a basic &lt;code&gt;Map&lt;/code&gt; based repository implementation that will use Spring Expression Language (SpEL) for querying values by default, provide sorting, pagination and Querydsl integration based on its collection module. It also exposes dedicated APIs to allow key-value stores to leverage store specific optimizations in storage, retrieval and most importantly query execution if needed.&lt;/p&gt;&lt;p&gt;The default query mechanism used by Spring Data KeyValue repositories is based on SpEL and allows you to define and run complex queries. This approach shows off its real power when run in &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/expressions.html#expressions-spel-compilation"&gt;&lt;code&gt;COMPILED&lt;/code&gt; mode&lt;/a&gt; as it effectively compiles the filter expressions to be executed on the values. Alternatively you also can use Querydsl expressions for typesafe querying.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableMapRepositories(&amp;quot;com.acme.repositories&amp;quot;)&#xD;
-class AppConfig {}&#xD;
-&#xD;
-@KeySpace(&amp;quot;user&amp;quot;)&#xD;
-class User {&#xD;
-&#xD;
-  String @Id id;&#xD;
-  String firstname;&#xD;
-}&#xD;
-&#xD;
-interface UserRepository extends CrudRepository&amp;lt;User, String&amp;gt; {&#xD;
-  List&amp;lt;String&amp;gt; findByFirstnameStartingWith(String firstname);&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We currently have extensions of that API cooking for Ehcache, &lt;a href="https://github.com/hazelcast-incubator/spring-data-integrations-commons/tree/develop"&gt;Hazelcast&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-data-aerospike"&gt;Aerospike&lt;/a&gt; and are looking forward to evaluate options to also integrate Redis and maybe port some of the Gemfire APIs to use that.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-next" class="anchor" name="what-rsquo-s-next"&gt;&lt;/a&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Up next is &lt;a href="http://www.springone2gx.com/"&gt;SpringOne2GX in Washington, DC&lt;/a&gt;- we&amp;rsquo;d be happy to see you there - the best place to get in touch with the team, learn about new features and simply have a good time. Meanwhile we are already preparing the next service release for the Fowler Release Train and started working on new features for the Hopper release train (Sshh&amp;hellip; We&amp;rsquo;ll give a sneak peak on Hopper in the &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/what_s_new_in_2015_for_spring_data.html"&gt;“What’s new in Spring Data?” talk&lt;/a&gt; at SpringOne).&lt;/p&gt;</content>
   </entry>
 </feed>

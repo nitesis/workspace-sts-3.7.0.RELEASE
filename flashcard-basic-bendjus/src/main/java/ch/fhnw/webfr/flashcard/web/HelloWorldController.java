@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,11 +19,19 @@ public class HelloWorldController {
 	@Autowired //heisst: nimm einfach das Rep, dass du findest. Diese Annotation muss sein!
 	private QuestionnaireRepository questionnaireRepository;
 
+//	@RequestMapping(method = RequestMethod.GET)
+//	@ResponseBody
+//	public String sayHello(@RequestParam("name") String name) throws IOException {
+//
+//		return "Hello to " + name + ". Das Repo hat " + questionnaireRepository.findAll().size() + " Records.";
+//	}
+
 	@RequestMapping(method = RequestMethod.GET)
-	@ResponseBody
-	public String sayHello(@RequestParam("name") String name) throws IOException {
-
-		return "Hello to " + name + ". Das Repo hat " + questionnaireRepository.findAll().size() + " Records.";
+	public String sayHello(@RequestParam("name") String name,
+	       Model model) {
+	    model.addAttribute("message", "Hello to " + name);
+	    model.addAttribute("questionnaires",
+	       questionnaireRepository.findAll());
+	    return "hello";
 	}
-
 }
