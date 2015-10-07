@@ -15,7 +15,7 @@ import ch.fhnw.webfr.flashcard.persistence.QuestionnaireRepository;
 @RequestMapping("/hello")
 public class HelloWorldController {
 
-	@Autowired
+	@Autowired //heisst: nimm einfach das Rep, dass du findest. Diese Annotation muss sein!
 	private QuestionnaireRepository questionnaireRepository;
 
 	@RequestMapping(method = RequestMethod.GET)

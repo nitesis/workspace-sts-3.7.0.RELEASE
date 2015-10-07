@@ -1,7 +1,0 @@
-package ch.fhnw.webfr.flashcard.web;
-
-import javax.servlet.http.HttpServlet;
-
-public class LanguageServlet extends HttpServlet{
-
-}

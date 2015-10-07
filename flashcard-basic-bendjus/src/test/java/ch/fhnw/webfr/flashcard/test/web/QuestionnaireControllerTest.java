@@ -63,12 +63,13 @@ public class QuestionnaireControllerTest {
 				.title("MyTitle 2")
 				.build();
 
+		//wenn findAll() aufgerufen wird, erhalte ich ArrayList mit den beiden Questionnaires
 		when(questionnaireRepositoryMock.findAll()).thenReturn(Arrays.asList(q1, q2));
-		
+		//get simuliert eine HTTP Anfrage
 	    mockMvc.perform(get("/questionnaires")
         )
         		.andExpect(status().isOk())
-        		.andExpect(view().name("/questionnaires"))
+        		.andExpect(view().name("questionnaires"))
         		.andExpect(model().attributeExists("questionnaire"))
         		.andExpect(model().attribute("questionnaires", hasSize(2)))
         		.andExpect(model().attribute("questionnaires", hasItem(
@@ -97,4 +98,59 @@ public class QuestionnaireControllerTest {
         	.andExpect(status().is3xxRedirection())
         	.andExpect(view().name("redirect:questionnaires"));
 	}
+	
+	@Test
+	public void create_NewQuestionnaireWithTitleNull_ShouldReturnErrors() throws Exception {	
+		mockMvc.perform(post("/questionnaires")
+                .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                .param("description", "MyDescription 1")
+                .param("title", (String) null)
+        )
+    	.andExpect(status().is3xxRedirection())
+    	.andExpect(view().name("redirect:questionnaires"));
+	}
+	
+	@Test
+	public void create_NewQuestionnaireWithTitleTooSmall_ShouldReturnErrors() throws Exception {	
+		mockMvc.perform(post("/questionnaires")
+                .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                .param("description", "MyDescription 1")
+                .param("title", "1")
+        )
+    	.andExpect(status().is3xxRedirection())
+    	.andExpect(view().name("redirect:questionnaires"));
+	}
+	
+	@Test
+	public void create_NewQuestionnaireWithTitleTooBig_ShouldReturnErrors() throws Exception {	
+		mockMvc.perform(post("/questionnaires")
+                .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                .param("description", "MyDescription 1")
+                .param("title", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ")
+        )
+    	.andExpect(status().is3xxRedirection())
+    	.andExpect(view().name("redirect:questionnaires"));
+	}
+	
+	@Test
+	public void create_NewQuestionnaireWithDescriptionNull_ShouldReturnErrors() throws Exception {	
+		mockMvc.perform(post("/questionnaires")
+                .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                .param("description", (String) null)
+                .param("title", "MyTitle 1")
+        )
+    	.andExpect(status().is3xxRedirection())
+    	.andExpect(view().name("redirect:questionnaires"));
+	}
+	
+	@Test
+	public void create_NewQuestionnaireWithDescriptionTooSmall_ShouldReturnErrors() throws Exception {	
+		mockMvc.perform(post("/questionnaires")
+                .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                .param("description", "Small")
+                .param("title", "MyTitle 1")
+        )
+        	.andExpect(status().is3xxRedirection())
+        	.andExpect(view().name("redirect:questionnaires"));
+	}		
 }

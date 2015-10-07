@@ -5,7 +5,18 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-06T09:30:00Z</updated>
+  <updated>2015-10-06T15:37:38Z</updated>
+  <entry>
+    <title>A brief update on Java EE 7 adoption</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/06/a-brief-update-on-java-ee-7-adoption" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2015-10-06:2248</id>
+    <updated>2015-10-06T15:37:38Z</updated>
+    <content type="html">&lt;p&gt;A reminder: Every time somebody shows you a survey result with a Java EE 7 usage column, in particular when talking about production usage, double-check what they actually asked for. Does Hibernate 4.3 usage count as Java EE 7, just because it&amp;rsquo;s JPA 2.1 (EE 7 level but run standalone)? Does Tomcat 8 usage count as Java EE 7, just because it&amp;rsquo;s Servlet 3.1? And of course, does running a Spring application with any such individual providers count as EE 7?&lt;/p&gt;&lt;p&gt;Take such statistics with a big grain of salt: They typically do not ask for &amp;ldquo;Java EE 7 platform usage&amp;rdquo; but are being presented that way eventually. Why is it a safe assumption that they did not ask for full Java EE 7 platform usage in production? Well, remember my &lt;a href="https://spring.io/blog/2015/06/04/happy-second-birthday-java-ee-7-how-is-it-going-in-production"&gt;blog post from back in June&lt;/a&gt;, which is still as valid in late 2015. In the meantime, the only real news is that there is no news since IBM released their EE 7 support in WebSphere&amp;rsquo;s Liberty Profile.&lt;/p&gt;&lt;p&gt;FWIW, we decided to raise our &lt;a href="https://spring.io/blog/2015/06/10/feedback-welcome-spring-5-system-requirements"&gt;Spring Framework 5 system requirements&lt;/a&gt; not only to JDK 8+ but also to JPA 2.1+ and Bean Validation 1.1+. After all, by Q4 2016 (our Spring 5 GA target), those specs will be 3.5 years old already, so we&amp;rsquo;re willing to require them at that point. And we&amp;rsquo;ll still support Servlet 3.0+, so EE 6 baselined servers with JPA 2.1 mixed in will be alright.&lt;/p&gt;&lt;p&gt;&lt;i&gt;To avoid any misunderstandings: Spring 4.x has been shipping full support for JPA 2.1 and other EE 7 level specs since 2013, side by side with our JPA 2.0 / EE 6 support. The above is just referring to requiring JPA 2.1+ as of Spring Framework 5.0 towards the end of 2016, making it incompatible with underlying server infrastructure that remains bound to JPA 2.0.&lt;/i&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Evolving Spring Initializr</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/06/evolving-spring-initializr" />
@@ -1913,22 +1924,5 @@ interface UserRepository extends CrudRepository&amp;lt;User, String&amp;gt; {&#x
   List&amp;lt;String&amp;gt; findByFirstnameStartingWith(String firstname);&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We currently have extensions of that API cooking for Ehcache, &lt;a href="https://github.com/hazelcast-incubator/spring-data-integrations-commons/tree/develop"&gt;Hazelcast&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-data-aerospike"&gt;Aerospike&lt;/a&gt; and are looking forward to evaluate options to also integrate Redis and maybe port some of the Gemfire APIs to use that.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-next" class="anchor" name="what-rsquo-s-next"&gt;&lt;/a&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Up next is &lt;a href="http://www.springone2gx.com/"&gt;SpringOne2GX in Washington, DC&lt;/a&gt;- we&amp;rsquo;d be happy to see you there - the best place to get in touch with the team, learn about new features and simply have a good time. Meanwhile we are already preparing the next service release for the Fowler Release Train and started working on new features for the Hopper release train (Sshh&amp;hellip; We&amp;rsquo;ll give a sneak peak on Hopper in the &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/what_s_new_in_2015_for_spring_data.html"&gt;“What’s new in Spring Data?” talk&lt;/a&gt; at SpringOne).&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.3.0.M5 Available Now</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/04/spring-boot-1-3-0-m5-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2015-09-04:2228</id>
-    <updated>2015-09-04T02:02:00Z</updated>
-    <content type="html">&lt;p&gt;Spring Boot v1.3.0.M5 is available now from the &lt;a href="http://repo.springsource.org/milestone/"&gt;Spring milestone repository&lt;/a&gt;. Just in time for SpringOne 2GX, this release closes &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.0.M5+is%3Aissue+is%3Aclosed"&gt;almost 50 issues&lt;/a&gt; and merges &lt;a href="https://github.com/spring-projects/spring-boot/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+is%3Aclosed+milestone%3A1.3.0.M3"&gt;15 pull-requests&lt;/a&gt;! Thanks &lt;em&gt;again&lt;/em&gt; to everyone that has contributed.&lt;/p&gt;&lt;p&gt;Highlights of the new release include:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Lots of bug fixes and stabilization as we head towards RC1&lt;/li&gt;
-  &lt;li&gt;Support for javax &lt;code&gt;@WebServlet&lt;/code&gt;, &lt;code&gt;@WebFilter&lt;/code&gt; and &lt;code&gt;@WebListener&lt;/code&gt; annotations&lt;/li&gt;
-  &lt;li&gt;Auto-configuration for Hazelcast&lt;/li&gt;
-  &lt;li&gt;Improved &amp;ldquo;root first&amp;rdquo; exception logging&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;For a complete list of changes, and upgrade instructions, see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes"&gt;Spring Boot 1.3 Release Notes&lt;/a&gt; on the wiki and the updated &lt;a href="http://docs.spring.io/spring-boot/docs/1.3.0.M5/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;&lt;h1&gt;&lt;a href="#springone-2gx-2015-is-around-the-corner" class="anchor" name="springone-2gx-2015-is-around-the-corner"&gt;&lt;/a&gt;SpringOne 2GX 2015 is around the corner!&lt;/h1&gt;&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com"&gt;SpringOne2GX in Washington, DC&lt;/a&gt; soon. It&amp;rsquo;s simply the best opportunity to find out first hand all that&amp;rsquo;s going on and to provide direct feedback. Join Brian and Stéphane for an &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/intro_to_spring_boot_for_the_web_tier.html"&gt;intro to Spring Boot for the web tier&lt;/a&gt;.&lt;/p&gt;</content>
   </entry>
 </feed>
