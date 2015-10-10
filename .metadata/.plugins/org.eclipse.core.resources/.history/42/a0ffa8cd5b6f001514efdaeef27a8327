@@ -84,6 +84,6 @@ public class QuestionnaireController {
 	    WebContext ctx = new WebContext(request, response, servletContext, request.getLocale());
 	    ctx.setVariable("quests", allQuestionnaires);
 
-	    templateEngine.process("quests/list", ctx, response.getWriter());
+	    templateEngine.process("product/list", ctx, response.getWriter());
 	}
 }

@@ -78,12 +78,12 @@ public class QuestionnaireController {
 	        HttpServletRequest request, HttpServletResponse response,
 	        ServletContext servletContext, TemplateEngine templateEngine) throws IOException {
 
-	    //Questionnaire questionnaire = new Questionnaire();
+	    Questionnaire questionnaire = new Questionnaire();
 	    List<Questionnaire> allQuestionnaires = questionnaireRepository.findAll(); 
 
 	    WebContext ctx = new WebContext(request, response, servletContext, request.getLocale());
-	    ctx.setVariable("quests", allQuestionnaires);
+	    ctx.setVariable("prods", allQuestionnaires);
 
-	    templateEngine.process("quests/list", ctx, response.getWriter());
+	    templateEngine.process("product/list", ctx, response.getWriter());
 	}
 }
