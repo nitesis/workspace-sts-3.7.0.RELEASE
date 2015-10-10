@@ -7,3 +7,8 @@
 0:0:0:0:0:0:0:1 - - [10/Oct/2015:15:36:32 +0200] "GET /flashcard-basic/ HTTP/1.1" 404 307
 0:0:0:0:0:0:0:1 - - [10/Oct/2015:15:36:39 +0200] "GET /flashcard-basic/questionnaires HTTP/1.1" 200 558
 0:0:0:0:0:0:0:1 - - [10/Oct/2015:15:37:04 +0200] "GET /flashcard-basic/questionnaires HTTP/1.1" 200 558
+127.0.0.1 - - [10/Oct/2015:16:03:11 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [10/Oct/2015:16:03:11 +0200] "GET /flashcard-basic/ HTTP/1.1" 404 307
+0:0:0:0:0:0:0:1 - - [10/Oct/2015:16:03:20 +0200] "GET /flashcard-basic/questionnaires HTTP/1.1" 200 1186
+0:0:0:0:0:0:0:1 - - [10/Oct/2015:16:03:20 +0200] "GET /webapp/css/bootstrap.min.css HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [10/Oct/2015:16:03:20 +0200] "GET /webapp/css/app.css HTTP/1.1" 404 1030

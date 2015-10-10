@@ -1,32 +1,35 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>flashcard</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>flashcard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../webapp/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../webapp/css/app.css" />
 </head>
 <body>
-	<h2>Questionnaires</h2>
-	
-	<ul>
-	<li>
-	<h1>Title1</h1>
-	<p>Description1</p>
-	</li>
-	<li>
-	<h1>Title2</h1>
-	<p>Description2</p>
-	</li>
-	<li>
-	<h1>Title3</h1>
-	<p>Description3</p>
-	</li>
-	<li>
-	<h1>Title4</h1>
-	<p>Description4</p>
-	</li>
-	</ul>
-	
-
+    <div class="container-fluid col-md-offset-3">
+        <form action="#" method="post" >
+            <input type="text" class="form-control col-md-1" />
+            <input type="submit" value="New" class="btn btn-primary"/>
+        </form>
+        <div>
+            [<span>0</span>]
+            <strong>title of questionnaire 0</strong><br/>
+            <span>description of questionnaire 0</span>
+            <p/>
+        </div>
+        <div>
+            [<span>1</span>]
+            <strong>title of questionnaire 1</strong><br/>
+            <span>description of questionnaire 1</span>
+            <p/>
+        </div>
+        <div>
+            [<span>2</span>]
+            <strong>title of questionnaire 2</strong><br/>
+            <span>description of questionnaire 2</span>
+            <p/>
+        </div>  
+    </div>  
 </body>
 </html>
