@@ -5,7 +5,93 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-07T05:25:54Z</updated>
+  <updated>2015-10-08T20:56:00Z</updated>
+  <entry>
+    <title>Spring XD 1.3 M1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/08/spring-xd-1-3-m1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2015-10-08:2254</id>
+    <updated>2015-10-08T20:56:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring XD team, I am very pleased to announce the first milestone release of Spring XD 1.3&lt;/p&gt;&lt;p&gt;This release includes &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=11401&amp;version=15099"&gt;bug fixes and some enhancements&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hadoop distribution version updates to Apache Hadoop 2.7.1 and Hortonworks Data Platform 2.3. Pivotal Hadoop 2.1, 3.0 and Cloudera Hadoop 5.4&lt;/li&gt;
+  &lt;li&gt;Spark 1.3.1 Support&lt;/li&gt;
+  &lt;li&gt;Cassandra Sink&lt;/li&gt;
+  &lt;li&gt;Header Enricher Processor&lt;/li&gt;
+  &lt;li&gt;Bug fixes to the Flo Designer UI and Admin UI&lt;/li&gt;
+  &lt;li&gt;Gpfdist sink now supports update operations and full range of control file options&lt;/li&gt;
+  &lt;li&gt;Update to Spring Integration 4.2 which provides performance improvements when monitoring is enabled.&lt;/li&gt;
+  &lt;li&gt;Upgrade to Spring Data Gosling Release train&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;You can &lt;a href="http://repo.spring.io/milestone/org/springframework/xd/spring-xd/1.3.0.M1/spring-xd-1.3.0.M1-dist.zip"&gt;download the zip distribution&lt;/a&gt; or install on OSX &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.M1/reference/html/#osx-homebrew-installation"&gt;using homebrew&lt;/a&gt;. On RHEL/CentOS you can &lt;a href="https://github.com/spring-projects/spring-xd/wiki/Installing-Spring-XD-using-RPM-on-RHEL-CentOS-v.-6.x"&gt;install using rpm&lt;/a&gt;. The &lt;a href="https://network.pivotal.io/products/p-spring-flo/"&gt;updated Flo UI&lt;/a&gt; is also available as a separate download.&lt;/p&gt;&lt;p&gt;Looking ahead, 1.3 release candidate will include a new DSL for creating Batch Jobs as well as a new version of Flo to author and visualize Jobs. The 1.3 release candidate is targeted for October 22 and 1.3 GA by the first week of November. &lt;/p&gt;&lt;p&gt;After the 1.3 GA release, the 1.x release line will be in maintenance mode, addressing only bug fixes. The next release line introduces a major redesign to the underlying architecture. The Spring XD Zookeeper based runtime will be replaced by a &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/1.0.0.M1/reference/html/getting-started-deploying-spring-cloud-dataflow.html"&gt;service provider interface&lt;/a&gt; (SPI) that delegates to native platform capabilities for running and scaling applications. Given the major change to the architecture, the next release line is rebranded as &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/"&gt;Spring Cloud Data Flow&lt;/a&gt; to better represent XD reimagined with a cloud native programming and operational model. For more details, please refer to the recent &lt;a href="http://blog.pivotal.io/pivotal-cloud-foundry/products/introducing-spring-cloud-data-flow"&gt;launch blog&lt;/a&gt; and stay tuned for an upcoming engineering blog on Spring Cloud Data Flow.&lt;/p&gt;&lt;p&gt;Feedback is very important, so please get in touch with questions and comments via&lt;br/&gt;* &lt;a href="http://stackoverflow.com/questions/tagged/spring-xd"&gt;StackOverflow&lt;/a&gt; &lt;code&gt;spring-xd&lt;/code&gt; tag&lt;br/&gt;* &lt;a href="https://jira.spring.io/browse/XD/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"&gt;Spring JIRA&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-xd/issues"&gt;GitHub Issues&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>The Spring Boot Dashboard in STS - Part 1: Local Boot Apps</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/08/the-spring-boot-dashboard-in-sts-part-1-local-boot-apps" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2015-10-08:2251</id>
+    <updated>2015-10-08T13:03:31Z</updated>
+    <content type="html">&lt;p&gt;Welcome Spring community,&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This is the first of three blog entries introducing you to the new Spring Boot Dashboard in STS. You will see how to use the Spring Boot Dashboard in the IDE, learn about the various features it provides, and how it helps you while developing applications based on Spring Boot. Since the Spring Boot Dashboard was introduced in the &lt;a href="https://spring.io/blog/2015/10/06/spring-tool-suite-3-7-1-released"&gt;recently released STS 3.7.1&lt;/a&gt;, you will need that version to follow this blog series. If you don't have that installed yet, please go to &lt;a href="http://spring.io/tools/"&gt;http://spring.io/tools/&lt;/a&gt; and grab your copy of it.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Spring Boot is now a widely adopted technology to simplify your life when implementing Spring applications for the enterprise. Especially suitable for creating microservice-based applications, it has changed the way we think about small and easy to configure Spring applications dramatically. Together with Spring Cloud, it opens the door to truly cloud-native applications, composed out of probably many microservices.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This dramatic shift in our architectural thinking needs to be reflected in our IDEs as well. Most of our traditional Java IDEs out there were invented not only in the pre-cloud-native era, but in the pre-cloud and to a certain degree in the pre-distributed era of programming. The same is true for the Spring Tool Suite and its base, the Eclipse IDE. It is time to push those IDEs into the cloud-native era. This was the starting point for the Spring Boot Dashboard. Its focus is to help you deal with a potentially larger number of Spring-Boot-based microservice applications and make your life as a developer a lot easier when working on those projects in your IDE.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;h2&gt;The Spring Boot Dashboard&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Starting small and incrementally, the Spring Boot Dashboard comes as an additional view in STS/Eclipse. You can open it by pressing the Spring Boot button in your main toolbar. It opens up a simple view that is in sync with your workspace projects, showing those projects of your workspace that are Spring Boot projects.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/01-dashboard.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The main purpose of the Boot Dashboard is to give you quick access to the things you do every day, every hour, or even more frequently. You can quickly start your boot apps (in run or debug mode) by selecting them in the boot dashboard and pressing the "run" or "debug" action in the toolbar. There is no faster way to launch your boot app than this. And since you probably are going to change code and want to restart your app, the action lets you restart your boot app, if it is already running. Change your code, press the "run" button in the boot dashboard, and your boot app gets stopped and restarted for you. Again, a simple one-click action.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/02-start-single.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The great thing about these actions (and many more) in the boot dashboard is that they operate on single or multiple projects at the same time. If you want to start or stop a bunch of boot apps at the same time, for example to startup a set of collaborating services, just select them all in the dashboard and press "run". That's it.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/03-start-multiple.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;As soon as you adopt Spring Boot 1.3 in your projects, you will notice additional goodies showing up in the Boot Dashboard. As soon as your boot app is being started, the boot dashboard visualizes that the app is starting - and it distinguishes between its startup phase (the VM is running, but the app is still initializing) and it is truly running and ready to use. The progress icon indicates the app is still starting up, the green "up" icon shows up as soon as the app is fully initialized and running. You don't need to observe the log output until some "server started" message shows up or something like that. The boot dashboards icons will let you know.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/04-starting.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Once the app is running, the port that it listens on will show up in the boot dashboard - for your convenience. You don't have to scan the log output anymore to find out what port is being used by the app. The dashboard displays that information automatically. And in case you would like to jump to the console output of a running boot app, there is a quick action for that as well.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Often there is no need anymore to know about the port of a running app - since you don't have to open a browser tab for the app yourself. Double-click on the project in the boot dashboard and it will open a new browser tab for you - directly navigating to the apps default URL.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/05-browser.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;By default, this opens an Eclipse/STS internal browser view. If you prefer to use an external browser, you can set this in the preferences.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;In case this default URL is not the one you would like to visit by default, you can customize that. Open the properties view, select the project in the boot dashboard and enter the default URL extension that you prefer. The double-click will open the default URL of the app + your customized extension to it.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/06-path.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In case you are not sure what URL extensions your application defines, you can select the “Request Mappings” tab in the properties view. All the request mappings of the running app are listed - your self-defined ones at the top, the ones coming from libraries at the bottom of that list. Double-clicking on the URL extension opens a browser for that extension, double-clicking on the code pointer opens the corresponding file of your project in an editor and jumps to the line that defines the request mapping.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/07-request-mappings.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The more microservice projects you have in your workspace, the more likely it is that you don’t work on all of them at the same time. You would like to focus on a subset. In Eclipse/STS, you might have created a working set, for example. The boot dashboard allows you to tag projects with an arbitrary number of tags (again, in the properties view). Those tags can then be used in the filter box (at the top of the boot dashboard) to reduce the number of projects that show up in the boot dashboard.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/08-filter.png"/&gt;&lt;/p&gt;
+&lt;h2&gt;Outlook&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The second part of this series will introduce you to the Cloud Foundry integration of the Boot dashboard, how to deploy microservices to CF from within the boot dashboard, and how to use local boot apps in combination with those deployed on CF.&lt;/p&gt;&#xD;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring REST Docs 1.0.0.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/07/spring-rest-docs-1-0-0-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-10-07:2250</id>
+    <updated>2015-10-07T16:02:41Z</updated>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m delighted to announce that &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 1.0.0.RELEASE has been released. It&amp;rsquo;s available from Maven Central and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-is-spring-rest-docs" class="anchor" name="what-is-spring-rest-docs"&gt;&lt;/a&gt;What is Spring REST Docs?&lt;/h2&gt;&lt;p&gt;Spring REST Docs helps you to document RESTful services. It combines hand-written documentation written with Asciidoctor and auto-generated snippets produced with Spring MVC Test. This approach frees you from the limitations imposed by tools like &lt;a href="http://swagger.io"&gt;Swagger&lt;/a&gt;. It helps you to produce documentation that is accurate, concise, and well-structured. This documentation then allows your users to get the information they need with a minimum of fuss.&lt;/p&gt;&lt;p&gt;If you&amp;rsquo;d like to see some documentation produced using Spring REST Docs, please look at the sample &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RELEASE/samples/restful-notes/api-guide.html"&gt;API guide&lt;/a&gt; and &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RELEASE/samples/restful-notes/getting-started-guide.html"&gt;Getting Started Guide&lt;/a&gt; for a simple RESTful notes service.&lt;/p&gt;&lt;h2&gt;&lt;a href="#getting-started" class="anchor" name="getting-started"&gt;&lt;/a&gt;Getting started&lt;/h2&gt;&lt;p&gt;To get started with Spring REST Docs, please refer to the &lt;a href="http://docs.spring.io/spring-restdocs/docs/current/reference/html5/#getting-started"&gt;getting started section&lt;/a&gt; of the &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RELEASE/reference/html5/"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#thank-you" class="anchor" name="thank-you"&gt;&lt;/a&gt;Thank you&lt;/h2&gt;&lt;p&gt;My sincere thanks to the members of the Spring community who have helped to shape Spring REST Docs 1.0. It would not be the same without your feature suggestions, pull requests, and bug reports. Thank you.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - October 6th, 2015</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/07/this-week-in-spring-october-6th-2015" />
@@ -37,8 +123,8 @@
       <name>Juergen Hoeller</name>
     </author>
     <id>tag:spring.io,2015-10-06:2248</id>
-    <updated>2015-10-06T15:37:38Z</updated>
-    <content type="html">&lt;p&gt;A reminder: Every time somebody shows you a survey result with a Java EE 7 usage column, in particular when talking about production usage, double-check what they actually asked for. Does Hibernate 4.3 usage count as Java EE 7, just because it&amp;rsquo;s JPA 2.1 (EE 7 level but run standalone)? Does Tomcat 8 usage count as Java EE 7, just because it&amp;rsquo;s Servlet 3.1? And of course, does running a Spring application with any such individual providers count as EE 7?&lt;/p&gt;&lt;p&gt;Take such statistics with a big grain of salt: They typically do not ask for &amp;ldquo;Java EE 7 platform usage&amp;rdquo; but are being presented that way eventually. Why is it a safe assumption that they did not ask for full Java EE 7 platform usage in production? Well, remember my &lt;a href="https://spring.io/blog/2015/06/04/happy-second-birthday-java-ee-7-how-is-it-going-in-production"&gt;blog post from back in June&lt;/a&gt;, which is still as valid in late 2015. In the meantime, the only real news is that there is no news since IBM released their EE 7 support in WebSphere&amp;rsquo;s Liberty Profile.&lt;/p&gt;&lt;p&gt;FWIW, we decided to raise our &lt;a href="https://spring.io/blog/2015/06/10/feedback-welcome-spring-5-system-requirements"&gt;Spring Framework 5 system requirements&lt;/a&gt; not only to JDK 8+ but also to JPA 2.1+ and Bean Validation 1.1+. After all, by Q4 2016 (our Spring 5 GA target), those specs will be 3.5 years old already, so we&amp;rsquo;re willing to require them at that point. And we&amp;rsquo;ll still support Servlet 3.0+, so EE 6 baselined servers with JPA 2.1 mixed in will be alright.&lt;/p&gt;&lt;p&gt;&lt;i&gt;To avoid any misunderstandings: Spring 4.x has been shipping full support for JPA 2.1 and other EE 7 level specs since 2013, side by side with our JPA 2.0 / EE 6 support. The above is just referring to requiring JPA 2.1+ as of Spring Framework 5.0 towards the end of 2016, making it incompatible with underlying server infrastructure that remains bound to JPA 2.0.&lt;/i&gt;&lt;/p&gt;</content>
+    <updated>2015-10-06T15:37:00Z</updated>
+    <content type="html">&lt;p&gt;A reminder: Every time somebody shows you a survey result with a Java EE 7 usage column, in particular when talking about production usage, double-check what they actually asked for. Does Hibernate 4.3 usage count as Java EE 7, just because it&amp;rsquo;s JPA 2.1 (EE 7 level but run standalone)? Does Tomcat 8 usage count as Java EE 7, just because it&amp;rsquo;s Servlet 3.1? And of course, does running a Spring application with any such individual providers count as EE 7?&lt;/p&gt;&lt;p&gt;Take such statistics with a big grain of salt: They typically do not ask for &amp;ldquo;native Java EE 7 platform usage&amp;rdquo; but are being presented that way eventually. Why is it a safe assumption that they did not ask for full Java EE 7 platform usage in production? Well, remember my &lt;a href="https://spring.io/blog/2015/06/04/happy-second-birthday-java-ee-7-how-is-it-going-in-production"&gt;blog post from back in June&lt;/a&gt;, which is still as valid in late 2015. In the meantime, the only real news is that there is no news since IBM released their EE 7 support in WebSphere&amp;rsquo;s Liberty Profile. All in all, responders to such survey questions are likely to answer based on &amp;ldquo;I&amp;rsquo;m using one or more specifications from that umbrella&amp;rdquo;, not on &amp;ldquo;I&amp;rsquo;m using the full platform in its intended form&amp;rdquo;.&lt;/p&gt;&lt;p&gt;FWIW, we decided to raise our &lt;a href="https://spring.io/blog/2015/06/10/feedback-welcome-spring-5-system-requirements"&gt;Spring Framework 5 system requirements&lt;/a&gt; not only to JDK 8+ but also to JPA 2.1+ and Bean Validation 1.1+. After all, by Q4 2016 (our Spring 5 GA target), those specs will be 3.5 years old already, so we&amp;rsquo;re willing to require them at that point. And we&amp;rsquo;ll still support Servlet 3.0+, so EE 6 baselined servers with JPA 2.1 mixed in will be alright.&lt;/p&gt;&lt;p&gt;&lt;i&gt;To avoid any misunderstandings: Spring 4.x has been shipping full support for JPA 2.1 and other EE 7 level specs since 2013, side by side with our JPA 2.0 / EE 6 support. The above is just referring to requiring JPA 2.1+ as of Spring Framework 5.0 towards the end of 2016, making it incompatible with underlying server infrastructure that remains bound to JPA 2.0.&lt;/i&gt;&lt;/p&gt;</content>
   </entry>
   <entry>
     <title>Evolving Spring Initializr</title>
@@ -1651,113 +1737,5 @@ You made it possible to change the page size and have the UI flexibly respond.&#
     <id>tag:spring.io,2015-09-10:2232</id>
     <updated>2015-09-10T12:40:03Z</updated>
     <content type="html">&lt;p&gt;We are pleased to announce that the 1.5.0.RELEASE of Spring AMQP is now available.&lt;/p&gt;&lt;p&gt;See the &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;version=15283"&gt;release notes&lt;/a&gt; for a few changes that have been applied since the release candidate was announced.&lt;/p&gt;&lt;p&gt;See the &lt;a href="https://spring.io/blog/2015/08/14/spring-amqp-1-5-0-release-candidate-available"&gt;release candidate announcement&lt;/a&gt; and the &lt;a href="http://docs.spring.io/spring-amqp/docs/latest-ga/reference/html/_introduction.html#whats-new"&gt;reference document what&amp;rsquo;s new&lt;/a&gt; for complete details of the release content.&lt;/p&gt;&lt;p&gt;See the &lt;a href="http://projects.spring.io/spring-amqp/"&gt;project page&lt;/a&gt; for links to downloads, documentation etc.&lt;/p&gt;&lt;h2&gt;&lt;a href="#springone-2gx-2015-is-around-the-corner" class="anchor" name="springone-2gx-2015-is-around-the-corner"&gt;&lt;/a&gt;SpringOne 2GX 2015 is around the corner!&lt;/h2&gt;&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com/"&gt;SpringOne2GX in Washington, DC next week&lt;/a&gt;. It’s simply the best opportunity to find out first hand all that’s going on and to provide direct feedback.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Integration Java DSL 1.1 M2 is Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/10/spring-integration-java-dsl-1-1-m2-is-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Artem Bilan</name>
-    </author>
-    <id>tag:spring.io,2015-09-10:2234</id>
-    <updated>2015-09-10T11:24:00Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce that the Milestone 2 of Spring Integration Java DSL is now available from the &lt;a href="https://repo.spring.io/milestone/"&gt;Milestone Repository&lt;/a&gt;:&lt;/p&gt;&lt;p&gt;For Gradle use this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;compile &amp;quot;org.springframework.integration:spring-integration-java-dsl:1.1.0.M2&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Maven this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;&amp;lt;dependency&amp;gt;&#xD;
-     &amp;lt;groupId&amp;gt;org.springframework.integration&amp;lt;/groupId&amp;gt;&#xD;
-     &amp;lt;artifactId&amp;gt;spring-integration-java-dsl&amp;lt;/artifactId&amp;gt;&#xD;
-     &amp;lt;version&amp;gt;1.1.0.M2&amp;lt;/version&amp;gt;&#xD;
-&amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There are not many new features since &lt;a href="https://spring.io/blog/2015/04/15/spring-integration-java-dsl-1-1-m1-is-available"&gt;Milestone 1&lt;/a&gt;, but here are the most important things to which to pay attention:&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-integration-4-2-foundation" class="anchor" name="spring-integration-4-2-foundation"&gt;&lt;/a&gt;Spring Integration 4.2 foundation&lt;/h2&gt;&lt;p&gt;The Spring Integration Java DSL 1.1 is now based on &lt;a href="https://spring.io/blog/2015/09/10/spring-integration-4-2-release-is-available"&gt;Spring Integration 4.2&lt;/a&gt; to become part of the upcoming &lt;a href="http://platform.spring.io/platform/"&gt;Spring IO 2.0&lt;/a&gt;. The 1.1 version of the Java DSL is no longer compatible with Spring Integration 4.1.x. &lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-integration-kafka-1-2-x-upgrade" class="anchor" name="spring-integration-kafka-1-2-x-upgrade"&gt;&lt;/a&gt;Spring Integration Kafka 1.2.x upgrade&lt;/h2&gt;&lt;p&gt;We now provide the &lt;code&gt;Kafka&lt;/code&gt; Namespace Factory for the Spring Integration Kafka Adapters. The new Spring Integration Kafka 1.2 &lt;a href="https://spring.io/blog/2015/06/19/spring-integration-kafka-1-2-is-available-with-0-8-2-support-and-performance-enhancements"&gt;release&lt;/a&gt; together with the upgrade to Apache Kafka &lt;code&gt;0.8.2&lt;/code&gt; brings a number of breaking changes. Hence this Java DSL Milestone 2 of 1.1 is no longer compatible with the previous version of Spring Integration Kafka and Apache Kafka respectively.&lt;/p&gt;&lt;h2&gt;&lt;a href="#http-namespace-factory" class="anchor" name="http-namespace-factory"&gt;&lt;/a&gt;HTTP Namespace Factory&lt;/h2&gt;&lt;p&gt;The Spring Integration HTTP Adapters are now covered with their specific &lt;code&gt;Http&lt;/code&gt; Namespace Factory. Please, meet our classical HTTP Proxy sample, but on Java DSL already:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Bean&#xD;
-public IntegrationFlow httpProxyFlow() {&#xD;
-    return IntegrationFlows&#xD;
-        .from((MessagingGateways g) -&amp;gt;&#xD;
-               g.httpGateway(&amp;quot;/proxy&amp;quot;)&#xD;
-                     .requestMapping(r -&amp;gt; r.params(&amp;quot;name&amp;quot;))&#xD;
-                     .payloadFunction(httpEntity -&amp;gt;&#xD;
-                           ((ServletRequestAttributes) RequestContextHolder&#xD;
-                                                     .currentRequestAttributes())&#xD;
-						.getRequest()&#xD;
-						.getQueryString()))&#xD;
-        .handleWithAdapter(a -&amp;gt;&#xD;
-              a.httpGateway(m -&amp;gt;&#xD;
-                   String.format(&amp;quot;http://target/service?%s&amp;quot;, m.getPayload()))&#xD;
-                              .expectedResponseType(String.class))&#xD;
-        .get();&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#reactive-streams-support" class="anchor" name="reactive-streams-support"&gt;&lt;/a&gt;Reactive Streams Support&lt;/h2&gt;&lt;p&gt;We are pleased to announce that Spring Integration is beginning to provide integration with &lt;a href="http://www.reactive-streams.org/"&gt;Reactive Streams&lt;/a&gt; and support for &lt;code&gt;Publisher&lt;/code&gt; is presented in the Java DSL directly:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Bean&#xD;
-public Publisher&amp;lt;Message&amp;lt;String&amp;gt;&amp;gt; reactiveFlow() {&#xD;
-	return IntegrationFlows&#xD;
-		.from(() -&amp;gt; new GenericMessage&amp;lt;&amp;gt;(&amp;quot;a,b,c,d,e,f&amp;quot;))&#xD;
-		.split(String.class, p -&amp;gt; p.split(&amp;quot;,&amp;quot;))&#xD;
-		.toReactivePublisher();&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you see it is simple to go from the Spring Integration world to the Reactive Streams world. The &lt;code&gt;org.reactivestreams.Publisher&lt;/code&gt; bean can be used afterwards as an event source for the Reactive program, e.g. using the &lt;a href="http://projectreactor.io/"&gt;Project Reactor&lt;/a&gt; implementation:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Autowired&#xD;
-@Qualifier(&amp;quot;reactiveFlow&amp;quot;)&#xD;
-private Publisher&amp;lt;Message&amp;lt;String&amp;gt;&amp;gt; publisher;&#xD;
-....&#xD;
-List&amp;lt;String&amp;gt; results = new ArrayList&amp;lt;&amp;gt;();&#xD;
-CountDownLatch latch = new CountDownLatch(6);&#xD;
-Streams.wrap(this.publisher)&#xD;
-	.map(m -&amp;gt; m.getPayload().toUpperCase())&#xD;
-	.consume(p -&amp;gt; {&#xD;
-			results.add(p);&#xD;
-			latch.countDown();&#xD;
-		});
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The other direction - from Reactive Stream to the Spring Integration - is simple enough, too (from Reactor perspective):&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;.consume(v -&amp;gt; messagingTemplate().convertAndSend(reactorStreamResult(), v));
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will consider some &lt;code&gt;org.reactivestreams.Subscriber&lt;/code&gt; option for the &lt;code&gt;MessageChannel&lt;/code&gt; implementation in the future release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#other-changes" class="anchor" name="other-changes"&gt;&lt;/a&gt;Other changes&lt;/h2&gt;&lt;p&gt;There have been done other important refactoring and deprecations to make the DSL more fluent, convenient and flexible, such as: &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The &lt;code&gt;Files.splitter()&lt;/code&gt; factory method for the &lt;code&gt;FileSplitter&lt;/code&gt; component;&lt;/li&gt;
-  &lt;li&gt;The &lt;code&gt;(S)Ftp.outboundGateway()&lt;/code&gt; for new &lt;code&gt;MessageSessionCallback&lt;/code&gt; (a Spring Integration 4.2 feature);&lt;/li&gt;
-  &lt;li&gt;Refactored and improved &lt;code&gt;.aggregate()&lt;/code&gt; and &lt;code&gt;.resequence()&lt;/code&gt; EIP-methods etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#springone-2gx-2015-is-around-the-corner" class="anchor" name="springone-2gx-2015-is-around-the-corner"&gt;&lt;/a&gt;SpringOne 2GX 2015 is around the corner!&lt;/h2&gt;&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com/"&gt;SpringOne2GX in Washington, DC next week&lt;/a&gt;. It’s simply the best opportunity to find out first hand all that’s going on and to provide direct feedback.&lt;/p&gt;&lt;p&gt;Come to my &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/spring_integration_java_dsl.html"&gt;talk&lt;/a&gt; to get more information from the first hands of Spring Integration Java DSL and help me to make this Framework better!&lt;/p&gt;&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-integration-java-dsl"&gt;Project Page&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/INTEXT"&gt;JIRA&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.md"&gt;Contributions&lt;/a&gt; | &lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; (&lt;code&gt;spring-integration&lt;/code&gt; tag)&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring REST Docs 1.0.0.RC1</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/08/spring-rest-docs-1-0-0-rc1" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2015-09-08:2231</id>
-    <updated>2015-09-08T15:51:00Z</updated>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m delighted to announce that &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 1.0.0.RC1 has been released and is available from our &lt;a href="https://repo.spring.io/milestone"&gt;milestone repository&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you&amp;rsquo;d like to see some examples of what can be produced with Spring REST Docs, please take a look at the &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.BUILD-SNAPSHOT/samples/restful-notes/"&gt;sample documentation&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-new" class="anchor" name="what-rsquo-s-new"&gt;&lt;/a&gt;What&amp;rsquo;s new&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Support for &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RC1/reference/html5/#documenting-your-api-path-parameters"&gt;documenting path parameters&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Support for documenting multipart requests&lt;/li&gt;
-  &lt;li&gt;Support for &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RC1/reference/html5/#documenting-your-api-constraints"&gt;documenting constraints declared using the Bean Validation API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Improved extensibility&lt;/li&gt;
-  &lt;li&gt;Improved configurability, including &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RC1/reference/html5/#documenting-your-api-customizing"&gt;template-based snippet rendering that allows you to take complete control over the generated snippets&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#getting-started" class="anchor" name="getting-started"&gt;&lt;/a&gt;Getting started&lt;/h2&gt;&lt;p&gt;To get started with Spring REST Docs, please refer to the &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RC1/reference/html5/#getting-started"&gt;getting started section&lt;/a&gt; of the &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.0.RC1/reference/html5/"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#upgrading" class="anchor" name="upgrading"&gt;&lt;/a&gt;Upgrading&lt;/h2&gt;&lt;p&gt;If you&amp;rsquo;re upgrading to Spring REST Docs from 1.0.0.M1, you&amp;rsquo;ll need to change your dependency from &lt;code&gt;spring-restdocs&lt;/code&gt; to &lt;code&gt;spring-restdocs-mockmvc&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#schedule" class="anchor" name="schedule"&gt;&lt;/a&gt;Schedule&lt;/h2&gt;&lt;p&gt;Spring REST Docs 1.0.0.RELEASE is planned for early October. Please grab the RC and &lt;a href="https://github.com/spring-projects/spring-restdocs/issues"&gt;let us know&lt;/a&gt; about any problems you encounter.&lt;/p&gt;&lt;h2&gt;&lt;a href="#springone-2015" class="anchor" name="springone-2015"&gt;&lt;/a&gt;SpringOne 2015&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ll be talking about &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/documenting_restful_apis.html"&gt;documenting RESTful APIs&lt;/a&gt;, including some live coding with Spring REST Docs, at this year&amp;rsquo;s &lt;a href="http://springone2gx.com"&gt;SpringOne&lt;/a&gt; in Washington, DC. I&amp;rsquo;d love to see you there.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - September 8, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/08/this-week-in-spring-september-8-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-09-08:2229</id>
-    <updated>2015-09-08T06:00:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I left Tokyo, Japan, and have been in Shanghai, China, speaking to a few large-scale startups - including &lt;a href="http://Ele.me"&gt;Ele.me&lt;/a&gt;, the largest food delivery service and application in a &lt;em&gt;very&lt;/em&gt; crowded Chinese market with more than 2 million orders every day - about building cloud-native applications using Spring Boot, Spring Cloud and Cloud Foundry! Tomorrow, it&amp;rsquo;s off to Oslo, Norway, &lt;a href="http://2015.javazone.no/"&gt;for the amazing JavaZone&lt;/a&gt; conference. I love this conference and have, in the last two years, been unable to attend because it was concurrent with SpringOne2GX! Happily, this year it is not, and I&amp;rsquo;ll be passing through on my way to Washington DC and SpringOne2GX 2015, this Monday!&lt;/p&gt;&lt;p&gt;The Spring team is hard at work this week &lt;a href="http://springone2gx.com/"&gt;preparing for SpringOne2GX 2015&lt;/a&gt;, starting next Monday, and so this week&amp;rsquo;s seen a &lt;em&gt;ton&lt;/em&gt; of exciting new releases! We&amp;rsquo;re all excited for the next week and we hope to see you there!&lt;/p&gt;&lt;p&gt;Finally, it is my pleasure to share that my dear friend Kenny Bastani, who I asked to be the co-author of the upcoming book, O&amp;rsquo;Reilly&amp;rsquo;s upcoming &lt;a href="http://shop.oreilly.com/product/0636920038252.do"&gt;&lt;em&gt;Cloud Native Java&lt;/em&gt;&lt;/a&gt;, joins my team this week as the first new Spring Developer Advocate. I hope &lt;a href="http://twitter.com/kennybastani"&gt;you&amp;rsquo;ll join me in welcoming him to the community and family&lt;/a&gt;!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Data ninja Christoph Strobl put together a nice post on &lt;a href="http://spring.io/blog/2015/09/04/what-s-new-in-spring-data-release-gosling"&gt;what&amp;rsquo;s coming in Spring Data Gosling &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring ninja Stéphane Nicoll just &lt;a href="http://spring.io/blog/2015/09/01/spring-framework-4-2-1-available-now"&gt;announced Spring framework 4.2.1 is now available&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;Spring Boot co-founder and all around nice guy &lt;a href="http://spring.io/blog/2015/09/04/spring-boot-1-3-0-m5-available-now"&gt;Phil Webb just announced that Spring Boot 1.3.0 M5 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Security lead &lt;a href="http://spring.io/blog/2015/09/02/spring-ldap-2-0-4-released"&gt;Rob Winch just announced some updates to Spring Security LDAP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Web ninja &lt;a href="http://spring.io/blog/2015/09/01/spring-web-flow-2-4-2-released"&gt;Rossen Stoyanchev announced Spring Web Flow 2.4.2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Statemachine lead Janne Valkealahti &lt;a href="http://spring.io/blog/2015/09/01/spring-statemachine-1-0-0-rc1-released"&gt;just announced 1.0.0.RC1 - get the bits and kick the tires&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;Our pal Ken Kreuger has put &lt;a href="https://www.udemy.com/microservices-with-spring-cloud/"&gt;together a Spring Cloud tutorial on Udemy&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;Dave Burke&amp;rsquo;s put together a nice post on one of &lt;a href="http://nixmash.com/java/using-spring-boot-commandlinerunner/"&gt;my favorite Spring Boot features, &lt;code&gt;CommandLineRunner&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This Czech-language post on running Spring Boot &lt;a href="http://www.java-skoleni.cz/novinky/jak-spustit-spring-boot-aplikaci-na-openshift.html"&gt;applications on Openshift looks pretty interesting!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Speaking of which, Red Hat &lt;em&gt;also&lt;/em&gt; did a blog on &lt;a href="https://blog.openshift.com/using-openshift-enterprise-grade-spring-boot-deployments/"&gt;running Spring Boot applications on Openshift this week&lt;/a&gt;! It is nice to see the likes of Red Hat talking about our cloud native technology stack.&lt;/li&gt;
-  &lt;li&gt;Tomasz Nurkiewicz has put together a really cool &lt;a href="http://www.nurkiewicz.com/2015/09/displaying-progress-of-spring.html"&gt;blog on monitoring the startup progress of a Spring Boot application&lt;/a&gt;. Of course Spring Boot applications typically take less than three seconds from &lt;code&gt;java -jar ..&lt;/code&gt; to handling requests, as he points out, but it can be helpful to get visibility into this progress!&lt;/li&gt;
-  &lt;li&gt;This video on &lt;a href="https://www.youtube.com/watch?v=pgQ9Bs-6l2k"&gt;Spring Boot web looked pretty interesting&lt;/a&gt;!&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

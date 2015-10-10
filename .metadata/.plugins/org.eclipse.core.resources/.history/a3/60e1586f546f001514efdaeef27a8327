@@ -6,9 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+<div>
 	<h2>Questionnaires</h2>
-	
+</div>
+<div>
 	<ul>
+	
 	<li>
 	<h1>Title1</h1>
 	<p>Description1</p>
@@ -26,7 +29,7 @@
 	<p>Description4</p>
 	</li>
 	</ul>
-	
+</div>		
 
 </body>
 </html>
