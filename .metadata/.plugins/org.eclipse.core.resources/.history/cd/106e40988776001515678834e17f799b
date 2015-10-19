@@ -82,9 +82,8 @@ public class QuestionnaireController {
 	    List<Questionnaire> allQuestionnaires = questionnaireRepository.findAll(); 
 
 	    WebContext ctx = new WebContext(request, response, servletContext, request.getLocale());
-	    //Wozu brauche ich das hier?
 	    ctx.setVariable("quests", allQuestionnaires);
-	    //Und was genau kann das hier?
+
 	    templateEngine.process("quests/list", ctx, response.getWriter());
 	}
 }

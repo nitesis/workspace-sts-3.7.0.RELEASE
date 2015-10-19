@@ -1,0 +1,9 @@
+127.0.0.1 - - [19/Oct/2015:19:20:17 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:20:17 +0200] "GET /flashcard-basic/WEB-INF/classes/ch/fhnw/webfr/flashcard/web/QuestionnaireController.java HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:30:19 +0200] "GET /basic/questionnaires HTTP/1.1" 200 271
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:30:19 +0200] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:31:44 +0200] "GET /flashcard-basic/WEB-INF/classes/ch/fhnw/webfr/flashcard/web/QuestionnaireController.java HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:32:01 +0200] "GET /basic/questionnaires HTTP/1.1" 200 271
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:32:08 +0200] "GET /basic/questionnaires/0 HTTP/1.1" 200 161
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:32:11 +0200] "GET /basic/questionnaires/1 HTTP/1.1" 200 161
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:19:32:16 +0200] "GET /basic/questionnaires/2 HTTP/1.1" 200 156

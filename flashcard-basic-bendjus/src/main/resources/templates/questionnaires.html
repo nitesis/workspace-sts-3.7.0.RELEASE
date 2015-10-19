@@ -14,7 +14,7 @@
 			<input type="text" class="form-control col-md-1" /> <input
 				type="submit" value="New" class="btn btn-primary" />
 		</form>
-		<div th:each="quest : ${quests}">
+		<div th:each="quest : ${questionnaires}">
 			[<span th:text="${quest.id}">0</span>] <strong th:text="${quest.title}">title of questionnaire 0</strong><br /> <span th:text="${quest.description}">description
 				of questionnaire 0</span>
 			<p />
