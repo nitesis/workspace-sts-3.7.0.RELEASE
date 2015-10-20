@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorator="layout">
+<head>
+    <title>flashcard</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../../../webapp/css/bootstrap.min.css" />
+    <link rel="stylesheet" th:href="@{/css/app.css}" href="../../../webapp/css/app.css" />    
+</head>
+<body>
+    <div layout:fragment="content">
+        <form action="#" th:action="@{/questionnaires}" th:object="${questionnaire}" method="post" >
+            <input type="text" th:field="*{title}" class="form-control col-md-1" />
+            <input type="submit" value="New" class="btn btn-primary"/>
+        </form>    
+        <hr/>
+        <div th:each="questionnaire : ${questionnaires}">
+            <dl>
+                <dt th:text="'[' + ${questionnaire.id} + '] ' + ${questionnaire.title}"/>
+                <dd>
+                    <span th:text="${questionnaire.description}">Description</span>
+                    <br/>
+                    <form class="col-md-1" action="#" th:action="@{/questionnaires} + '/' + ${questionnaire.id}" method="post" >
+                        <input type="hidden" name="_method" value="DELETE"/>
+                        <button type="submit" class="btn-link btn-xs">Delete</button>
+                    </form>                    
+                    <a class="btn-link btn-xs" th:href="@{/questionnaires}+ '/' + ${questionnaire.id} + '?form'">Update</a>
+                    <br/>
+                </dd>   
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
