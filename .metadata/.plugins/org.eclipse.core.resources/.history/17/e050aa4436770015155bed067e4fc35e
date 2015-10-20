@@ -74,5 +74,17 @@ public class QuestionnaireController {
 		//redirect erkennt Spring und führt eine Redirection aus
 		return "redirect:questionnaires";
 	}
-
+//	public void process(
+//	        HttpServletRequest request, HttpServletResponse response,
+//	        ServletContext servletContext, TemplateEngine templateEngine) throws IOException {
+//
+//	    //Questionnaire questionnaire = new Questionnaire();
+//	    List<Questionnaire> allQuestionnaires = questionnaireRepository.findAll(); 
+//
+//	    WebContext ctx = new WebContext(request, response, servletContext, request.getLocale());
+//	    //Wozu brauche ich das hier?
+//	    ctx.setVariable("quests", allQuestionnaires);
+//	    //Und was genau kann das hier?
+//	    templateEngine.process("quests/list", ctx, response.getWriter());
+//	}
 }
