@@ -69,7 +69,7 @@ public class QuestionnaireController {
 	public String create(Questionnaire questionnaire, Model model) {
 		if ((questionnaire.getTitle() != null) && (questionnaire.getTitle().length() > 0) &&
 			(questionnaire.getDescription() != null) && (questionnaire.getDescription().length() > 0)) {
-			questionnaireRepository.save(questionnaire);//wird nicht im MockTest 
+			questionnaireRepository.save(questionnaire);//wird nicht im MockTest abgefragt
 		}
 		//redirect erkennt Spring und führt eine Redirection aus
 		return "redirect:questionnaires";
