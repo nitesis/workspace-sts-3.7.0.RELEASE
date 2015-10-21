@@ -24,7 +24,6 @@ public class CounterController {
 	//Lösung AB7 Aufgabe 2 -> unabhängiges Hochzählen in verschiedenen Browsern möglich
 	@RequestMapping(method = RequestMethod.GET)
 	//HttpSession session wird von Spring initiert
-	//
 	public String count(Model model, HttpSession session) {
 	//session.getAttribute("counter") prüft, ob überhaupt etwas gesetzt ist
 		Integer counter = (Integer) session.getAttribute("counter");
