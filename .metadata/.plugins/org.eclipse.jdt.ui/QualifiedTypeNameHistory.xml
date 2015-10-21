@@ -25,4 +25,9 @@
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
 <fullyQualifiedTypeName name="org.thymeleaf.TemplateEngine"/>
 <fullyQualifiedTypeName name="org.thymeleaf.context.WebContext"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.Log_.logger"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.common.util.impl.Log_.logger"/>
+<fullyQualifiedTypeName name="javax.validation.Valid"/>
+<fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
 </qualifiedTypeNameHistroy>

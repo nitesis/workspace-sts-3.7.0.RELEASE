@@ -5,7 +5,18 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-19T19:55:00Z</updated>
+  <updated>2015-10-21T04:59:25Z</updated>
+  <entry>
+    <title>Spring Boot 1.3.0.RC1 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/21/spring-boot-1-3-0-rc1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2015-10-21:2283</id>
+    <updated>2015-10-21T04:59:25Z</updated>
+    <content type="html">&lt;p&gt;Spring Boot v1.3.0.RC1 is available now from the &lt;a href="http://repo.springsource.org/milestone/"&gt;Spring milestone repository&lt;/a&gt;. This release closes &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.0.RC1+is%3Aissue+is%3Aclosed"&gt;almost 140 issues&lt;/a&gt; and merges &lt;a href="https://github.com/spring-projects/spring-boot/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+is%3Aclosed+milestone%3A1.3.0.RC1"&gt;53 pull-requests&lt;/a&gt;! Thanks to everyone that has contributed.&lt;/p&gt;&lt;p&gt;We&amp;rsquo;re not planning on having a long release candidate phase, so please do try RC1 and let us know if you find any problems.&lt;/p&gt;&lt;p&gt;For a complete list of changes, and upgrade instructions, see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes"&gt;Spring Boot 1.3 Release Notes&lt;/a&gt; on the wiki and the updated &lt;a href="http://docs.spring.io/spring-boot/docs/1.3.0.RC1/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>SpringOne2GX 2015 replay: Modern Java Component Design with Spring Framework 4.2</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-java-component-design-with-spring-framework-4-2" />
@@ -251,31 +262,5 @@ Speakers: James Watters, Josh Long, Dr. David Syer, Scott Frederick, Juergen Hoe
 &lt;p&gt;Speakers: Jon Schneider, Taylor Wicksell - Netflix&lt;/p&gt;
 &lt;p&gt;Web / JavaScript Track&lt;/p&gt;
 &lt;p&gt; Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-cloud-at-netflix"&gt;http://www.slideshare.net/SpringCentral/spring-cloud-at-netflix&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Cloud Native Track&lt;br/&gt;Spring Cloud Netflix allows you to quickly take your existing Spring Boot application and transform it into a fully cloud-ready service (even if you are operating out of a private data center).&lt;br/&gt;This talk will be largely live coded, taking a simple Spring Boot app and progressively augmenting it with more and more production-ready features.&lt;br/&gt;1. Service discovery &amp;ndash; how we have extended Spring Cloud to integrate more seamlessly with Eureka.&lt;br/&gt;2. Real-time Metrics &amp;ndash; Spectator/Atlas integration, including how we fold Spring Boot Actuator metrics into Spectator. We will show you how to use the Atlas stack language to generate real-time metrics graphics.&lt;br/&gt;3. Inter-service Communication/Loading Balancing - When should you choose client-side load balancing (Ribbon) over traditional server-side load balancing? We will explain how Netflix OSS can contain both a client side load balancer in Ribbon and a software router in Zuul and when to use each.&lt;br/&gt;4. Managing Failure - Provide a demo of Hystrix/Spring integration with Turbine.&lt;br/&gt;5. Analytics - How Spring Cloud Netflix makes Spring XD an even more powerful real-time analytics platform with real-time operational insights.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6wvVANQ6EJ8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring IO Platform 1.1.4 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/16/spring-io-platform-1-1-4-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2015-10-16:2261</id>
-    <updated>2015-10-16T22:03:15Z</updated>
-    <content type="html">&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Spring IO Platform&lt;/a&gt; 1.1.4.RELEASE is now available from both &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.spring.platform"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;This maintenance release upgrades the versions of a number of the projects in the Platform to pick up their latest maintenance releases:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Boot 1.2.7.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Data Evans SR4&lt;/li&gt;
-  &lt;li&gt;Spring Framework 4.1.8.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Integration 4.1.6.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring LDAP 2.0.4.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Mobile 1.1.5.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Security 3.2.8.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Session 1.0.2.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Social Facebook 2.0.2.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Social LinkedIn 1.0.2.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Social Twitter 1.1.2.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Web Flow 2.4.2.RELEASE&lt;/li&gt;
-  &lt;li&gt;Spring Web Services 2.2.2.RELEASE&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;The versions of many third-party dependencies have also been updated.&lt;/p&gt;&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/1.1.4.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

@@ -11,10 +11,10 @@ body {
 }
 
 input.fieldError {
-	border-color: red;
+	border-color: green;
 }
 
 .fieldErrorText {
-	color: red;
+	color: green;
 	font-size: 12px;
 }
