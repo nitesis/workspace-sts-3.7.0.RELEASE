@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/counter")
 public class CounterController {
 	
-	//Lösung AB7 Aufgabe 2
 	@RequestMapping(method = RequestMethod.GET)
 	public String count(Model model, HttpSession session) {
 		Integer counter = (Integer) session.getAttribute("counter");
