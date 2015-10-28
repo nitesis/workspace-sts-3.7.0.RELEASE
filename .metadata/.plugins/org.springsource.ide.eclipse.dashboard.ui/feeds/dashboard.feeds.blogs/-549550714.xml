@@ -5,7 +5,149 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-21T04:59:25Z</updated>
+  <updated>2015-10-28T00:46:11Z</updated>
+  <entry>
+    <title>This Week in Spring (JavaOne 2015 Edition) - October 27, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/28/this-week-in-spring-javaone-2015-edition-october-27-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-10-28:2287</id>
+    <updated>2015-10-28T00:46:11Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m at JavaOne 2015 in San Francisco along with the rest of the Pivotal team. This week the Pivotal Spring team is out in full force, come stop by and say hi!&lt;/p&gt;
+&lt;p&gt;There are some great new SpringOne2GX 2015 recordings on line as well as some great community content this week so let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Cloud cofounder&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud"&gt;Spencer Gibb and Dr. David Syer&amp;rsquo;s talk&lt;/a&gt; on the Spring Cloud Developer experience from SpringOne2GX 2015!&lt;/li&gt;
+  &lt;li&gt;Spring tools ninja Martin Lippert &lt;a href="http://spring.io/blog/2015/10/22/the-spring-boot-dashboard-in-sts-part-3-spring-boot-devtools-reloaded"&gt;continues his series with this third installment on using Spring Boot Dashboard in STS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Gary Russell has just announced a few &lt;a href="uhttp://spring.io/blog/2015/10/27/spring-integration-maintenance-releases-available"&gt;new maintenance releases of Spring Integration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out this upcoming IntelliJ IDEA webinar on the &lt;a href="http://info.jetbrains.com/IDEA-Webinar-November2015-registration.html"&gt;new Spring framework and Spring Boot support in IntelliJ IDEA with Spring ninja Stéphane Nicoll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;this post by Rajith Delantha walks through &lt;a href="http://www.javacodegeeks.com/2015/10/spring-boot-oauth2-security.html"&gt;using Spring Security OAuth with Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;My article on the &lt;a href="https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"&gt;The Power, Patterns, and Pains of Microservices of microservices is now up on DZone&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Giau Ngo has a good example mapping on using JPA many-to-many relationship mapping &lt;a href="http://hellokoding.com/jpa-many-to-many-relationship-mapping-example-with-spring-boot-maven-and-mysql/"&gt;with Spring Boot, MySQL and Maven&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Papo Reto has a nice in Portguese-language video - I&amp;rsquo;m pretty sure - &lt;a href="https://www.youtube.com/watch?v=ROw92pLEYmA"&gt;on using Spring Boot on Heroku&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dan Vega&amp;rsquo;s got a really cool look at using &lt;a href="http://therealdanvega.com/blog/2015/10/23/spring-boot-application-annotation"&gt;the &lt;code&gt;@SpringBootApplication&lt;/code&gt; on annotation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Do you &lt;a href="http://docs.stormpath.com/java/spring-boot-web/quickstart.html"&gt;want to get Stormpath working with Spring Boot&lt;/a&gt;? Check out this handy getting-started example!&lt;/li&gt;
+  &lt;li&gt;I thought this was a cool &lt;a href="http://www.haydonryan.com/category/cloudfoundry/"&gt;blog on using Cloud Watch with Cloud Foundry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Roberto Venanzi of &lt;em&gt;The Spring Side blog&lt;/em&gt; has an interesting Italian-language post on &lt;a href="http://www.thespringside.com/?p=19"&gt;using Spring Boot with JSF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Integration Maintenance Releases Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/27/spring-integration-maintenance-releases-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2015-10-27:2286</id>
+    <updated>2015-10-27T21:03:28Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the following release versions are now available. These versions include important bug fixes and users should upgrade as soon as possible. Click the version to see the appropriate JIRA release notes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=15324"&gt;4.2.1.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=15242"&gt;4.1.7.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=14991"&gt;4.0.8.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=14992"&gt;3.0.8.RELEASE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please note that, unless some compelling reason arises, it is anticipated that the 4.1.7 and 4.0.8 releases will be the last in those lines; 4.x users are encouraged to upgrade to 4.2.1, which is the current release for the 4.x line.&lt;/p&gt;
+&lt;p&gt;We expect to continue to make available further 3.0.x releases to address important bug fixes, as necessary, at least through the end of 2016.&lt;/p&gt;
+&lt;p&gt;Please refer to the &lt;a href="http://projects.spring.io/spring-integration/"&gt;project page&lt;/a&gt; for links to documentation, downloads etc.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2015 replay: Developer Experience with Spring Cloud</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>null</name>
+    </author>
+    <id>tag:spring.io,2015-10-22:2285</id>
+    <updated>2015-10-22T14:48:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
+&lt;p&gt;Speakers: Dr. Dave Syer, Spencer Gibb&lt;/p&gt;
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/developer-experience-with-spring-cloud"&gt;http://www.slideshare.net/SpringCentral/developer-experience-with-spring-cloud&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;So you&amp;rsquo;ve decided to go cloud native. You&amp;rsquo;ve got a number of microservices that your company builds and runs. They interact with each other in various ways. You&amp;rsquo;ve got testing and staging and production environments that may have taken a lot of effort to get right. How does an individual developer work on just one of those services without stomping on other developers using a shared environment? In this session we will explore a range of options for development, starting with deploying everything locally, through stubbing, to local development solution that allows a developer to run their service in their IDE and have the whole system interact on their local machine!&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oqYzySDiLWI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>The Spring Boot Dashboard in STS - Part 3:  Spring Boot Devtools reloaded</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/22/the-spring-boot-dashboard-in-sts-part-3-spring-boot-devtools-reloaded" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2015-10-08:2253</id>
+    <updated>2015-10-22T08:00:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome back Spring community,&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;to this final part of our series about the new Spring Boot Dashboard in the Spring Tool Suite. In this final part we will take a deeper look at using the &lt;a href="https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3"&gt;Spring Boot Devtools&lt;/a&gt; in combination with the boot dashboard. Again, this feature is new with Spring Boot 1.3, so you need to be on that version in order to use the following features.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;h2&gt;Quickly deploy code changes&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;For local apps, using the Spring Boot Devtools is extremely easy and straightforward. As soon as you add the Spring Boot Devtools to your project as a dependency (there is an easy menu option for that in the Spring category of your context menu) and start your app, it will listen for local changes to configuration and class files and kick a restart of the app for you automatically. You don’t even need to restart the app yourself, the Spring Boot Devtools will do that for you automatically. Since STS/Eclipse produces and updates class files whenever you save a file, all this happens automatically for you when working within STS.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/17-enable-devtools.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This story gets more interesting if you run your Spring Boot apps on a remote runtime like Cloud Foundry. In principle, you can use the Spring Boot Devtools in such a remote setting as well, but it requires a bit more work. The good news is that the Spring Boot Dashboard helps you with that.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;As soon as you deploy or restart (and therefore update) a Spring Boot app on Cloud Foundry (using the boot dashboard) that has the Spring Boot Devtools on its classpath, the boot dashboard will configure the boot app on CF for the remote usage of the devtools automatically. This includes primarily the setting of a remote secret - to allow remote devtools access to it.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Once the devtools-enabled boot app is running on Cloud Foundry, you can easily start the boot devtools remote client application for it. This client application runs locally on your machine and connects to the remote application on Cloud Foundry. It watches for file changes, uploads them to the app on Cloud Foundry and triggers a restart of the app on Cloud Foundry.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/18-devtools-client.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;Since the remote client app will watch for file changes within the project on your local machine, you can continue to work within your IDE as usual. Changed files are automatically updated to the Cloud Foundry version of the app by the remote client app. The counterpart on Cloud Foundry will restart the boot app once those changed files are stored to the app on Cloud Foundry. This works for newly compiled source code as well as for changed resource files.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This allows you to achieve quick turnaround cycles when working on your project even if it is deployed to a remote cloud runtime.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;h2&gt;Debugging in the cloud&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;In addition to the automatic restart feature, the Spring Boot Devtools also enable full debugging of remote apps on a cloud runtime. This is supported by the Spring Boot Dashboard in STS, too. If you have the Spring Boot Devtools on the classpath of your application, you can press the (re)debug button for the Cloud Foundry instance of the app. This will restart the app on Cloud Foundry in debug mode, automatically start the corresponding remote client app on your machine, and hook up the Eclipse debugger to it.&lt;/p&gt;&#xD;
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/19-debugging.png"/&gt;&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;You can debug the application that is running on the cloud runtime in the same way as local applications, including setting breakpoints, inspecting variables, or even hot-swapping code. However, the automatic restart feature is not available for apps running in debug mode (due to technical limitations of the boot devtools at the moment).&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;If you try the remote debugging of apps on Cloud Foundry, you will notice a significant slowdown in debugging. This is caused by the tunneling of the remote debug protocol of the JVM through a HTTP connection, something the remote debug protocol is not designed for. We are working on improving this by using a different transport mechanism. But the remote debugging of the app on Cloud Foundry should be something you rarely do. For more frequent debugging you might want to consider running and debugging the app locally and connecting it up with the rest of your application services via the ngrok tunneling feature that we described in the previous part of this blog series.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This concludes the blog series on the Spring Boot Dashboard, a new feature in the Spring Tool Suite since its 3.7.1 release. Let us know about your experiences using the dashboard.&lt;/p&gt;&#xD;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring ( SpringOne2GX replay / Pieter Humphrey edition!) - October 21, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/21/this-week-in-spring-springone2gx-replay-pieter-humphrey-edition-october-21-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-10-21:2284</id>
+    <updated>2015-10-21T08:32:30Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week is the first week (of many) where the &lt;em&gt;crazy awesome&lt;/em&gt; [https://twitter.com/pieterhumphrey](Pieter Humphrey) has released scores of &lt;a href="http://SpringOne2gx.com"&gt;SpringOne2GX&lt;/a&gt; 2015 videos for our binge watching enjoyment! Most of this week&amp;rsquo;s bountiful roundup is thanks to Pieter&amp;rsquo;s meticulous transcoding, uploading and posting videos from SpringOne2GX 2015 - thanks Pieter! So without further ado, let&amp;rsquo;s take a look at some of this week&amp;rsquo;s selection including a LOT of content from SpringOne2GX, including..&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;..&lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-java-component-design-with-spring-framework-4-2"&gt;Juergen Holler and Stephane Nicoll&amp;rsquo;s talk presenting the updates to Spring framework 4.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..&lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-day-1-keynote-cloud-native-enterprise"&gt;the SpringOne2GX day 1 keynote&lt;/a&gt; featuring James Watters, Dr. David Syer, Scott Frederick, Juergen Hoeller and yours truly&lt;/li&gt;
+  &lt;li&gt;..&lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-day-2-technical-keynote-cloud-native-enterprise"&gt;the SpringOne2GX day 2 keynote&lt;/a&gt; featuring Guillaume LaForge, Graeme Rocher, Dr. David Syer, Mark Fisher, Scott Frederick and yours truly&lt;/li&gt;
+  &lt;li&gt;..the talk that Spring Boot and Spring Cloud co-founder Dr. Dave Syer and I, aided by a &lt;em&gt;VERY&lt;/em&gt; gracious guest appearance by Spring creator and hero &lt;a href="http://twitter.com/springrod"&gt;Dr. Rod Johnson&lt;/a&gt;, gave &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-getting-started-with-spring-cloud"&gt;introducing Spring Cloud&lt;/a&gt; (I&amp;rsquo;ve &lt;em&gt;never been so privileged&lt;/em&gt; as I was to be a part of this talk and I &lt;em&gt;truly&lt;/em&gt; hope you enjoy this one)&lt;/li&gt;
+  &lt;li&gt;..Netflix&amp;rsquo;s Jon Schneider and Taylor Wicksell &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-at-netflix"&gt;showing - live - how they build cloud native applications using Spring Boot and Spring Cloud at Netflix&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..Matt Stine&amp;rsquo;s talk introducing &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-lattice-a-cloud-native-platform-for-your-spring-applications"&gt;some of the powerful new features in Lattice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;.. Grails lead &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-grails-3-x-update"&gt;Graeme Rocher&amp;rsquo;s Grails 3 update&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..Spencer Gibb&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-exploring-alternative-spring-cloud-implementations"&gt;introducing some of the various extensibility planes of Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..John Field and Shawn McKinney&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-a-how-to-guide-to-security-in-the-paas-cloud"&gt;discussing some of the security concerns when moving applications to a PaaS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..Will Tran&amp;rsquo;s talk on &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-securing-microservices-with-spring-cloud-security"&gt;securing microservices with Spring Cloud Security&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..Google&amp;rsquo;s Ray Tsang introducing how &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-boot-micro-services-containers-and-kubernetes-how-to"&gt;to run Spring Boot-based microservices on Kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..Nicholas Frankel&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-boot-for-devops"&gt;talk introducing devops with Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..Cornelia Davis&amp;rsquo; talk on &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-12-factor-or-cloud-native-apps-for-spring-developers"&gt;12 factor Spring applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..AppDynamics&amp;rsquo;s Dustin Whittle&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-frontend-engineering"&gt;about modern frontend engineering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..VMWare&amp;rsquo;s Emad Benjamin&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-building-and-tuning-high-performance-java-platforms"&gt;about building and tunng high performance Java platforms&lt;/a&gt; in a world of virtual machines and the cloud&lt;/li&gt;
+  &lt;li&gt;..Colin Harrington&amp;rsquo;s talk on using Grails to &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-booting-iot-with-grails"&gt;support Internet-of-Things use cases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..the amazing &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-bringing-javax-cache-ing-to-your-application"&gt;incomparable Jeff Brown&amp;rsquo;s talk introducing &lt;code&gt;javax.cache&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..and Jeff&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-restful-grails-3"&gt;talk on RESTful Grails 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;..and Jeff&amp;rsquo;s talk on building a &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-microservice-architecture-with-grails"&gt;microservice architecture with Grails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Whew! That&amp;rsquo;s &lt;em&gt;at least&lt;/em&gt; a week&amp;rsquo;s worth of watching! That&amp;rsquo;s all thanks to Pieter Humphrey working overtime to get this all available as early and abundantly as possible. Pieter is &lt;em&gt;also&lt;/em&gt; responsible for working very hard over the last few years to ensure that &lt;em&gt;all&lt;/em&gt; talks are recorded and available so to be able to binge watch everything so quickly after the show is a &lt;em&gt;true&lt;/em&gt; privilege. Thank you, Pieter! We still have some &lt;em&gt;news&lt;/em&gt; to catch up on, as well! So..&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring and Spring Boot ninja Stéphane Nicoll just announced &lt;a href="http://spring.io/blog/2015/10/16/spring-boot-1-2-7-available-now"&gt;that Spring Boot 1.2.7 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Thomas Risberg just announced &lt;a href="http://spring.io/blog/2015/10/15/spring-for-apache-hadoop-2-3-release-candidate-1-released"&gt;that Spring for Apache Hadoop RC1 has been released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;SN has also just announced &lt;a href="http://spring.io/blog/2015/10/15/spring-framework-4-2-2-4-1-8-and-3-2-15-available-now"&gt;that Spring framework 4.2.2, 4.1.8, and 3.2.15 - complete with lots of bug fixes, are all now available as well&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Martin Lippert&amp;rsquo;s just posted the second part &lt;a href="http://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry"&gt;of his series on using the Spring Boot Dashboard in Spring Tool Suite&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring lead and co-founder Juergen Hoeller put together a nice &lt;a href="http://spring.io/blog/2015/10/14/spring-on-glassfish-4-1-1-and-wildfly-10-undertow-1-3"&gt;post on the compatible Java EE 7 implementations and Spring&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Janne Valkealahti just announced &lt;a href="http://spring.io/blog/2015/10/13/spring-statemachine-1-0-0-released"&gt;Spring Statemachine 1.0.0 has been released&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Boot 1.3.0.RC1 Available Now</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/21/spring-boot-1-3-0-rc1-available-now" />
@@ -22,7 +164,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-java-component-design-with-spring-framework-4-2" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2282</id>
     <updated>2015-10-19T19:55:00Z</updated>
@@ -33,7 +175,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-exploring-alternative-spring-cloud-implementations" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2281</id>
     <updated>2015-10-19T19:52:00Z</updated>
@@ -44,7 +186,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-a-how-to-guide-to-security-in-the-paas-cloud" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2280</id>
     <updated>2015-10-19T19:50:00Z</updated>
@@ -55,7 +197,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-securing-microservices-with-spring-cloud-security" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2278</id>
     <updated>2015-10-19T19:46:00Z</updated>
@@ -66,7 +208,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-boot-micro-services-containers-and-kubernetes-how-to" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2277</id>
     <updated>2015-10-19T19:44:00Z</updated>
@@ -77,7 +219,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-boot-for-devops" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2276</id>
     <updated>2015-10-19T19:43:00Z</updated>
@@ -88,7 +230,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-12-factor-or-cloud-native-apps-for-spring-developers" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2275</id>
     <updated>2015-10-19T19:37:00Z</updated>
@@ -99,7 +241,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-lattice-a-cloud-native-platform-for-your-spring-applications" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2274</id>
     <updated>2015-10-19T19:34:00Z</updated>
@@ -110,7 +252,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-getting-started-with-spring-cloud" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2273</id>
     <updated>2015-10-19T19:31:00Z</updated>
@@ -124,7 +266,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-frontend-engineering" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2271</id>
     <updated>2015-10-19T18:51:00Z</updated>
@@ -138,7 +280,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-building-and-tuning-high-performance-java-platforms" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2270</id>
     <updated>2015-10-19T18:45:00Z</updated>
@@ -152,7 +294,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-bringing-javax-cache-ing-to-your-application" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2268</id>
     <updated>2015-10-19T18:40:00Z</updated>
@@ -166,7 +308,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-booting-iot-with-grails" />
     <category term="engineering" label="Engineering" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2269</id>
     <updated>2015-10-19T18:38:00Z</updated>
@@ -180,7 +322,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-restful-grails-3" />
     <category term="news" label="News and Events" />
     <author>
-      <name>Pieter Humphrey</name>
+      <name>null</name>
     </author>
     <id>tag:spring.io,2015-10-20:2267</id>
     <updated>2015-10-19T18:37:00Z</updated>
@@ -188,79 +330,5 @@
 &lt;p&gt;Speakers: Jeff Brown, OCI Web&lt;/p&gt;
 &lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/restful-grails3"&gt;http://www.slideshare.net/SpringCentral/restful-grails3&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;p&gt;Grails 3 includes a lot of features and functionality related to building RESTful services. These include an entirely new and more flexibile data binding system, runtime and compile time metaprogramming which greatly reduce the amount of code required in your RESTful services, a rich set of content negotiation tools and more.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LVNJza4NO5U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Microservice Architecture with Grails</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-microservice-architecture-with-grails" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2266</id>
-    <updated>2015-10-19T18:24:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Jeff Brown, OCI Web&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/microservice-architecture-with-grails-3"&gt;http://www.slideshare.net/SpringCentral/microservice-architecture-with-grails-3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;For some web applications it does not make sense to have 1 monolithing process which handles all of the requirements of the application. More and more often Grails is showing up in microservice architectures where instead of building 1 monolithing web application which is responsible for all of the pieces of the application puzzle, microservice applications are being assembled which collectively solve the requirements of the larger application. Grails is very well suited for this type of architecture. A microservice based architecture can result in applications which are easier to build, easier to test, easier to extend and are easier to adapt to changing business requirements.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/SxukqBZmWsM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Grails 3.x update</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-grails-3-x-update" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2265</id>
-    <updated>2015-10-19T18:18:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Graeme Rocher&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/whats-new-in-grails-3"&gt;http://www.slideshare.net/SpringCentral/whats-new-in-grails-3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;In this talk, Grails project lead Graeme Rocher, will update you on the latest release of Grails and what is coming up during the course of the next year.&lt;/p&gt;&lt;p&gt;Covering all the new features of Grails 3 including the new plugin model, Gradle build and profiles support, this talk promise to be packed full of information for those interested in the latest and greatest from the Grails community.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/U2C7iAGvLHQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Day 2 Technical Keynote - Cloud Native Enterprise</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-day-2-technical-keynote-cloud-native-enterprise" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2264</id>
-    <updated>2015-10-19T18:14:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Recorded at SpringOne2GX 2015.&#xD;
-Speakers: Guillaume LaForge, Graeme Rocher, Josh Long, Dr. David Syer, Mark Fisher, Scott Frederick&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/springone2gx-2015-technical-keynote-day-two"&gt;http://www.slideshare.net/SpringCentral/springone2gx-2015-technical-keynote-day-two&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/M7qHt_hwDrk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 Replay: Day 1 Keynote - Cloud Native Enterprise</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-day-1-keynote-cloud-native-enterprise" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2263</id>
-    <updated>2015-10-19T18:10:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Recorded at SpringOne2GX 2015.&#xD;
-Speakers: James Watters, Josh Long, Dr. David Syer, Scott Frederick, Juergen Hoeller&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/springone2gx-2015-keynote-day-one"&gt;http://www.slideshare.net/SpringCentral/springone2gx-2015-keynote-day-one&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/171rFqarHj8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 Replay: Spring Cloud at Netflix</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-at-netflix" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-19:2262</id>
-    <updated>2015-10-19T13:01:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Jon Schneider, Taylor Wicksell - Netflix&lt;/p&gt;
-&lt;p&gt;Web / JavaScript Track&lt;/p&gt;
-&lt;p&gt; Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-cloud-at-netflix"&gt;http://www.slideshare.net/SpringCentral/spring-cloud-at-netflix&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Cloud Native Track&lt;br/&gt;Spring Cloud Netflix allows you to quickly take your existing Spring Boot application and transform it into a fully cloud-ready service (even if you are operating out of a private data center).&lt;br/&gt;This talk will be largely live coded, taking a simple Spring Boot app and progressively augmenting it with more and more production-ready features.&lt;br/&gt;1. Service discovery &amp;ndash; how we have extended Spring Cloud to integrate more seamlessly with Eureka.&lt;br/&gt;2. Real-time Metrics &amp;ndash; Spectator/Atlas integration, including how we fold Spring Boot Actuator metrics into Spectator. We will show you how to use the Atlas stack language to generate real-time metrics graphics.&lt;br/&gt;3. Inter-service Communication/Loading Balancing - When should you choose client-side load balancing (Ribbon) over traditional server-side load balancing? We will explain how Netflix OSS can contain both a client side load balancer in Ribbon and a software router in Zuul and when to use each.&lt;br/&gt;4. Managing Failure - Provide a demo of Hystrix/Spring integration with Turbine.&lt;br/&gt;5. Analytics - How Spring Cloud Netflix makes Spring XD an even more powerful real-time analytics platform with real-time operational insights.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6wvVANQ6EJ8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

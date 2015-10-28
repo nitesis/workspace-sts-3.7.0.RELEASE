@@ -8,6 +8,7 @@
     <link rel="stylesheet" th:href="@{/css/app.css}" href="../../../webapp/css/app.css" />    
 </head>
 <body>
+	<!--  Layout soll dann an die Stell "content" -->
     <div layout:fragment="content">
         <form action="#" th:action="@{/questionnaires}" th:object="${questionnaire}" method="post" >
             <input type="text" th:field="*{title}" class="form-control col-md-1" />

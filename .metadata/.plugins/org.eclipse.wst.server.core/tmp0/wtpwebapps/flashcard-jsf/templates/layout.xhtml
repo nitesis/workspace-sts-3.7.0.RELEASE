@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<f:view contentType="text/html">
+    <h:head>
+        <title>JSF Flashcard</title>
+        <h:outputStylesheet library="css" name="bootstrap.min.css" />
+        <h:outputStylesheet library="css" name="app.css" />
+    </h:head>
+
+    <h:body>
+        <div class="container-fluid col-md-offset-3">
+            <ui:insert name="content" />
+            <ui:include src="footer.xhtml" />
+        </div>
+    </h:body>
+</f:view>
+</html>

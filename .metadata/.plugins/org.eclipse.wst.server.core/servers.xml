@@ -4,7 +4,7 @@
     <list key="addExtraVmArgs" value0="-Dinsight.enabled=false"/>
     <list key="removeExtraVmArgs"/>
   </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.0 Server at localhost" name="Tomcat v8.0 Server at localhost" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="11">
-    <list key="modules" value0="basic::org.eclipse.jst.j2ee.server:basic::jst.web::2.3" value1="flashcard-basic-ab6::org.eclipse.jst.jee.server:flashcard-basic-ab6::jst.web::3.0" value2="hello-jsf-ab8::org.eclipse.jst.jee.server:hello-jsf-ab8::jst.web::3.0"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.0 Server at localhost" name="Tomcat v8.0 Server at localhost" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="13">
+    <list key="modules" value0="basic::org.eclipse.jst.j2ee.server:basic::jst.web::2.3" value1="flashcard-basic-ab6::org.eclipse.jst.jee.server:flashcard-basic-ab6::jst.web::3.0" value2="flashcard-jsf::org.eclipse.jst.jee.server:flashcard-jsf::jst.web::3.0"/>
   </server>
 </servers>

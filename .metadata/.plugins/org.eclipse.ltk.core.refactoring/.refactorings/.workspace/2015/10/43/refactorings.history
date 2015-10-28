@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;flashcard-basic-bendjus&apos;" deleteContents="false" description="Delete resource &apos;flashcard-basic-bendjus&apos;" element1="/flashcard-basic-bendjus" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1445363279854"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;flashcard-basic-bendjus&apos;" deleteContents="false" description="Delete resource &apos;flashcard-basic-bendjus&apos;" element1="/flashcard-basic-bendjus" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1445363279854"/>&#x0A;<refactoring comment="Delete resource &apos;hello-jsf-ab8&apos;" deleteContents="false" description="Delete resource &apos;hello-jsf-ab8&apos;" element1="/hello-jsf-ab8" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1445417601605"/>
 </session>

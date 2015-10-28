@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorator="layout">
+<head>
+    <title>flashcard create</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../../../webapp/css/bootstrap.min.css" />
+    <link rel="stylesheet" th:href="@{/css/app.css}" href="../../../webapp/css/app.css" />    
+</head>
+<body>
+    <div layout:fragment="content">
+        <form action="#" th:action="@{/questionnaires}" th:object="${questionnaire}" method="post" >
+        <div>
+            <div class="form-group">
+                <label class="control-label" for="title">Title:</label>
+                <div>
+                    <input type="text" id="title" class="form-control" th:field="*{title}" th:errorclass="fieldError"/>
+                    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="fieldErrorText">Incorrect title</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="description">Description:</label>
+                <div>
+                    <input type="text" id="description" class="form-control" th:field="*{description}" th:errorclass="fieldError"></input>
+                    <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}" class="fieldErrorText">Incorrect description</span>
+                </div>
+            </div>
+        </div>
+        <div>
+          <a class="btn btn-default" th:href="@{/questionnaires}">Cancel</a>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
