@@ -10,6 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableAutoConfiguration
 public class Application {
 	public static void main(String[] args) {
+		//führt Klasse aus und nimmt Konfiguration vor
 		SpringApplication.run(Application.class);
 	}
 

@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import ch.fhnw.webfr.flashcard.persistence.QuestionnaireRepository;
 import ch.fhnw.webfr.flashcard.util.QuestionnaireInitializer;
 
+//Wird aufgerufen, wenn die Session erstellt wird
 public class BasicListener implements ServletContextListener{
 
 	private Logger logger = Logger.getLogger(this.getClass().getName());
@@ -21,6 +22,7 @@ public class BasicListener implements ServletContextListener{
 		}
 //		Variante Maurice:
 //		 ServletContext servletContext = sce.getServletContext();
+		//holt Wert aus web.xml unter param=mode
 //        String mode = servletContext.getInitParameter("mode");
 //
 //        switch (mode) {

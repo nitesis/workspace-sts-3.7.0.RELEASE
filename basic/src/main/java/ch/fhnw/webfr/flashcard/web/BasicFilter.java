@@ -13,6 +13,10 @@ import org.apache.log4j.Logger;
 
 public class BasicFilter implements javax.servlet.Filter{
 	
+	public static final String DEFAULT_BEFORE_MESSAGE_PREFIX = "Before request [";
+	public static final String DEFAULT_BEFORE_MESSAGE_SUFFIX = "]";
+	
+	//Logger hier wegen InterceptorPattern
 	private static Logger logger = Logger.getLogger(BasicFilter.class);
 	
 	public BasicFilter(){
@@ -30,6 +34,15 @@ public class BasicFilter implements javax.servlet.Filter{
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		logger.info(((HttpServletRequest) request).getRequestURL());
+		//Bei jedem Request wird Filter aufgerufen
+		HttpServletRequest httpRequest = (HttpServletRequest) request;
+		//Hier ist der Filter ein Logger
+		StringBuffer buffer = new StringBuffer();
+		buffer.append(DEFAULT_BEFORE_MESSAGE_PREFIX);
+		buffer.append("uri=").append(httpRequest.getRequestURI());
+		buffer.append(DEFAULT_BEFORE_MESSAGE_SUFFIX);
+		logger.debug(buffer.toString());
+		
 		//ruft alle Filter auf
 		chain.doFilter(request, response);
 		
@@ -38,6 +51,7 @@ public class BasicFilter implements javax.servlet.Filter{
 	@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
+		//Hier könnet man z.B. auch den Logger wieder löschen
 		
 	}
 

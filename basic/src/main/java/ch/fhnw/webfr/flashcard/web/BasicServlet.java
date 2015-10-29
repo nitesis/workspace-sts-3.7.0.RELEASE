@@ -15,6 +15,7 @@ import ch.fhnw.webfr.flashcard.persistence.QuestionnaireRepository;
 import ch.fhnw.webfr.flashcard.util.QuestionnaireInitializer;
 
 @SuppressWarnings("serial")
+// Das ist ein Servlet
 public class BasicServlet extends HttpServlet {
 
 	private QuestionnaireRepository questionnaireRepository;
@@ -24,6 +25,8 @@ public class BasicServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 
 		String[] pathElements = request.getRequestURI().split("/");
+		//Aufteilung der fachlichen Logik auf Handler-Methoden durch ein Pseudo-Mapping mit "if"-Abfragen
+		//Schaut, wo man ist (welche URL) und geht dann entsprechend weiter
 		if (isLastPathElementQuestionnairesId(pathElements)) {
 
 			long id = Long.parseLong(pathElements[pathElements.length - 1]);
