@@ -15,7 +15,6 @@ public class Questionnaire {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
     
-    //Wenn nur in dieser Klasse Annotation ist -> Validation auf Datenbankschicht Exception wird geworfen
     @Size(min = 2, max = 50)
     @NotNull
     private String  title;

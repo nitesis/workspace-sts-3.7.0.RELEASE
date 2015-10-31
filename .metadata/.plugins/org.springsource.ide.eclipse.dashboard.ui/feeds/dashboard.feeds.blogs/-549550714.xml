@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-28T14:04:00Z</updated>
+  <updated>2015-10-29T17:30:00Z</updated>
+  <entry>
+    <title>Spring IO Platform 2.0.0.RC1</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/29/spring-io-platform-2-0-0-rc1" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-10-29:2289</id>
+    <updated>2015-10-29T17:30:00Z</updated>
+    <content type="html">&lt;p&gt;Spring IO Platform 2.0.0.RC1 is available now from the &lt;a href="http://repo.springsource.org/milestone/"&gt;Spring milestone repository&lt;/a&gt;. The 2.0 release upgrades the versions of a number of components including Spring Boot 1.3 and Spring Framework 4.2. &lt;/p&gt;
+&lt;p&gt;Please note that a number of dependencies that were previously part of the Platform have been removed or replaced in this release. Please refer to &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RC1/reference/htmlsingle/#upgrading-dependency-management"&gt;the documentation&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;p&gt;All being well, 2.0.0.RELEASE will be released in a few weeks time once Spring Boot 1.3.0.RELEASE is available. Please take RC1 for a spin and let us know if you find any problems.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RC1/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>React.js and Spring Data REST: Part 5 - Security</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/28/react-js-and-spring-data-rest-part-5-security" />
@@ -1053,22 +1067,9 @@ You updated the UI to show an employee&amp;#8217;s manager and also display erro
     <id>tag:spring.io,2015-10-20:2268</id>
     <updated>2015-10-19T18:40:00Z</updated>
     <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Jeff Brown, OCI Web&lt;/p&gt;
+&lt;p&gt;Speakers: Alex Snaps, Chris Dennis - Terracotta / Software AG&lt;/p&gt;
 &lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/bringing-javaxcacheing-to-your-app"&gt;http://www.slideshare.net/SpringCentral/bringing-javaxcacheing-to-your-app&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;p&gt;10 years in the making and finally JSR-107 has been finalized. We now have a standardized Caching API for the Java Platform. And that&amp;rsquo;s all ready for you to use in your Spring apps. But what does it really enable for you? What&amp;rsquo;s with these optional features? No transaction support? How do you efficiently make use of this new API to solve real world problems in your application today? We&amp;rsquo;ll look into how get you best started introducing caching into your Spring application to solve real world problems. And, as we explore the javax.cache API in much more details, we&amp;rsquo;ll see how to push the specifications to its limits and&amp;hellip; beyond. Whether implicitly through frameworks (like Spring and Hibernate), or explicitly (cache-aside, cache-through, &amp;hellip;). And how to abstract yourself from a given provider when you require more than what the specifications cover (e.g. transactional caches). We&amp;rsquo;ll also cover some implementer specifics you might want to account for when choosing an implementation, especially if you plan to push the spec to the extreme, like when going distributed and caching terabytes of data.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CsaOK1GPj-E" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Booting IoT with Grails</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-booting-iot-with-grails" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>null</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2269</id>
-    <updated>2015-10-19T18:38:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Colin Harrington, OCI Web&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/booting-iot-with-grails"&gt;http://www.slideshare.net/SpringCentral/booting-iot-with-grails&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;p&gt;In a world of the cloud, virtualization, containerization, microservices and nanoservices we talk about scaling up, scaling out, and decoupling our systems, but typically miss scaling down to an embedded platform.&lt;br/&gt;At the same time that we have moved away from heavy monolithic web containers, we&amp;rsquo;ve seen a rise of powerful low cost embedded Linux devices such as the RaspberryPi.&lt;br/&gt; &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ExtWTUWV9mg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
+&lt;p&gt;
+&lt;p&gt;10 years in the making and finally JSR-107 has been finalized. We now have a standardized Caching API for the Java Platform. And that&amp;rsquo;s all ready for you to use in your Spring apps. But what does it really enable for you? What&amp;rsquo;s with these optional features? No transaction support? How do you efficiently make use of this new API to solve real world problems in your application today? We&amp;rsquo;ll look into how get you best started introducing caching into your Spring application to solve real world problems. And, as we explore the javax.cache API in much more details, we&amp;rsquo;ll see how to push the specifications to its limits and&amp;hellip; beyond. Whether implicitly through frameworks (like Spring and Hibernate), or explicitly (cache-aside, cache-through, &amp;hellip;). And how to abstract yourself from a given provider when you require more than what the specifications cover (e.g. transactional caches). We&amp;rsquo;ll also cover some implementer specifics you might want to account for when choosing an implementation, especially if you plan to push the spec to the extreme, like when going distributed and caching terabytes of data.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CsaOK1GPj-E" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

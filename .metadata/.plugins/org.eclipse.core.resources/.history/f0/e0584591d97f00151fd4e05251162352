@@ -33,8 +33,7 @@ public class QuestionnaireController {
 		return "questionnaires/create";
 	}
 	
-	// Validierung im Controller
-	// With validation support from the framework!
+	// Without any validation support from the framework!
 	@RequestMapping(method = RequestMethod.POST)
 	public String create(@Valid Questionnaire questionnaire, BindingResult result) {
 		if (result.hasErrors()) {
