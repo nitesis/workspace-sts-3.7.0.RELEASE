@@ -36,14 +36,20 @@ public class QuestionnaireController {
 	// Validierung im Controller
 	// With validation support from the framework!
 	@RequestMapping(method = RequestMethod.POST)
-	public String create(@Valid Questionnaire questionnaire, BindingResult result) {
+	public String create(@Valid Questionnaire questionnaire, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			return "questionnaires/create";
 		}
 		if ((questionnaire.getTitle() != null) && (questionnaire.getTitle().length() > 0) &&
 			(questionnaire.getDescription() != null) && (questionnaire.getDescription().length() > 0)) {
 			questionnaireRepository.save(questionnaire);
+			
+			
 		}
+		model.addAttribute("message", "Successfully saved new Questionnaire: " + questionnaire.getTitle());
+		//return "questionnaires/create";
+		// redirect: löst weiteren Request aus
+		//macht eine normale Get-Anfrage auf questionnaires, d.h. sagt, dass Post jetzt fertig ist und lädt die Hauptseite neu
 		return "redirect:/questionnaires";
 	}	
 
