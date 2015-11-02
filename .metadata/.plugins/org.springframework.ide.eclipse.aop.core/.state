@@ -2,4 +2,5 @@
 <aop-reference-model>
 <aop-project name="flashcard-basic-ab6"/>
 <aop-project name="flashcard-jsf"/>
+<aop-project name="hello-mvc-ab7 2"/>
 </aop-reference-model>
