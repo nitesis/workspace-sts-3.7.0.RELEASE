@@ -5,7 +5,46 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-29T17:30:00Z</updated>
+  <updated>2015-11-02T08:00:00Z</updated>
+  <entry>
+    <title>Spring Security 3.2.9 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/02/spring-security-3-2-9-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2015-10-30:2290</id>
+    <updated>2015-11-02T08:00:00Z</updated>
+    <content type="html">&lt;p&gt;I’m pleased to announce the release of Spring Security 3.2.9.RELEASE. This release provides bug fixes and minor enhancements. For complete details on the release, refer to the &lt;a href="https://jira.spring.io/browse/SEC/fixforversion/15254/?selectedTab=com.atlassian.jira.plugins.jira-development-integration-plugin%3Arelease-report-tabpanel"&gt;Change Log&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Highlights of the release include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-2190"&gt;SEC-2190&lt;/a&gt; - Fixing integration with the JSP tag libraries when Spring Security is registered in a child ApplicationContext&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-2521"&gt;SEC-2521&lt;/a&gt; - Removal of synchronized in StandardPasswordEncoder which drastically improves performance&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3108"&gt;SEC-3108&lt;/a&gt; - Fix potential race condition in DigestAuthenticationFilter&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3109"&gt;SEC-3109&lt;/a&gt; - DelegatingSecurityContextExecutor works with Concurrent/ThreadPoolTaskScheduler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.9.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.9.RELEASE/guides/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security 4.0.3 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/02/spring-security-4-0-3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2015-10-30:2291</id>
+    <updated>2015-11-02T08:00:00Z</updated>
+    <content type="html">&lt;p&gt;I’m pleased to announce the release of Spring Security 4.0.3.RELEASE. This release provides bug fixes and minor enhancements. For complete details on the release, refer to the &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10040&amp;version=15253"&gt;Change Log&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Highlights of the release include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3063"&gt;SEC-3063&lt;/a&gt; - Fixes for Spring Boot 1.3&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-2190"&gt;SEC-2190&lt;/a&gt; - Fixing integration with the JSP tag libraries when Spring Security is registered in a child ApplicationContext&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-2521"&gt;SEC-2521&lt;/a&gt; - Removal of synchronized in StandardPasswordEncoder which drastically improves performance&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3108"&gt;SEC-3108&lt;/a&gt; - Fix potential race condition in DigestAuthenticationFilter&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3109"&gt;SEC-3109&lt;/a&gt; - DelegatingSecurityContextExecutor works with Concurrent/ThreadPoolTaskScheduler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.3.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.3.RELEASE/guides/html5/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring IO Platform 2.0.0.RC1</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/29/spring-io-platform-2-0-0-rc1" />
@@ -1042,34 +1081,5 @@ You updated the UI to show an employee&amp;#8217;s manager and also display erro
 &lt;p&gt;Speakers: Dustin Whittle, AppDynamics&lt;/p&gt;
 &lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/modern-frontend-engineering"&gt;http://www.slideshare.net/SpringCentral/modern-frontend-engineering&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;p&gt;The web has evolved tremendously in the last decade. In this talk we will dive into the latest tools and techniques that make for a modern foundation for frontend engineering. We will start with bootstrapping with Yeoman, move into managing dependencies with bower, and finally how to automate best practices with Grunt and Gulp. We will discuss the pros and cons of modern ui toolkits like Zurb, Bootstrap, and SemanticUI and modern javascript frameworks like React, Angular, and Ember. We will highlight the latest in css frameworks, javascript frameworks, and why you should choose the right toolset for complex app or a single page app. When you leave this session you will be prepared to launch a modern web application in 2015.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-uA4a8y8q9I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Building and Tuning High Performance Java Platforms</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-building-and-tuning-high-performance-java-platforms" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>null</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2270</id>
-    <updated>2015-10-19T18:45:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Emad Benjamin, VMWare&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/building-and-tuning-high-performance-java-platforms"&gt;http://www.slideshare.net/SpringCentral/building-and-tuning-high-performance-java-platforms&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;p&gt;In a world of the cloud, virtualization, containerization, microservices and nanoservices we talk about scaling up, scaling out, and decoupling our systems, but typically miss scaling down to an embedded platform.&lt;br/&gt;At the same time that we have moved away from heavy monolithic web containers, we&amp;rsquo;ve seen a rise of powerful low cost embedded Linux devices such as the RaspberryPi.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/IGS-rqSjmFk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Bringing javax.cache'ing to your application</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-bringing-javax-cache-ing-to-your-application" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>null</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2268</id>
-    <updated>2015-10-19T18:40:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Alex Snaps, Chris Dennis - Terracotta / Software AG&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/bringing-javaxcacheing-to-your-app"&gt;http://www.slideshare.net/SpringCentral/bringing-javaxcacheing-to-your-app&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;p&gt;10 years in the making and finally JSR-107 has been finalized. We now have a standardized Caching API for the Java Platform. And that&amp;rsquo;s all ready for you to use in your Spring apps. But what does it really enable for you? What&amp;rsquo;s with these optional features? No transaction support? How do you efficiently make use of this new API to solve real world problems in your application today? We&amp;rsquo;ll look into how get you best started introducing caching into your Spring application to solve real world problems. And, as we explore the javax.cache API in much more details, we&amp;rsquo;ll see how to push the specifications to its limits and&amp;hellip; beyond. Whether implicitly through frameworks (like Spring and Hibernate), or explicitly (cache-aside, cache-through, &amp;hellip;). And how to abstract yourself from a given provider when you require more than what the specifications cover (e.g. transactional caches). We&amp;rsquo;ll also cover some implementer specifics you might want to account for when choosing an implementation, especially if you plan to push the spec to the extreme, like when going distributed and caching terabytes of data.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CsaOK1GPj-E" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
