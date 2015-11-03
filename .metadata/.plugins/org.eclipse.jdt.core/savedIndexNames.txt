@@ -81,7 +81,6 @@ INDEX VERSION 1.127+/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.
 3980032608.index
 4001976462.index
 1159407507.index
-242284375.index
 3712507179.index
 2298799590.index
 3041363284.index
