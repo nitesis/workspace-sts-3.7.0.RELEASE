@@ -1,0 +1,19 @@
+/*
+ * created by Viviane
+ */
+
+angular.module('flashcard', []);
+
+var questionnaires = [
+{id:1, title: 'Q1', description: 'Lorem ipsum...'}, 
+{id:2, title: 'Q2', description: 'Lorem ipsum...'}, 
+{id:3, title: 'Q3', description: 'Lorem ipsum...'}
+];
+
+angular.module.controller('flashcardController', function ($scope) {
+	angular.forEach(values, function(value, key) {
+		  this.push(key + ': ' + value);
+		}, questionnaires);
+		
+			});
+

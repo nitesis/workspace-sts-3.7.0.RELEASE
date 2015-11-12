@@ -1,0 +1,6 @@
+/*
+ * created by Viviane
+ */
+
+angular.module('flashcard', []);
+

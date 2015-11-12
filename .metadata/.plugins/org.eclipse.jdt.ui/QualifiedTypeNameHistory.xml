@@ -30,4 +30,5 @@
 <fullyQualifiedTypeName name="javax.validation.Valid"/>
 <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
 </qualifiedTypeNameHistroy>

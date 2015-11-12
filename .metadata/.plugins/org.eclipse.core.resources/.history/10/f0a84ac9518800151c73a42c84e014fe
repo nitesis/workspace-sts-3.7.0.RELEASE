@@ -1,0 +1,5 @@
+angular.module('flashcard');
+
+angular.module('flashcard').controller(
+		
+);

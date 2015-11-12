@@ -1,0 +1,11 @@
+/*
+ * created by Viviane
+ */
+
+angular.module('flashcard', []);
+
+
+angular.module.controller('flashcardController', function ($scope) {
+		$scope.flashcard = "?";
+			});
+
