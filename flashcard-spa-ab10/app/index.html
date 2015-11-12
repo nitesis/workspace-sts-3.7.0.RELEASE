@@ -17,20 +17,39 @@
             </form>
             <hr/>
             
+            <!-- UE08 -->
+            <div>
+            	<dl >
+                <!-- input values -->
+                    <dt>[id] {{mytitle}}</dt>
+                    <dd>description</dd>
+                </dl>
+            </div>
+            
+            <!-- AB10 Aufgabe 1 -->
+            <div >
+                <dl >
+                <!-- input values -->
+                    <dt>[id] {{mytitle}}</dt>
+                    <dd>description</dd>
+                </dl>  
+            </div>
+            
+            <!-- AB10 Aufgabe 2 -->
             <div ng-repeat="questionnaire in bla">
                 <dl >
                 <!-- get values -->
                     <dt>[{{questionnaire.id}}] {{questionnaire.title}}</dt>
                     <dd>{{questionnaire.description}}</dd>
-                </dl>
-                
+                </dl>  
             </div>
+            
             <footer>&copy; 2015 The FHNW Team</footer>
         </div>
     
     </div>
     <!-- Best practice: script tags at the end -->
-    <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-  	<script src="app.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  	<script src="app.js"></script>
   </body>
 </html>
