@@ -5,7 +5,688 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-11-17T20:50:57Z</updated>
+  <updated>2015-12-01T12:52:39Z</updated>
+  <entry>
+    <title>This Week in Spring - December 1, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/01/this-week-in-spring-december-1-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-12-01:2313</id>
+    <updated>2015-12-01T12:52:39Z</updated>
+    <content type="html">&lt;p&gt;Wow! Can you believe we&amp;rsquo;re already staring down 2016? Time sure flies! Remember, &lt;em&gt;This Week in Spring&lt;/em&gt; was &lt;em&gt;started&lt;/em&gt; the first week of 2011, so we&amp;rsquo;ll soon mark the fifth anniversairry of TWiS!&lt;/p&gt;
+&lt;p&gt;This week I&amp;rsquo;m in Shanghai, China, for &lt;em&gt;the Cloud Foundry Summit Asia&lt;/em&gt; and then off to Ft. Lauderdale, Florida, USA, for the &lt;em&gt;Rich Web Experience&lt;/em&gt;! If you&amp;rsquo;re in either place, &lt;a href="mailto:josh@joshlong.com"&gt;don&amp;rsquo;t hesitate to reach me&lt;/a&gt;! &lt;/p&gt;
+&lt;p&gt;As usual, we&amp;rsquo;ve got a lot to cover so let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Boot co-founder and Spring framework contributor Phil Webb put up a really thoughtful post helping people looking at Spring (which has been around for 10+ years) to &lt;a href="http://spring.io/blog/2015/11/29/how-not-to-hate-spring-in-2016"&gt;avoid some of the common pitfalls facing new developers in 2016&lt;/a&gt;. A &lt;em&gt;very&lt;/em&gt; recommended read!&lt;/li&gt;
+  &lt;li&gt;Florian Benz did a great job discussing the motivations and use of comprehensive REST &lt;a href="https://medium.com/@flbenz/beautiful-api-documentation-with-negligible-overhead-2ba523205f61#.fo0hrc2lv"&gt;documentation as generated with Spring Rest Docs&lt;/a&gt;. This is a really cool, &lt;em&gt;quick&lt;/em&gt; read!&lt;/li&gt;
+  &lt;li&gt;Speaking of Spring Rest Docs, there&amp;rsquo;s a great interview with the project lead, the amazing Andy Wilkinson who - in his ample free time - also manages the Spring IO Platform as well as contributes to Spring Boot. &lt;a href="https://dzone.com/articles/a-qa-with-andy-wilkinson-on-spring-rest-docs"&gt;Read on to learn more about one of my heroes&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Spring Boot and Spring Cloud co-founder Dr. Dave Syer has put [up a nice post on &lt;a href="http://spring.io/blog/2015/11/25/migrating-spring-cloud-apps-from-spring-boot-1-2-to-1-3"&gt;migrating Spring Cloud applications from Spring Boot 1.2 to the just released 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Social lead Craig Walls just &lt;a href="http://spring.io/blog/2015/11/25/spring-social-1-1-4-released"&gt;announced Spring Social 1.1.4 which includes a few recommended bugfixes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Thomas Risberg &lt;a href="http://spring.io/blog/2015/11/25/news-for-spring-data-jdbc-extensions-project"&gt;just announced Spring Data JDBC Extensions 1.2 and a slew of other great updates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Tool Suite lead Martin Lippert &lt;a href="http://spring.io/blog/2015/11/27/spring-tool-suite-3-7-2-released"&gt;just announced the STS 3.7.2 release of STS&lt;/a&gt; which includes an updated Spring Boot Dashboard, Spring Boot 1.3.0 compatibility, quick text search and more.&lt;/li&gt;
+  &lt;li&gt;Spring Boot, Spring Cloud and Spring Security OAuth contributor, co-founder and ninja Dr. Dave Syer&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/11/30/migrating-oauth2-apps-from-spring-boot-1-2-to-1-3"&gt;post on migrating OAuth-based code from Spring Cloud Angel to Brixton&lt;/a&gt;, given the introduction of some of those features in Spring Boot 1.3, is a very cool read!&lt;/li&gt;
+  &lt;li&gt;Speaking of Spring Cloud Security, check &lt;a href="https://dzone.com/articles/securing-microservices-with-spring-cloud-security"&gt;out my pal Will Tran&amp;rsquo;s epic talk from SpringOne2GX 2015&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Check out Spring Cloud co-founder Spencer Gibb&amp;rsquo;s epic talk from &lt;a href="http://www.infoq.com/presentations/spring-cloud-alternatives?utm_source=infoq&amp;utm_medium=videos_homepage&amp;utm_campaign=videos_row2"&gt;SpringOne2GX on alternative implementations of common extension hooks for Spring Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Migrating OAuth2 Apps from Spring Boot 1.2 to 1.3</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/30/migrating-oauth2-apps-from-spring-boot-1-2-to-1-3" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2015-11-24:2306</id>
+    <updated>2015-11-30T15:29:29Z</updated>
+    <content type="html">&lt;p&gt;There are some new features in &lt;a href="http://projects.spring.io/spring-boot/"&gt;Spring Boot&lt;/a&gt; 1.3 to do with &lt;a href="https://tools.ietf.org/html/rfc6749"&gt;OAuth2&lt;/a&gt; clients and servers and &lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;Spring Security OAuth2&lt;/a&gt;. Some of those features were ported from &lt;a href="http://cloud.spring.io/spring-cloud-Security/,"&gt;Spring Cloud Security&lt;/a&gt; and hence were in the Angel release train of &lt;a href="http://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt;, but are not in the Brixton release train. This article helps you navigate the changes and update any existing apps to use the new features.&lt;/p&gt;&lt;h2&gt;&lt;a href="#dependency-management" class="anchor" name="dependency-management"&gt;&lt;/a&gt;Dependency Management&lt;/h2&gt;
+&lt;p&gt;If you are not using Spring Cloud you should be able to just change the version number of your Spring Boot dependency. Since some of the OAuth2 features migrated from Spring Cloud Security to Spring Boot in 1.3, it is likely that things are slightly more complicated than that. A &lt;a href="https://spring.io/blog/2015/11/25/migrating-spring-cloud-apps-from-spring-boot-1-2-to-1-3"&gt;separate article&lt;/a&gt; deals with upgrading Spring Cloud apps from Spring Boot 1.2 to 1.3. If you are using the Spring Cloud Angel release train then you should consult that article for details of how to manage the dependencies (independent of any specific features).&lt;/p&gt;&lt;h2&gt;&lt;a href="#authorization-server" class="anchor" name="authorization-server"&gt;&lt;/a&gt;Authorization Server&lt;/h2&gt;
+&lt;p&gt;An OAuth2 Authorization Server is responsible first and foremost for issuing access tokens. To do this it must be able to authenticate client apps and (optionally) users.&lt;/p&gt;
+&lt;p&gt;A very simple OAuth2 Authorization Server with a single client can be implemented by convention and some configuration properties in Spring Boot 1.3. So a really basic example like the vanilla auth server from the &lt;a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_sso_with_oauth2_angular_js_and_spring_security_part_v"&gt;Angular JS Spring Securrity Tutorial&lt;/a&gt; from spring.io can be simplified quite a bit. In Spring Boot 1.2 we have:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+@RestController&#xD;
+@EnableResourceServer&#xD;
+public class AuthserverApplication {&#xD;
+       &#xD;
+  @Configuration&#xD;
+  @EnableAuthorizationServer&#xD;
+  protected static class OAuth2Config extends AuthorizationServerConfigurerAdapter {&#xD;
+&#xD;
+    @Autowired&#xD;
+    private AuthenticationManager authenticationManager;&#xD;
+         &#xD;
+    @Override&#xD;
+    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Excep&#xD;
+      endpoints.authenticationManager(authenticationManager);&#xD;
+    }&#xD;
+&#xD;
+    @Override&#xD;
+    public void configure(ClientDetailsServiceConfigurer clients) throws Exception {&#xD;
+      clients.inMemory()&#xD;
+        .withClient(&amp;quot;acme&amp;quot;)&#xD;
+          .secret(&amp;quot;acmesecret&amp;quot;)&#xD;
+          .authorizedGrantTypes(&amp;quot;authorization_code&amp;quot;, &amp;quot;refresh_token&amp;quot;,&#xD;
+              &amp;quot;password&amp;quot;)&#xD;
+          .scopes(&amp;quot;openid&amp;quot;).autoApprove(true);&#xD;
+    }&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+  ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In Spring Boot 1.3 we have just:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+@RestController&#xD;
+@EnableResourceServer&#xD;
+@EnableAuthorizationServer&#xD;
+public class AuthserverApplication {&#xD;
+  ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and in &lt;code&gt;application.properties&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;security.oauth2.client.clientId: acme&#xD;
+security.oauth2.client.clientSecret: acmesecret&#xD;
+security.oauth2.client.authorized-grant-types: authorization_code,refresh_token,password&#xD;
+security.oauth2.client.scope: openid
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a general purpose Authorization Server, great for demos, but not very realistic in practice because it only has one client (&amp;ldquo;acme&amp;rdquo;). Nevertheless, as a way to get started quickly with OAuth2 it&amp;rsquo;s nice to be able to do so much with so little.&lt;/p&gt;
+&lt;p&gt;To extend the basic sample and take control of the Authorization Server features you only have to go back to the old Spring Boot 1.2 version (any app with its own &lt;code&gt;AuthorizationServerConfigurer&lt;/code&gt; switches off the autoconfigured features).&lt;/p&gt;&lt;h2&gt;&lt;a href="#resource-server" class="anchor" name="resource-server"&gt;&lt;/a&gt;Resource Server&lt;/h2&gt;
+&lt;p&gt;A Resource Server protects its endpoints by requiring a valid access token (as created by the Authorization Server).&lt;/p&gt;
+&lt;p&gt;Similarly to the Authorization Server, a Resource Server can be implemented by convention and some configuration properties in Spring Boot 1.3, and also with Spring Boot 1.2 in conjunction with Spring Cloud Security. As an example consider the vanilla resource server &lt;a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_sso_with_oauth2_angular_js_and_spring_security_part_v"&gt;Angular JS Spring Security Tutorial&lt;/a&gt; from spring.io.&lt;/p&gt;
+&lt;p&gt;With Spring Boot 1.2 we had to use Spring Cloud Security for the &lt;code&gt;@EnableOAuth2Resource&lt;/code&gt; annotation:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;@SpringBootApplication&#xD;
+@RestController&#xD;
+@EnableOAuth2Resource&#xD;
+class ResourceApplication {&#xD;
+  ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and some configuration to help decode the access tokens in &lt;code&gt;application.properties&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.oauth2.resource.userInfoUri: http://localhost:9999/uaa/user
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With Spring Boot 1.3 the Spring Cloud dependency can be removed and the annotation replaced with a vanilla &lt;code&gt;@EnableResourceServer&lt;/code&gt; annotation from Spring Security OAuth2:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;@SpringBootApplication&#xD;
+@RestController&#xD;
+@EnableResourceServer&#xD;
+class ResourceApplication {&#xD;
+  ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To finish the app there is a slightly different configuration (note the key prefix change from &lt;code&gt;spring.oauth2&lt;/code&gt; to &lt;code&gt;security.oauth2&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;security.oauth2.resource.userInfoUri: http://localhost:9999/uaa/user
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#client-application" class="anchor" name="client-application"&gt;&lt;/a&gt;Client Application&lt;/h2&gt;
+&lt;p&gt;In OAuth2 a client is an agent (usually an application) that acquires a token, often on behalf of a user. Single Sign On can be implemented by having a single Authorization Server and dependent authenticating apps that are OAuth2 clients.&lt;/p&gt;&lt;h3&gt;&lt;a href="#vanilla-single-sign-on" class="anchor" name="vanilla-single-sign-on"&gt;&lt;/a&gt;Vanilla Single Sign On&lt;/h3&gt;
+&lt;p&gt;On the client side in Spring Boot 1.3 you can implement the Single Sign On pattern with an annotation and some configuration properties. You can do the same with Spring Boot 1.2 is you use Spring Cloud Security as well.&lt;/p&gt;
+&lt;p&gt;A really generic example with Spring Boot 1.2 and Spring Cloud Angel would use a single &lt;code&gt;@EnableOAuth2Sso&lt;/code&gt; annotation:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+@EnableOAuth2Sso&#xD;
+public class SsoApplication {&#xD;
+  ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and some configuration for the client in &lt;code&gt;application.yml&lt;/code&gt; (or equivalently &lt;code&gt;application.properties&lt;/code&gt;). Here&amp;rsquo;s an example for authentication with Facebook for an app running on localhost:8080:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint yaml"&gt;spring:&#xD;
+  oauth2:&#xD;
+    client:&#xD;
+      clientId: 233668646673605&#xD;
+      clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d&#xD;
+      accessTokenUri: https://graph.facebook.com/oauth/access_token&#xD;
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth&#xD;
+      tokenName: oauth_token&#xD;
+      authenticationScheme: query&#xD;
+      clientAuthenticationScheme: form&#xD;
+    resource:&#xD;
+      userInfoUri: https://graph.facebook.com/me
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The same app looks almost identical in Spring Boot 1.3 but there is no need for Spring Cloud Security. Also the annotation moved to a different package, and the configuration prefix changed. So removing the Cloud dependency, changing the import for the annotation and switching the prefix in &lt;code&gt;application.yml&lt;/code&gt; from &lt;code&gt;spring&lt;/code&gt; to &lt;code&gt;security&lt;/code&gt; is all that is needed to migrate this app.&lt;/p&gt;&lt;h3&gt;&lt;a href="#single-sign-on-and-custom-access-rules" class="anchor" name="single-sign-on-and-custom-access-rules"&gt;&lt;/a&gt;Single Sign On and Custom Access Rules&lt;/h3&gt;
+&lt;p&gt;In Spring Cloud Security 1.0 (from the Angel release train) users can customize the request matching and access rules using a combination of a special callback &lt;code&gt;OAuth2ClientConfigurer&lt;/code&gt; and some configuration properties in &lt;code&gt;spring.oauth2.sso.*&lt;/code&gt;. So for example, the vanilla client app in the &lt;a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_sso_with_oauth2_angular_js_and_spring_security_part_v"&gt;Angular JS Spring Security Tutorial&lt;/a&gt; from spring.io has this general pattern of implementation in Spring Boot 1.2:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+@EnableOAuth2Sso&#xD;
+public class UiApplication {&#xD;
+&#xD;
+  @Configuration&#xD;
+  protected static class SecurityConfiguration extends OAuth2SsoConfigurerAdapter {&#xD;
+&#xD;
+    @Override&#xD;
+    public void match(RequestMatchers matchers) {&#xD;
+      matchers.anyRequest();&#xD;
+    }&#xD;
+&#xD;
+    @Override&#xD;
+    public void configure(HttpSecurity http) throws Exception {&#xD;
+      http&#xD;
+        .authorizeRequests()&#xD;
+          .antMatchers(&amp;quot;/index.html&amp;quot;, &amp;quot;/home.html&amp;quot;, &amp;quot;/&amp;quot;).permitAll()&#xD;
+          .anyRequest().authenticated()&#xD;
+        .and().csrf()&#xD;
+          .csrfTokenRepository(csrfTokenRepository())&#xD;
+        .and()&#xD;
+          .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);&#xD;
+    }&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+  ...&#xD;
+  &#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and a similar &lt;code&gt;application.yml&lt;/code&gt; to the vanilla sample:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint yaml"&gt;spring:&#xD;
+   oauth2:&#xD;
+    sso:&#xD;
+      home:&#xD;
+        secure: false&#xD;
+        path: /,/**/*.html&#xD;
+     client:&#xD;
+       accessTokenUri: http://localhost:9999/uaa/oauth/token&#xD;
+       userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize&#xD;
+     resource:&#xD;
+       userInfoUri: http://localhost:9999/uaa/user
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With Spring Boot 1.3 there is no need for Spring Cloud Security, and the customizations don&amp;rsquo;t need the obsolete &lt;code&gt;OAuth2SsoConfigurerAdapter&lt;/code&gt;. Instead they just need all of the same code, plus a request matcher, in a regular &lt;code&gt;WebSecurityConfigurerAdapter&lt;/code&gt; carrying the &lt;code&gt;@EnableOAuth2Sso&lt;/code&gt; annotation:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+@EnableZuulProxy&#xD;
+@EnableOAuth2Sso&#xD;
+public class UiApplication extends WebSecurityConfigurerAdapter {&#xD;
+&#xD;
+  @Override&#xD;
+  public void configure(HttpSecurity http) throws Exception {&#xD;
+    http.antMatcher(&amp;quot;/**&amp;quot;)&#xD;
+      .authorizeRequests()&#xD;
+        .antMatchers(&amp;quot;/index.html&amp;quot;, &amp;quot;/home.html&amp;quot;, &amp;quot;/&amp;quot;).permitAll()&#xD;
+        .anyRequest().authenticated()&#xD;
+      .and().csrf()&#xD;
+        .csrfTokenRepository(csrfTokenRepository())&#xD;
+      .and()&#xD;
+        .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);&#xD;
+  }&#xD;
+  &#xD;
+  ...&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The configuration properties in the updated version are mostly the same: there is a prefix change from &lt;code&gt;spring.oauth2&lt;/code&gt; to &lt;code&gt;security.oauth2&lt;/code&gt; and there is no need for the &lt;code&gt;*.oauth2.sso.*&lt;/code&gt; properties because they are explicitly configured by the user in the &lt;code&gt;WebSecurityConfigurerAdapter&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#single-sign-on-and-zuul-proxy" class="anchor" name="single-sign-on-and-zuul-proxy"&gt;&lt;/a&gt;Single Sign On and Zuul Proxy&lt;/h3&gt;
+&lt;p&gt;The actual client app in the &lt;a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_sso_with_oauth2_angular_js_and_spring_security_part_v"&gt;Angular JS Spring Security Tutorial&lt;/a&gt; from spring.io is similar to the customized one above, but it is also a Zuul proxy, responsible for forwarding requests from the browser client to back-end services. In Spring Boot 1.3, this app still needs Spring Cloud Security for the token relay (it wants to send the access tokens used for authentication to the back end resources), but it doesn&amp;rsquo;t need it for the basic SSO features, so the implementation is identical to the previous sample with the addition of an &lt;code&gt;@EnableZuulProxy&lt;/code&gt; annotation.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE: a bug in Spring Boot 1.3.0 leads to a workaround in the current implementation (at time of writing) of the client app in the &lt;a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_sso_with_oauth2_angular_js_and_spring_security_part_v"&gt;Angular JS Spring Security Tutorial&lt;/a&gt;. The workaround is only needed because it is using Spring Cloud Security, and will also be redundant in Spring Boot 1.3.1:&lt;/p&gt;
+  &lt;pre&gt;&lt;code class="prettyprint"&gt;@Component
+@Order(Ordered.HIGHEST_PRECEDENCE)
+class WorkaroundRestTemplateCustomizer implements UserInfoRestTemplateCustomizer {
+
+  public void customize(OAuth2RestTemplate template) {
+    template.setInterceptors(new ArrayList&amp;lt;&amp;gt;(template.getInterceptors()));
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#single-sign-one-in-cloud-foundry" class="anchor" name="single-sign-one-in-cloud-foundry"&gt;&lt;/a&gt;Single Sign One in Cloud Foundry&lt;/h2&gt;
+&lt;p&gt;With Spring Boot 1.2 and Spring Cloud Security in the Angel release train, an app is able to configire itself for OAuth2 SSO if you bind to a service with the right credentials. E.g. you can create a User Provided Service like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;cf create-user-provided-service sso -p &amp;#39;{&amp;quot;userInfoUri&amp;quot;:&amp;quot;https://uaa.run.pivotal.io/userinfo&amp;quot;, &amp;quot;tokenUri&amp;quot;:&amp;quot;login.run.pivotal.io/oauth/token&amp;quot;, &amp;quot;authorizationUri&amp;quot;:&amp;quot;login.run.pivotal.io/oauth/authorize&amp;quot;, &amp;quot;clientId&amp;quot;:&amp;quot;[client]&amp;quot;, &amp;quot;clientSecret&amp;quot;:&amp;quot;[secret]&amp;quot;}&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then an app with &lt;code&gt;@EnableOAuth2Sso&lt;/code&gt; which is bound to the service will bind the configuration needed for the SSO without the user having to change any configuration.&lt;/p&gt;
+&lt;p&gt;The same feature is available in Spring Boot 1.3 and Spring Cloud Brixton, but instead of Spring Cloud Security you need to use the new &lt;code&gt;spring-cloud-cloudfoundry-web&lt;/code&gt; library to get the SSO configuration binding behaviour. You can also use the built-in SSO service in Cloud Foundry instead of a User Provided Service (available in Pivotal Web Services for selected accounts or in Pivotal Cloud Foundry).&lt;/p&gt;&lt;h2&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;If you are using Spring Boot and maybe Spring Cloud with OAuth2, hopefully you will now be able to upgrade smoothly from Spring Boot 1.2 to 1.3, or at worst you will have some tools to help you think about what is going on when you hit the bumps. Spring Boot 1.3 has nearly all the features of Spring Cloud Security 1.0, so the main thing you need to think about is the dependencies. In addition there are a few new features in Spring Boot, like autoconfiguration of an Authorization Server, for instance. As usual with Spring Boot, you can (and should) take the default bevaviour until you need to change it, at which point there should be no barriers to doing so.&lt;/p&gt;
+&lt;p&gt;The sample apps in the Spring Guides have all been updated to Spring Boot 1.3 now, even if that means they depend on a milestone of Spring Cloud (this only applies to the Zuul proxy sample). Many do not need Spring Cloud any more. If you need a GA version of Spring Cloud you need to stay with Spring Boot 1.2 right now. The samples for that combination can be lifted from git history.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>How not to hate Spring in 2016</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/29/how-not-to-hate-spring-in-2016" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2015-11-29:2311</id>
+    <updated>2015-11-29T17:31:00Z</updated>
+    <content type="html">&lt;p&gt;Over the Thanksgiving weekend a 2014 article called &lt;a href="http://samatkinson.com/why-i-hate-spring/"&gt;&amp;ldquo;Why I hate Spring&amp;rdquo; by Sam Atkinson&lt;/a&gt; started doing the rounds on Twitter. It&amp;rsquo;s always interesting to listen to criticisms to see what we can do to improve Spring, much of &lt;a href="https://spring.io/projects/spring-boot"&gt;Spring Boot&lt;/a&gt; was born out of listening to &lt;a href="https://jira.spring.io/browse/SPR-9888"&gt;people talk about the problems&lt;/a&gt; that they faced with the framework. &lt;/p&gt;
+&lt;p&gt;In this blog post, I&amp;rsquo;ll try to address some of the concerns discussed in Sam&amp;rsquo;s article, and describe my personal Spring &amp;ldquo;best practices&amp;rdquo;. Before we get too much into the details though, it&amp;rsquo;s worth considering why less than optimal ways of doing things still exist in the framework.&lt;/p&gt;&lt;h2&gt;&lt;a href="#the-curse-of-backwards-compatibility" class="anchor" name="the-curse-of-backwards-compatibility"&gt;&lt;/a&gt;The curse of backwards-compatibility&lt;/h2&gt;
+&lt;p&gt;One of the more stressful aspects of working on Spring, other than people writing about how much they hate it, is that features tend to have a very long tail. Spring has a strong commitment to back-compatibility, which means once a feature gets added, it&amp;rsquo;s quite hard to fundamentally change it. Developing a framework presents unique challenges that application developers don&amp;rsquo;t generally have. Agile techniques such as YAGNI &lt;em&gt;(You ain&amp;rsquo;t gonna need it)&lt;/em&gt; and, refactor aggressively are much harder to apply. We have SMNI &lt;em&gt;(Someone might need it)&lt;/em&gt; and, refactor cautiously. Features that made sense before lambdas, generics and even annotations existed in Java are still supported. It&amp;rsquo;s easy to argue that XML isn&amp;rsquo;t such a good way to wire up beans these days, but it&amp;rsquo;s much harder to argue that it should be removed altogether. I personally value the fact that I can easily upgrade older Spring applications and gradually migrate to newer techniques.&lt;/p&gt;
+&lt;p&gt;Remember as well that, just like commercial software, open source has limited resource and pressures of time. Sometimes we just make mistakes as developers and end up needing to live with them for a while.&lt;/p&gt;&lt;h2&gt;&lt;a href="#too-big-too-fail" class="anchor" name="too-big-too-fail"&gt;&lt;/a&gt;Too Big, Too Fail?&lt;/h2&gt;
+&lt;p&gt;At its heart, Spring is an integration framework. It provides a consistent programming model over lots of different technologies. It&amp;rsquo;s fair to say that Spring can be on the large side, but it&amp;rsquo;s simply not possible to provide integration with lots of technologies without&amp;hellip; integrating with lots of technologies. Although it can seem overwhelming, once you understand the core concepts, it&amp;rsquo;s pretty easy to pick only the parts of the Spring that you need. The &lt;a href="https://spring.io/guides"&gt;guides on spring.io&lt;/a&gt; can be useful starting point if you have some specific goal that you need to achieve. The &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter-poms"&gt;list of Spring Boot starters&lt;/a&gt; or using &lt;a href="http://start.spring.io"&gt;start.spring.io&lt;/a&gt; can also be a good way of limiting Spring to a specific area.&lt;/p&gt;&lt;h2&gt;&lt;a href="#dependencies" class="anchor" name="dependencies"&gt;&lt;/a&gt;Dependencies&lt;/h2&gt;
+&lt;p&gt;A typical Spring-based application will have dependencies on any number of third-party libraries. Historically, it&amp;rsquo;s been hard to know exactly which versions of various libraries will work well together. If you&amp;rsquo;re starting a new project today, I highly recommend using &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-dependency-management"&gt;Spring Boot&amp;rsquo;s parent POM&lt;/a&gt; or the &lt;a href="https://spring.io/platform"&gt;Spring Platform&lt;/a&gt;. Both provide a curated set of dependencies that are known to work well together.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve even developed a &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"&gt;Gradle plugin that allows you to use the managed dependencies&lt;/a&gt; section of POM when you don&amp;rsquo;t have the benefit of Maven&amp;rsquo;s parent dependency feature.&lt;/p&gt;
+&lt;p&gt;If you can&amp;rsquo;t use managed dependencies for some reason, you can still refer to the Spring Boot documentation for a &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#appendix-dependency-versions"&gt;list of compatible versions&lt;/a&gt; that are known to play well together.&lt;/p&gt;&lt;h2&gt;&lt;a href="#injection" class="anchor" name="injection"&gt;&lt;/a&gt;Injection&lt;/h2&gt;
+&lt;p&gt;Always use &lt;a href="http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/#beans-constructor-injection"&gt;constructor based dependency injection&lt;/a&gt; in your beans. Always use &lt;a href="http://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/Assert.html"&gt;assertions&lt;/a&gt; for mandatory dependencies. For more background on why field based injection is evil, you can read &lt;a href="http://olivergierke.de/2013/11/why-field-injection-is-evil/"&gt;this article by Oliver Gierke&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As always there is one exception to the rule, it&amp;rsquo;s fine to use field based injection in tests when you&amp;rsquo;re &lt;a href="http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/#integration-testing"&gt;using the &lt;code&gt;SpringJUnit4ClassRunner&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#leaky-spring" class="anchor" name="leaky-spring"&gt;&lt;/a&gt;Leaky Spring&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve seen a few people argue that application code should &lt;em&gt;never&lt;/em&gt; have any dependencies on frameworks. I.e. an &lt;code&gt;org.springframework&lt;/code&gt; import anywhere (other than configuration code) is bad. Whilst you can absolutely can do this (there is wide support for standard annotations such as &lt;code&gt;@Inject&lt;/code&gt;), I tend not to be so prescriptive. I prefer to apply the 80/20 rule here. I think it&amp;rsquo;s fine to have dependencies on framework classes and annotations, but I don&amp;rsquo;t want to rewrite more than 20% of the class if I were to move off Spring.&lt;/p&gt;
+&lt;p&gt;What I do want is application code that is easy to test. It should be possible for me to manually create an instance of my business service and test it without needing a full &lt;code&gt;ApplicationContext&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#configuration" class="anchor" name="configuration"&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;I personally like to keep my Spring configuration fairly light. I like to use component-scanning to find application beans and I like to keep my &lt;code&gt;@Configuration&lt;/code&gt; for framework specific configuration that deviates from Spring Boot&amp;rsquo;s default auto-configuration. I don&amp;rsquo;t tend to use XML-configuration at all these days.&lt;/p&gt;
+&lt;p&gt;Some people argue that it&amp;rsquo;s better to have explicit configuration for all defined beans but in practice I tend to find this a hindrance. Applications that follow this approach tend to have a single &lt;code&gt;@Configuration&lt;/code&gt; class that ends up knowing about everything in the system, and contains a whole bunch of small &lt;code&gt;@Bean&lt;/code&gt; methods. I also find the self-documentation nature of annotations really useful. I can easily search for &lt;code&gt;@Service&lt;/code&gt; and find all my service beans.&lt;/p&gt;
+&lt;p&gt;Sam&amp;rsquo;s article states &lt;em&gt;&amp;ldquo;&amp;hellip;annotations are still magic. Until you run your app you’ve no idea if it’s wired up correctly&amp;rdquo;&lt;/em&gt; but I don&amp;rsquo;t really see how this is much different to having a class that &lt;a href="https://sites.google.com/site/unclebobconsultingllc/blogs-by-robert-martin/dependency-injection-inversion"&gt;manually wires everything up&lt;/a&gt;. You still need to run the entire app at some point to be sure that it works.&lt;/p&gt;&lt;h2&gt;&lt;a href="#layering" class="anchor" name="layering"&gt;&lt;/a&gt;Layering&lt;/h2&gt;
+&lt;p&gt;Any system of significant size needs to think about architectural layers. Almost all my Spring applications end up with a &amp;ldquo;domain&amp;rdquo; layer at the bottom and a &amp;ldquo;web&amp;rdquo; layer at the top. I find it best to enforce strict separation between layers and keep dependencies in a single direction. It&amp;rsquo;s pretty easy to annotate domain service exceptions with &lt;code&gt;@ResponseStatus&lt;/code&gt; but I&amp;rsquo;ve rarely found this to be a good idea in practice. Likewise, it&amp;rsquo;s easy to throw some Jackson annotations on an &lt;code&gt;@Entity&lt;/code&gt; so that it can be marshalled as JSON but this often causes problems in the long run.&lt;/p&gt;
+&lt;p&gt;I recommend tools such as &lt;a href="https://structure101.com/"&gt;Structure 101&lt;/a&gt; and &lt;a href="http://www.sonarqube.org/"&gt;SonarQube&lt;/a&gt; which can check your code for package tangles and design problems.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-mvc" class="anchor" name="spring-mvc"&gt;&lt;/a&gt;Spring MVC&lt;/h2&gt;
+&lt;p&gt;I generally find it best to keep business logic outside of Spring MVC &lt;code&gt;@Controller&lt;/code&gt; beans. I like to think of Spring MVC as a little adapter layer. It&amp;rsquo;s responsible for taking HTTP input, validating it, passing it to a service then returning a response. I&amp;rsquo;ll often add mediator &lt;code&gt;@Service&lt;/code&gt; beans at the web layer to take care coordinating calls to business services. This generally makes it much easier to test things, especially when using the &lt;a href="http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/#spring-mvc-test-framework"&gt;MVC Test framework&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#logging" class="anchor" name="logging"&gt;&lt;/a&gt;Logging&lt;/h2&gt;
+&lt;p&gt;Logging in Java really shouldn&amp;rsquo;t be as difficult as it is. There are so many logging libraries to choose from, and so many different combinations that it&amp;rsquo;s easy to get bogged down. Luckily, for a typical Spring Boot application you don&amp;rsquo;t really need to worry too much. My advice is always:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use &lt;a href="http://www.slf4j.org/"&gt;SLF4J&lt;/a&gt; in your code to log things.&lt;/li&gt;
+  &lt;li&gt;Stick with Spring Boot&amp;rsquo;s default choice of &lt;a href="http://logback.qos.ch/"&gt;logback&lt;/a&gt; if possible.&lt;/li&gt;
+  &lt;li&gt;Log to the console only and use a tool such as &lt;a href="http://www.splunk.com"&gt;Splunk&lt;/a&gt; to capture and store.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#testing" class="anchor" name="testing"&gt;&lt;/a&gt;Testing&lt;/h2&gt;
+&lt;p&gt;The golden rule for unit testing in Spring is keep Spring out of your unit testing! It should be possible to unit test the majority of your beans without needing to spin up an application context. There&amp;rsquo;s a lot of debate in the testing world about mocks, but I generally find judicious use of &lt;a href="http://mockito.org/"&gt;Mockito&lt;/a&gt; (I like &lt;a href="http://mockito.github.io/mockito/docs/current/org/mockito/BDDMockito.html"&gt;BDD Mockito&lt;/a&gt;) pretty helpful.&lt;/p&gt;
+&lt;p&gt;You will often need to involve Spring when it comes to integration testing. I tend to find my integration tests often configure a &amp;ldquo;layer&amp;rdquo; of the application. For example, domain tests might startup Hibernate + Spring Data + In-memory Database. For Spring MVC tests, I tend to leave the database alone and inject mock services. The layered architecture discussed above really starts to pay dividends here since it&amp;rsquo;s easy to mock or stub the things that your &amp;ldquo;web layer&amp;rdquo; needs.&lt;/p&gt;&lt;h2&gt;&lt;a href="#startup-times" class="anchor" name="startup-times"&gt;&lt;/a&gt;Startup times&lt;/h2&gt;
+&lt;p&gt;A typical Spring Boot REST application starts in about 2.5 seconds and things get slower once you start to throw technologies such as Hibernate in the mix. Spring is designed to &amp;ldquo;fail fast &amp;amp; fail early&amp;rdquo; and unfortunately that does have an impact on startup time. On the plus side, once an application has started, it&amp;rsquo;s likely that it&amp;rsquo;s in a functioning state.&lt;/p&gt;
+&lt;p&gt;If you do have issues with slow startup, consider looking at &lt;a href="https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3"&gt;Spring Boot Devtools&lt;/a&gt; which should make re-starts much quicker. You should also look at using &lt;code&gt;@Lazy&lt;/code&gt; initialization if you have any of your own beans that are slow to create.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-boot" class="anchor" name="spring-boot"&gt;&lt;/a&gt;Spring Boot&lt;/h2&gt;
+&lt;p&gt;Spring Boot was launched at the end of 2013 to specifically address some of the common problems faced by users of Spring. Unfortunately I&amp;rsquo;ve seen the &lt;em&gt;&amp;ldquo;Spring is now so complex that it has its own framework.&amp;rdquo;&lt;/em&gt; quote paraphrased quite often. Spring Boot is intentionally distinct from the Spring Framework, it has different goals, different dependencies and a different release schedule. I prefer to think of Spring Framework as the raw ingredients, and Spring Boot as fully baked cake. You&amp;rsquo;re free to mix the ingredients in anyway you see fit, but who doesn&amp;rsquo;t like cake?&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/philwebb/media/master/hownottohate/spring-ingredients.jpg" alt="Ingredients" /&gt; &lt;img src="https://raw.githubusercontent.com/philwebb/media/master/hownottohate/boot-cake.jpg" alt="Cake" /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#choice-amp-open-source" class="anchor" name="choice-amp-open-source"&gt;&lt;/a&gt;Choice &amp;amp; Open Source&lt;/h2&gt;
+&lt;p&gt;One of the greatest things about Open Source is that it gives you tremendous freedom. If you want Dependency Injection, but you&amp;rsquo;re not a fan of Spring, take a look at &lt;a href="https://github.com/google/guice"&gt;Guice&lt;/a&gt;. If you want to build a REST service, but you don&amp;rsquo;t like Spring MVC, try &lt;a href="http://ratpack.io/"&gt;Ratpack&lt;/a&gt;. If you want a well integrated, well tested, documented framework with a proven track record, try &lt;a href="http://start.spring.io"&gt;Spring&lt;/a&gt; with &lt;a href="http://start.spring.io"&gt;Spring Boot&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to change the way that your Open Source works, try &lt;a href="https://spring.io/blog/2013/09/20/contributing-to-spring-boot-with-a-pull-request"&gt;contributing&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tool Suite 3.7.2 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/27/spring-tool-suite-3-7-2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2015-11-27:2310</id>
+    <updated>2015-11-27T12:37:50Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 3.7.2 release of the Spring Tool Suite, our Eclipse-based tooling.&lt;/p&gt;
+&lt;p&gt;STS 3.7.2 focuses on fixing existing issues and updating STS to work with the latest updates on Cloud Foundry, Spring, and the various Spring projects.&lt;/p&gt;
+&lt;p&gt;The list of fixed issues include:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Spring Boot Dashboard now works with the new Diego runtime on Cloud Foundry&lt;/li&gt;&#xD;
+&lt;li&gt;Spring Boot 1.3.0 compatibility (due to updated spring components inside)&lt;/li&gt;&#xD;
+&lt;li&gt;quick text search can now search for escaped * and ? characters&lt;/li&gt;&#xD;
+&lt;li&gt;preliminary support for Eclipse Buildship (the new Gradle integration for Eclipse from Gradleware)&lt;/li&gt;&#xD;
+&lt;/ul&gt;
+&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;/ul&gt;
+&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v372/NewAndNoteworthy.html"&gt;STS 3.7.2 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;STS 3.7.3 is scheduled to ship in early March 2016.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>News for Spring Data JDBC Extensions Project</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/25/news-for-spring-data-jdbc-extensions-project" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2015-11-25:2309</id>
+    <updated>2015-11-25T15:16:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the 1.2 release of the Spring Data JDBC Extensions project. This release updates the Querydsl dependency to 3.6.9 and adds an option to retrieve &lt;code&gt;SearchResults&lt;/code&gt; using the &lt;code&gt;QueryDslTemplate&lt;/code&gt;. See &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.2.1.RELEASE/changelog.txt"&gt;changelog for 1.2.1.RELEASE&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We are also pleased to announce the first milestone of the 2.0 version of the Spring Data JDBC Extensions project. The big changes for this release are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change to building with Java 7 or later&lt;/li&gt;
+  &lt;li&gt;upgrading the Oracle JDBC to version 12.1.0.2&lt;/li&gt;
+  &lt;li&gt;updating any dependencies to follow Spring IO Platform 2.0 including Spring Framework 4.2&lt;/li&gt;
+  &lt;li&gt;removing the Querydsl SQL support in this version (see below)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The upgrade to use the Oracle JDBC driver version 12.1.0.2 allows us to change our code to support deprecations and new features available in this version. You can still use older database versions compatible with this driver including Oracle Database 12c R1, 11g R2 and 11g R1.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/2.0.0.M1/changelog.txt"&gt;changelog for 2.0.0.M1&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#querydsl-support" class="anchor" name="querydsl-support"&gt;&lt;/a&gt;Querydsl support&lt;/h2&gt;
+&lt;p&gt;The Querydsl project has been undergoing some changes for their 4.0 version with a change of Maven group id, package names and also some API changes. This means that as of Querydsl version 4.0.0 the existing Spring Data JDBC Extension code that integrates with Querydsl no longer works.&lt;/p&gt;
+&lt;p&gt;We don&amp;rsquo;t plan to port our Querydsl SQL support to the new Querydsl version 4.0 or later. Instead we encourage users developing new projects to use the Querydsl SQL APIs directly and to use the integration with Spring that is available in the Querydsl project&amp;rsquo;s &lt;code&gt;querydsl-sql-spring&lt;/code&gt; sub-project. This means that we are removing the Querydsl SQL support from the new Spring Data JDBC Extensions 2.x version.&lt;/p&gt;
+&lt;p&gt;For the 1.x version of Spring Data JDBC Extensions we will continue to use the latest available version of the Querydsl 3.x release series. We are also marking the Querydsl SQL support as deprecated to indicate that it will not be available in version 2.0 of Spring Data JDBC Extensions.&lt;/p&gt;
+&lt;p&gt;For more project specific information please see the &lt;a href="http://projects.spring.io/spring-data-jdbc-ext/"&gt;project page&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Social 1.1.4 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/25/spring-social-1-1-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Craig Walls</name>
+    </author>
+    <id>tag:spring.io,2015-11-25:2308</id>
+    <updated>2015-11-25T14:27:53Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m pleased to announce the availability of Spring Social 1.1.4.RELEASE. This includes the Spring Social Core, Web, Security, and Config modules.&lt;/p&gt;
+&lt;p&gt;This is a maintenance release, addressing a handful of bugs and introducing a few minor improvements (many of which were submitted as pull requests from our wonderful open-source community&amp;hellip;thanks!). View the &lt;a href="https://raw.githubusercontent.com/spring-projects/spring-social/master/src/dist/changelog.txt"&gt;changelog&lt;/a&gt; for full details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://spring.io/projects/spring-social"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-social/docs/1.1.4.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-social/docs/1.1.4.RELEASE/apidocs/"&gt;JavaDoc&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Migrating Spring Cloud Apps from Spring Boot 1.2 to 1.3</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/25/migrating-spring-cloud-apps-from-spring-boot-1-2-to-1-3" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2015-11-25:2307</id>
+    <updated>2015-11-25T12:18:00Z</updated>
+    <content type="html">&lt;p&gt;There are some interesting new features in &lt;a href="http://projects.spring.io/spring-boot/"&gt;Spring Boot&lt;/a&gt; 1.3 that are now available in Spring Cloud in the Brixton release train. The Angel release train of &lt;a href="http://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; is partly incompatible with Spring Boot 1.3, so when you upgrade there are some important things to be aware of. This article helps you navigate the changes and update any existing apps to use the new features. It should also be helpful generally when trying to adopt new versions of Spring projects into existing codebases.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;TIP: You can use &lt;code&gt;mvn dependency:tree&lt;/code&gt; or &lt;code&gt;gradle dependencies&lt;/code&gt; to list the dependencies in your project and check the versions.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#dependency-management" class="anchor" name="dependency-management"&gt;&lt;/a&gt;Dependency Management&lt;/h2&gt;
+&lt;p&gt;If you are using the older versions of Spring Boot, you probably have something like this in your Maven POM:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
+  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;version&amp;gt;1.2.7.RELEASE&amp;lt;/version&amp;gt;&#xD;
+  &amp;lt;relativePath /&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
+&amp;lt;/parent&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;1.2.7.RELEASE&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or, if you are using Gradle,&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
+	ext {&#xD;
+		springBootVersion = &amp;#39;1.2.7.RELEASE&amp;#39;&#xD;
+	}&#xD;
+	dependencies {&#xD;
+		classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;)&#xD;
+	}&#xD;
+}&#xD;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To upgrade to Spring Boot 1.3.0 you would change the &amp;lsquo;1.2.7&amp;rsquo; above to &amp;lsquo;1.3.0&amp;rsquo;. So far so simple.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;TIP: to see a &amp;ldquo;typical&amp;rdquo; Maven POM with the most recent version of Spring Boot you can &lt;code&gt;curl start.spring.io/pom.xml&lt;/code&gt;. To add Spring Cloud you can append &lt;code&gt;-d style=cloud-config-client&lt;/code&gt;. The Spring Boot version can be changed by adding &lt;code&gt;-d bootVersion=1.3.1.BUILD-SNAPSHOT&lt;/code&gt; (for instance). To do the same for Gradle use &lt;code&gt;build.gradle&lt;/code&gt; instead of &lt;code&gt;pom.xml&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#using-spring-cloud-with-spring-boot" class="anchor" name="using-spring-cloud-with-spring-boot"&gt;&lt;/a&gt;Using Spring Cloud with Spring Boot&lt;/h2&gt;
+&lt;p&gt;Since Spring Cloud builds on top of Spring Boot it can be confusing and difficult to find a combination that works together. In what follows we describe a few scenerios of upgrades and show what you can expect to be able to achieve with dependency management. &lt;/p&gt;&lt;h3&gt;&lt;a href="#the-big-upgrade" class="anchor" name="the-big-upgrade"&gt;&lt;/a&gt;The Big Upgrade&lt;/h3&gt;
+&lt;p&gt;In general the biggest change will be when you upgrade (Spring Boot 1.2 to 1.3, or Spring Cloud Angel to Brixton). If you downloaded a project from the &lt;a href="https://start.spring.io"&gt;Spring Initializr&lt;/a&gt; then it will be using the Spring Boot parent POM:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
+  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;version&amp;gt;1.2.7.RELEASE&amp;lt;/version&amp;gt;&#xD;
+  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
+&amp;lt;/parent&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and a Spring Cloud BOM in the &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;Angel.SR4&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In Gradle you would see something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
+    ext {&#xD;
+        springBootVersion = &amp;#39;1.2.7.RELEASE&amp;#39;&#xD;
+    }&#xD;
+    repositories {&#xD;
+        mavenCentral()&#xD;
+    }&#xD;
+    dependencies {&#xD;
+        classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;) &#xD;
+    }&#xD;
+}&#xD;
+dependencyManagement {&#xD;
+  imports { &#xD;
+    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-starter-parent:Angel.SR4&amp;quot; &#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Simply updating the Spring Boot version in either case isn&amp;rsquo;t going to work because the Spring Cloud Angel BOM has old versions of Spring Boot and Spring (amongst other things). Thus we really need to upgrade both Spring Boot and Spring Cloud. For example in Maven:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
+  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;version&amp;gt;1.3.0.RELEASE&amp;lt;/version&amp;gt;&#xD;
+  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
+&amp;lt;/parent&amp;gt;&#xD;
+&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;Brixton.M3&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and in Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
+    ext {&#xD;
+        springBootVersion = &amp;#39;1.3.0.RELEASE&amp;#39;&#xD;
+    }&#xD;
+    repositories {&#xD;
+        mavenCentral()&#xD;
+    }&#xD;
+    dependencies {&#xD;
+        classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;) &#xD;
+    }&#xD;
+}&#xD;
+dependencyManagement {&#xD;
+  imports { &#xD;
+    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-starter-parent:Brixton.M3&amp;quot; &#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;NOTE: Brixton.M2 and all earlier releases of Spring Cloud are &lt;em&gt;not&lt;/em&gt; compatible with Spring Boot 1.3.0.RELEASE. You need at least Brixton.M3.&lt;/p&gt;&lt;h2&gt;&lt;a href="#upgrading-spring-boot-beyond-1-3-0" class="anchor" name="upgrading-spring-boot-beyond-1-3-0"&gt;&lt;/a&gt;Upgrading Spring Boot Beyond 1.3.0&lt;/h2&gt;
+&lt;p&gt;Suppose you want to use Spring Boot snapshots, or upgrade to 1.3.1 when it is released, but Spring Cloud doesn&amp;rsquo;t have a version that explicitly depends on the version of Boot you want.&lt;/p&gt;
+&lt;p&gt;In Maven, remember that if you use one of the off the shelf parent POMs they contain &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; and will take precedence. With that in mind, if you use those parent POMs, be sure to use the parent with the closest dependency set to what you need (the Boot one in this scenario).&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
+  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;version&amp;gt;1.3.1.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
+  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
+&amp;lt;/parent&amp;gt;&#xD;
+&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;Brixton.M3&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In Gradle things are in principle simpler because there is no concept of a &amp;ldquo;parent&amp;rdquo;. In practice the Spring Boot plugin cannot be applied with a different version than the dependency management unless you also manually apply the dependency management plugin as well. So you have to do a little dance in the &lt;code&gt;build.gradle&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
+    ext {&#xD;
+        springBootVersion = &amp;#39;1.3.0.RELEASE&amp;#39;&#xD;
+    }&#xD;
+    repositories {&#xD;
+        mavenCentral()&#xD;
+    }&#xD;
+    dependencies {&#xD;
+        classpath &amp;quot;io.spring.gradle:dependency-management-plugin:0.5.3.RELEASE&amp;quot;&#xD;
+        classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;) &#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
+...&#xD;
+&#xD;
+dependencyManagement {&#xD;
+  imports { &#xD;
+    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-starter-parent:Brixton.M3&amp;quot; &#xD;
+    mavenBom &amp;quot;org.springframework.bootspring-boot-starter-parent:1.3.1.BUILD-SNAPSHOT&amp;quot; &#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+apply plugin: &amp;#39;spring-boot&amp;#39; &#xD;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The rule is you have to a) import the dependency management plugin manually and &lt;em&gt;before&lt;/em&gt; the Spring Boot one, b) declare the &lt;code&gt;dependencyManagement&lt;/code&gt; &lt;em&gt;before&lt;/em&gt; applying the Spring Boot plugin. Once you do that you can list dependencies in the &lt;code&gt;dependencyManagement&lt;/code&gt; declaration and the &lt;em&gt;last&lt;/em&gt; one wins (the opposite to Maven).&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE: This sensitivity to the order of the declarations is a &amp;ldquo;feature&amp;rdquo; of the current version of the tooling. It might be different in future versions. See &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin/issues/66"&gt;this issue in the Gradle tooling&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#using-maven-with-a-custom-parent" class="anchor" name="using-maven-with-a-custom-parent"&gt;&lt;/a&gt;Using Maven with a Custom Parent&lt;/h2&gt;
+&lt;p&gt;If you don&amp;rsquo;t use the off the shelf parent POMs you have the freedom yo use one that does &lt;em&gt;not&lt;/em&gt; contain &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt;, and this makes things easier to control. In this case you need to put both Spring Boot and Spring Cloud in the &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; and the order is significant: the first one wins (last one for Gradle). For example, to use Spring Boot 1.3.1.BUILD-SNAPSHOT and Spring Cloud Brixton.M3 in Maven:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;1.3.1.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;Brixton.M3&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#order-of-the-boms" class="anchor" name="order-of-the-boms"&gt;&lt;/a&gt;Order of the BOMs&lt;/h2&gt;
+&lt;p&gt;Note that in both Maven and Gradle the order of the BOMs is significant: the one that is declared first generally wins in Maven (last one in Gradle) if there is a conflict at the top level (explicitly declared dependencies). A big difference with Maven is that the parent is special: if it contains &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; it always wins.&lt;/p&gt;
+&lt;p&gt;To understand if a particular dependency version will resolve in the way you need is complicated. It depends on the order of the BOMs, &lt;em&gt;and&lt;/em&gt; the depth in the transitive dependency tree that your dependency is declared. For instance, the Spring Boot BOM declares an explicit (level 1) dependency management for &lt;code&gt;spring-core&lt;/code&gt; but not on any other Spring Framework jars (those are brought in via a reference to the Spring Framework BOM). The rule is that the first time it is declared wins, but the whole tree is included (including all BOMs), searching from the top, level by level.&lt;/p&gt;
+&lt;p&gt;NOTE: Gradle does not have this &amp;ldquo;last one wins&amp;rdquo; rule without the Spring Boot (or Spring Dependency Management) Plugin. To do the same thing with a &amp;ldquo;native&amp;rdquo; Gradle build often requires careful and tedious work manually fixing transitive dependency versions.&lt;/p&gt;&lt;h2&gt;&lt;a href="#further-manipulating-dependency-versions" class="anchor" name="further-manipulating-dependency-versions"&gt;&lt;/a&gt;Further Manipulating Dependency Versions&lt;/h2&gt;
+&lt;p&gt;If you want to bump the version of a dependency beyond what is specified in the Spring Boot and Spring Cloud BOMs, things can get complicated. Broadly speaking there are 2 options: properties and additional BOMs. The first (properties) works with the off the shelf parent POMs, and the other doesn&amp;rsquo;t. The second (more BOMs) only works if there &lt;em&gt;is&lt;/em&gt; a BOM available for the dependency you are interested in, and only if the transitive dependencies don&amp;rsquo;t conflict with your requirements. All of the Spring Cloud projects have their own BOM, for instance, as does Spring Framework, so that&amp;rsquo;s a start. &lt;/p&gt;&lt;h3&gt;&lt;a href="#properties" class="anchor" name="properties"&gt;&lt;/a&gt;Properties&lt;/h3&gt;
+&lt;p&gt;The Spring Boot parent POM (and the Spring Cloud one if you use that since it inherits from the Boot one) has all of its dependency versions extracted into &lt;code&gt;&amp;lt;properties/&amp;gt;&lt;/code&gt;. So you can often just change the property value. Example in Maven:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
+  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;version&amp;gt;1.3.0.RELEASE&amp;lt;/version&amp;gt;&#xD;
+  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
+&amp;lt;/parent&amp;gt;&#xD;
+&amp;lt;properties&amp;gt;&#xD;
+  &amp;lt;spring.version&amp;gt;4.2.4.BUILD-SNAPSHOT&amp;lt;/spring.version&amp;gt;&#xD;
+&amp;lt;/properties&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There corresponding feature in Gradle is an &lt;code&gt;ext&lt;/code&gt; property, e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;ext[&amp;#39;spring.version&amp;#39;] = &amp;#39;4.2.4.BUILD-SNAPSHOT&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#additional-boms" class="anchor" name="additional-boms"&gt;&lt;/a&gt;Additional BOMs&lt;/h3&gt;
+&lt;p&gt;The Spring Framework has its own BOM, so we can use that to manage the Spring versions instead. In Maven with a custom parent (containing no &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-framework-bom&amp;lt;/artifactId&amp;gt;&#xD;
+      &amp;lt;version&amp;gt;4.2.4.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
+      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE: this example actually will &lt;em&gt;not&lt;/em&gt; work with the Spring Boot parent POM (unless it happens to have the same &lt;code&gt;&amp;lt;spring.version/&amp;gt;&lt;/code&gt;) because the Spring Framework version is fixed already by the parent. To use the Spring Boot parent with a Spring Framwork snapshot it is better to use the properties approach (above).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In Gradle it is simpler (because there is no parent to set conflicting versions):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;dependencyManagement {&#xD;
+	imports { &#xD;
+      mavenBom &amp;quot;org.springframework:spring-framework-bom:4.2.4.BUILD-SNAPSHOT&amp;quot; &#xD;
+      mavenBom &amp;quot;org.springframework.boot:spring-boot-starter-parent:1.3.0.RELEASE&amp;quot; &#xD;
+	}&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Dependency management is hard, but hopefully we have softened the blow by outlining a few common scenarios when upgrading bits of Spring Boot and Spring Cloud. There are some slightly different behaviours depending on whether you choose Maven or Gradle, but at least if you choose Gradle and use the Spring Boot plugin the differences are minimized. At the end of the day, Spring projects have different release schedules, so there can always be conflicts, but they will generally always be moving towards convergence, so if you wait long enough things will equalize. Umbrella projects like Spring Cloud, Spring Boot and the Spring IO Platform also help to smooth out the bumps: if you can use one of those to manage all your dependencies things get a lot simpler.&lt;/p&gt;
+&lt;p&gt;The sample apps in the Spring Guides have all been updated to Spring Boot 1.3 now, even if that means they depend on a milestone of Spring Cloud (this only applies to the Zuul proxy sample). Many do not need Spring Cloud any more. If you need a GA version of Spring Cloud you need to stay with Spring Boot 1.2 right now. The samples for that combination can be lifted from git history.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - November 23, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/24/this-week-in-spring-november-23-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-11-24:2305</id>
+    <updated>2015-11-24T11:00:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! Here in the US it&amp;rsquo;s the week of Thanksgiving, where - hopefully - we take a moment to note the many things for which we&amp;rsquo;re thankful. I&amp;rsquo;m sure I speak for the whole team here at Pivotal when I say: we&amp;rsquo;re thankful for you, dear community. Thank you.&lt;/p&gt;
+&lt;p&gt;And so, as usual, we&amp;rsquo;ve got a lot to get to it. All the better, in fact, for the lazy hours after turkey! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dr. Mark Pollack has just announced the release &lt;a href="http://spring.io/blog/2015/11/19/spring-xd-1-3-ga-and-flo-for-spring-xd-1-0-ga-released"&gt;of Spring XD 1.3 GA and Spring Flo for Spring XD 1.0&lt;/a&gt;. This is a &lt;em&gt;huge&lt;/em&gt; release! Spring XD 1.3.0 supports job composition DSLs, Spring Flo for Spring XD, an improved Admin UI, Spark 1.3.1, updates to the Spring Data and Spring for Hadoop distributions, a Cassandra Sink and &lt;em&gt;much&lt;/em&gt; more! It is also the last in the line before Spring XD completes its journey to the archhitecture already partially laid out in Spring Cloud Stream and Spring Cloud Dataflow! This is an exciting evolution of the technology!&lt;/li&gt;
+  &lt;li&gt;Spring Security and Spring Session lead &lt;a href="http://spring.io/blog/2015/11/17/spring-session-1-1-0-m1-released"&gt;Rob Winch has just announced Spring Session 1.1.0.M1&lt;/a&gt; complete with a lot of new features: searching HTTP sessions by username, &lt;code&gt;HttpSessionListener&lt;/code&gt; support, customized &lt;code&gt;Cookie&lt;/code&gt; creation, overriding the default &lt;code&gt;RedisSerializer&lt;/code&gt;, and Hazelcast configuration and support.&lt;/li&gt;
+  &lt;li&gt;the amazing Andy Wilkinson just &lt;a href="http://spring.io/blog/2015/11/18/spring-io-platform-2-0-0-release"&gt;announced the Spring IO Platform 2.0.0.RELEASE&lt;/a&gt;! The Spring IO platform is a great way to mange your dependencies, in the same way that the Spring Boot dependency management section does, but with an eye towards supporting a) longer terms of stability and b) supporting &lt;em&gt;all&lt;/em&gt; Spring projects, not just those supported by Spring Boot. It&amp;rsquo;s a &lt;em&gt;wonderful&lt;/em&gt; solution for managing applications.&lt;/li&gt;
+  &lt;li&gt;Spring Statemachine lead Janne Valkealahti has &lt;a href="http://spring.io/blog/2015/11/20/spring-statemachine-1-0-1-released"&gt;just announced 1.0.1&lt;/a&gt; which includes a new &lt;code&gt;@EnableStateMachine&lt;/code&gt; annotation, updates to 4.2.2, and several fixes.&lt;/li&gt;
+  &lt;li&gt;friend to the Pivotal community Dan Vega talks about &lt;a href="http://therealdanvega.com/blog/2015/11/17/spring-boot-introduction-course"&gt;his just released Udemy course on using Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mattias Severson&amp;rsquo;s post explains how to use the Gradle Spring Boot plugin to ensure that a project a project - &lt;a href="http://www.jayway.com/2015/11/23/reusing-spring-boots-dependency-management/"&gt;that doesn&amp;rsquo;t otherwise use or depend on Spring Boot - gets the same versions as if it did&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This slide deck &lt;a href="https://speakerdeck.com/toedter/cool-web-apps-with-spring-boot-angularjs-and-typescript"&gt;&lt;em&gt;Cool Web Apps with Spring Boot, AngularJS &amp;amp; TypeScript&lt;/em&gt; by Kai Toedter seemed pretty interesting!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the Stormpath Java developer evangelist &lt;a href="https://www.youtube.com/watch?v=5Cs6GahGSjE"&gt;Micah Silverman just blogged about their new Stormpath Spring Boot auto-configuration&lt;/a&gt;. &lt;a href="http://www.slideshare.net/stormpath/stormpath-101-spring-boot-spring-security"&gt;The slides are available online, as well&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://activiti.org"&gt;Activiti&lt;/a&gt; ninja Joram Barrez blogged about the &lt;a href="http://www.jorambarrez.be/blog/category/spring-2/"&gt;recent addition of the Activiti auto-configuration&lt;/a&gt; to the &lt;a href="http://start.spring.io"&gt;Spring Initializr&lt;/a&gt;, complete with a cool demo!&lt;/li&gt;
+  &lt;li&gt;Dan also did a nice video about one of the features &lt;a href="https://www.youtube.com/watch?v=JAOsHylYj9o&amp;feature=youtu.be&amp;a"&gt;in Spring Boot 1.3 that&amp;rsquo;s sweeping the nation: the color ASCII art banners&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Statemachine 1.0.1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/20/spring-statemachine-1-0-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2015-11-20:2304</id>
+    <updated>2015-11-20T17:38:41Z</updated>
+    <content type="html">&lt;p&gt;We’re pleased to announce a first maintenance release of &lt;a href="http://projects.spring.io/spring-statemachine"&gt;Spring Statemachine 1.0.1&lt;/a&gt;. Artifacts are available either from &lt;a href="http://repo1.maven.org/maven2/org/springframework/statemachine/"&gt;Maven Central&lt;/a&gt; or from &lt;a href="http://repo.spring.io/libs-release/org/springframework/statemachine/"&gt;Spring Repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Changes in version 1.0.1 (2015-11-18)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;autoStart via @EnableStateMachineFactory doesn&amp;rsquo;t work [#113]&lt;/li&gt;
+  &lt;li&gt;Update to framework 4.2.2 [#115]&lt;/li&gt;
+  &lt;li&gt;Association with @EnableStateMachine and @WithStateMachine [#116]&lt;/li&gt;
+  &lt;li&gt;EnableStateMachineFactory fails when there are 2 state machine configurations [#117]&lt;/li&gt;
+  &lt;li&gt;PersistStateMachineHandler returning event outcome [#118]&lt;/li&gt;
+  &lt;li&gt;NPE with missing configurer [#119]&lt;/li&gt;
+  &lt;li&gt;Context events not working with StateMachineBuilder [#120]&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring XD 1.3 GA and Flo for Spring XD 1.0 GA released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/19/spring-xd-1-3-ga-and-flo-for-spring-xd-1-0-ga-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2015-11-19:2303</id>
+    <updated>2015-11-19T23:20:00Z</updated>
+    <content type="html">&lt;p&gt;Today we are pleased to announce the general availability of Spring XD 1.3 and Flo for Spring XD 1.0.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring XD 1.3 GA: &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/xd/spring-xd/1.3.0.RELEASE/spring-xd-1.3.0.RELEASE-dist.zip"&gt;zip&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#osx-homebrew-installation"&gt;brew&lt;/a&gt; and &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#redhatcentos-installation"&gt;rpm&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Flo for Spring XD 1.0 GA: &lt;a href="https://network.pivotal.io/products/p-spring-flo/"&gt;zip&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition to bug fixes we have also added several new features in the 1.3 release line&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#composed-jobs"&gt;Job Composition DSL&lt;/a&gt; allows for the creation of a complex graph of job executions.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blog.pivotal.io/big-data-pivotal/features/the-new-flo-for-spring-xd"&gt;Flo for Spring XD&lt;/a&gt; designer supports creating &lt;a href="http://docs.pivotal.io/spring-flo/building-composed-jobs.html"&gt;composed jobs&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Admin UI supports execution history of composed jobs.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#cassandra"&gt;Cassandra Sink&lt;/a&gt; and &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#header-enricher"&gt;Header Enricher Processor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#gpfdist"&gt;Gpfdist sink&lt;/a&gt; now supports update operations and full range of control file options&lt;/li&gt;
+  &lt;li&gt;Spark 1.3.1 Support&lt;/li&gt;
+  &lt;li&gt;A timeout value for flushing writes to HDFS in order to ensure data is persisted on the HDFS DataNode’s disks.&lt;/li&gt;
+  &lt;li&gt;General dependency upgrades, Spring Data Gosling, SI 4.2, and Boot 1.2&lt;/li&gt;
+  &lt;li&gt;Hadoop distribution version updates to Apache Hadoop 2.7.1 and Hortonworks Data Platform 2.2. Pivotal Hadoop 2.1, 3.0 and Cloudera Hadoop 5.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The next release line introduces a major redesign to the underlying architecture and breaking up Spring XD into several independent projects. Building upon Spring Boot and Spring Cloud capabilities, Spring XD is actively being redesigned as &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/"&gt;Spring Cloud Data Flow&lt;/a&gt; - a cloud native programming and operating model for composable message-driven microservices. More details can be found in the blog posts: &lt;a href="http://blog.pivotal.io/pivotal-cloud-foundry/products/introducing-spring-cloud-data-flow"&gt;Introducing Spring Cloud Data Flow&lt;/a&gt; and &lt;a href="http://blog.pivotal.io/pivotal-perspectives/features/a-quick-look-at-spring-cloud-data-flow"&gt;A Quick Look At Spring Cloud Data Flow&lt;/a&gt;. InfoQ also summarizes the changes in the article &lt;a href="http://www.infoq.com/news/2015/09/spring-cloud-data-flow"&gt;SpringXD being Re-architected and Re-branded to Spring Cloud Data Flow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feedback is very important, so please get in touch with questions and comments via&lt;br/&gt;* &lt;a href="http://stackoverflow.com/questions/tagged/spring-xd"&gt;StackOverflow&lt;/a&gt; &lt;code&gt;spring-xd&lt;/code&gt; tag&lt;br/&gt;* &lt;a href="https://jira.spring.io/browse/XD/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"&gt;Spring JIRA&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-xd/issues"&gt;GitHub Issues&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring IO Platform 2.0.0.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/18/spring-io-platform-2-0-0-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-11-18:2302</id>
+    <updated>2015-11-18T11:35:00Z</updated>
+    <content type="html">&lt;p&gt;Spring IO Platform 2.0.0.RELEASE is now available from the &lt;a href="https://repo.spring.io/release"&gt;Spring release repository&lt;/a&gt; and Maven Central.&lt;/p&gt;
+&lt;p&gt;Additions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring REST Docs 1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Major upgrades:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reactor 2.0&lt;/li&gt;
+  &lt;li&gt;Spring Security 4.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Minor upgrades:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring AMQP 1.5&lt;/li&gt;
+  &lt;li&gt;Spring Boot 1.3&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Connectors 1.2&lt;/li&gt;
+  &lt;li&gt;Spring Data Gosling&lt;/li&gt;
+  &lt;li&gt;Spring Framework 4.2&lt;/li&gt;
+  &lt;li&gt;Spring HATEOAS 0.19&lt;/li&gt;
+  &lt;li&gt;Spring Integration 4.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A number of other Spring projects and their dependencies have also been updated to their latest maintenance releases.&lt;/p&gt;
+&lt;p&gt;Please note that a number of dependencies that were previously part of the Platform have been removed or replaced in this release. Please refer to &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RELEASE/reference/htmlsingle/#upgrading-dependency-management"&gt;the documentation&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Session 1.1.0.M1 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2015/11/17/spring-session-1-1-0-m1-released" />
@@ -211,968 +892,5 @@
   &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3109"&gt;SEC-3109&lt;/a&gt; - DelegatingSecurityContextExecutor works with Concurrent/ThreadPoolTaskScheduler&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.9.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.9.RELEASE/guides/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 4.0.3 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/02/spring-security-4-0-3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2015-10-30:2291</id>
-    <updated>2015-11-02T08:00:00Z</updated>
-    <content type="html">&lt;p&gt;I’m pleased to announce the release of Spring Security 4.0.3.RELEASE. This release provides bug fixes and minor enhancements. For complete details on the release, refer to the &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10040&amp;version=15253"&gt;Change Log&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Highlights of the release include:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3063"&gt;SEC-3063&lt;/a&gt; - Fixes for Spring Boot 1.3&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-2190"&gt;SEC-2190&lt;/a&gt; - Fixing integration with the JSP tag libraries when Spring Security is registered in a child ApplicationContext&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-2521"&gt;SEC-2521&lt;/a&gt; - Removal of synchronized in StandardPasswordEncoder which drastically improves performance&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3108"&gt;SEC-3108&lt;/a&gt; - Fix potential race condition in DigestAuthenticationFilter&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/SEC-3109"&gt;SEC-3109&lt;/a&gt; - DelegatingSecurityContextExecutor works with Concurrent/ThreadPoolTaskScheduler&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.3.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.3.RELEASE/guides/html5/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring IO Platform 2.0.0.RC1</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/29/spring-io-platform-2-0-0-rc1" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2015-10-29:2289</id>
-    <updated>2015-10-29T17:30:00Z</updated>
-    <content type="html">&lt;p&gt;Spring IO Platform 2.0.0.RC1 is available now from the &lt;a href="http://repo.springsource.org/milestone/"&gt;Spring milestone repository&lt;/a&gt;. The 2.0 release upgrades the versions of a number of components including Spring Boot 1.3 and Spring Framework 4.2. &lt;/p&gt;
-&lt;p&gt;Please note that a number of dependencies that were previously part of the Platform have been removed or replaced in this release. Please refer to &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RC1/reference/htmlsingle/#upgrading-dependency-management"&gt;the documentation&lt;/a&gt; for further details.&lt;/p&gt;
-&lt;p&gt;All being well, 2.0.0.RELEASE will be released in a few weeks time once Spring Boot 1.3.0.RELEASE is available. Please take RC1 for a spin and let us know if you find any problems.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RC1/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>React.js and Spring Data REST: Part 5 - Security</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/28/react-js-and-spring-data-rest-part-5-security" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Greg Turnquist</name>
-    </author>
-    <id>tag:spring.io,2015-10-28:2288</id>
-    <updated>2015-10-28T14:04:00Z</updated>
-    <content type="html">&lt;div id="preamble"&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;In the &lt;a href="https://spring.io/blog/2015/10/13/react-js-and-spring-data-rest-part-4-events"&gt;previous session&lt;/a&gt;, you made the app dynamically response to updates from other users via Spring Data REST&amp;#8217;s built in event handlers and the Spring Framework&amp;#8217;s WebSocket support. But no application is complete without securing the whole thing so that only proper users have access to the UI and the resources behind it.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Feel free to &lt;a href="https://github.com/gregturn/react-and-spring-data-rest/tree/master/security"&gt;grab the code&lt;/a&gt; from this repository and follow along. This session is based on the previous session&amp;#8217;s app with extra things added.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_adding_spring_security_to_the_project"&gt;Adding Spring Security to the project&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Before getting underway, you need to add a couple dependencies to your project&amp;#8217;s pom.xml file:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependency&amp;gt;&#xD;
-    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-    &amp;lt;artifactId&amp;gt;spring-boot-starter-security&amp;lt;/artifactId&amp;gt;&#xD;
-&amp;lt;/dependency&amp;gt;&#xD;
-&amp;lt;dependency&amp;gt;&#xD;
-    &amp;lt;groupId&amp;gt;org.thymeleaf.extras&amp;lt;/groupId&amp;gt;&#xD;
-    &amp;lt;artifactId&amp;gt;thymeleaf-extras-springsecurity4&amp;lt;/artifactId&amp;gt;&#xD;
-&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This bring in Spring Boot&amp;#8217;s Spring Security starter as well as some extra Thymeleaf tags to do security look ups in the web page.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_defining_the_security_model"&gt;Defining the security model&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;In the past session, you have worked with a nice payroll system. It&amp;#8217;s handy to declare things on the backend and let Spring Data REST do the heavy lifting. The next step is to model a system where security controls need to be instituted.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;If this is a payroll system, then only managers would be accessing it. So kick things off by modeling a &lt;code&gt;Manager&lt;/code&gt; object:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Data&#xD;
-@ToString(exclude = "password")&#xD;
-@Entity&#xD;
-public class Manager {&#xD;
-&#xD;
-	public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();&#xD;
-&#xD;
-	private @Id @GeneratedValue Long id;&#xD;
-&#xD;
-	private String name;&#xD;
-&#xD;
-	private @JsonIgnore String password;&#xD;
-&#xD;
-	private String[] roles;&#xD;
-&#xD;
-	public void setPassword(String password) {&#xD;
-		this.password = PASSWORD_ENCODER.encode(password);&#xD;
-	}&#xD;
-&#xD;
-	protected Manager() {}&#xD;
-&#xD;
-	public Manager(String name, String password, String... roles) {&#xD;
-&#xD;
-		this.name = name;&#xD;
-		this.setPassword(password);&#xD;
-		this.roles = roles;&#xD;
-	}&#xD;
-&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="ulist"&gt;&#xD;
-&lt;ul&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;code&gt;PASSWORD_ENCODER&lt;/code&gt; is the means to encrypt new passwords or to take password inputs and encrypt them before comparison.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;code&gt;id&lt;/code&gt;, &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;password&lt;/code&gt;, and &lt;code&gt;roles&lt;/code&gt; define the parameters needed to restrict access.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;p&gt;The customized &lt;code&gt;setPassword()&lt;/code&gt; ensures that passwords are never stored in the clear.&lt;/p&gt;&#xD;
-&lt;/li&gt;&#xD;
-&lt;/ul&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;There is a key thing to keep in mind when designing your security layer. Secure the right bits of data (like passwords) and do NOT let them get printed to console, into logs, or exported via JSON serialization.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="ulist"&gt;&#xD;
-&lt;ul&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;code&gt;@ToString(exclude = "password")&lt;/code&gt; ensures that the Lombok-generated toString() method will NOT print out the password.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;code&gt;@JsonIgnore&lt;/code&gt; applied to the password field protects from Jackson serializing this field.&#xD;
-&lt;/li&gt;&#xD;
-&lt;/ul&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_creating_a_manager_s_repository"&gt;Creating a manager&amp;#8217;s repository&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Spring Data is so good at managing entities. Why not create a repository to handle these managers?&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@RepositoryRestResource(exported = false)&#xD;
-public interface ManagerRepository extends Repository&amp;lt;Manager, Long&amp;gt; {&#xD;
-&#xD;
-	Manager save(Manager manager);&#xD;
-&#xD;
-	Manager findByName(String name);&#xD;
-&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Instead of extending the usual &lt;code&gt;CrudRepository&lt;/code&gt;, you don&amp;#8217;t need so many methods. Instead, you need to save data (which is also used for updates) and you need to look up existing users. Hence, you can use Spring Data Common&amp;#8217;s minimal &lt;code&gt;Repository&lt;/code&gt; marker interface. It comes with no predefined operations.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Spring Data REST, by default, will export any repository it finds. You do NOT want this repository exposed for REST operations! Apply the &lt;code&gt;@RepositoryRestResource(exported = false)&lt;/code&gt; annotation to block it from export. This prevents the repository from being served up as well as any metadata.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_linking_employees_with_their_managers"&gt;Linking employees with their managers&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The last bit of modeling security is to associate employees with a manager. In this domain, an employee can have one manager while a manager can have multiple employees:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Data&#xD;
-@Entity&#xD;
-public class Employee {&#xD;
-&#xD;
-	private @Id @GeneratedValue Long id;&#xD;
-	private String firstName;&#xD;
-	private String lastName;&#xD;
-	private String description;&#xD;
-&#xD;
-	private @Version @JsonIgnore Long version;&#xD;
-&#xD;
-	private @ManyToOne Manager manager;&#xD;
-&#xD;
-	private Employee() {}&#xD;
-&#xD;
-	public Employee(String firstName, String lastName, String description, Manager manager) {&#xD;
-		this.firstName = firstName;&#xD;
-		this.lastName = lastName;&#xD;
-		this.description = description;&#xD;
-		this.manager = manager;&#xD;
-	}&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="ulist"&gt;&#xD;
-&lt;ul&gt;&#xD;
-&lt;li&gt;&#xD;
-The manager attribute is linked via JPA&amp;#8217;s &lt;code&gt;@ManyToOne&lt;/code&gt;. Manager doesn&amp;#8217;t need the &lt;code&gt;@OneToMany&lt;/code&gt; because you haven&amp;#8217;t defined the need to look that up.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-The utility constructor call is updated to support initialization.&#xD;
-&lt;/li&gt;&#xD;
-&lt;/ul&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_securing_employees_to_their_managers"&gt;Securing employees to their managers&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Spring Security supports a multitude of options when it comes to defining security policies. In this session, you want to restrict things such that ONLY managers can view employee payroll data, and that saving, updating, and deleting operations are confined to the employee&amp;#8217;s manager. In other words, any manager can log in and view the data, but only a given employee&amp;#8217;s manager can make any changes.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@PreAuthorize("hasRole('ROLE_MANAGER')")&#xD;
-public interface EmployeeRepository extends PagingAndSortingRepository&amp;lt;Employee, Long&amp;gt; {&#xD;
-&#xD;
-	@Override&#xD;
-	@PreAuthorize("#employee?.manager == null or #employee?.manager?.name == authentication?.name")&#xD;
-	Employee save(@Param("employee") Employee employee);&#xD;
-&#xD;
-	@Override&#xD;
-	@PreAuthorize("@employeeRepository.findOne(#id)?.manager?.name == authentication?.name")&#xD;
-	void delete(@Param("id") Long id);&#xD;
-&#xD;
-	@Override&#xD;
-	@PreAuthorize("#employee?.manager?.name == authentication?.name")&#xD;
-	void delete(@Param("employee") Employee employee);&#xD;
-&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;&lt;code&gt;@PreAuthorize&lt;/code&gt; at the top of the interface restricts access to people with &lt;strong&gt;ROLE_MANAGER&lt;/strong&gt;.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;On &lt;code&gt;save()&lt;/code&gt;, either the employee&amp;#8217;s manager is null (initial creation of a new employee when no manager has been assigned), or the employee&amp;#8217;s manager&amp;#8217;s name matches the currently authenticated user&amp;#8217;s name. Here you are using &lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#el-access"&gt;Spring Security&amp;#8217;s SpEL expressions&lt;/a&gt; to define access. It comes with a handy "?." property navigator to handle null checks. It&amp;#8217;s also important to note using the &lt;code&gt;@Param(&amp;#8230;&amp;#8203;)&lt;/code&gt; on the arguments to link HTTP operations with the methods.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;On &lt;code&gt;delete()&lt;/code&gt;, the method either has access to the employee, or in the event it only has an id, then it must find the &lt;strong&gt;employeeRepository&lt;/strong&gt; in the application context, perform a &lt;code&gt;findOne(id)&lt;/code&gt;, and then check the manager against the currently authenticated user.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_writing_a_code_userdetails_code_service"&gt;Writing a &lt;code&gt;UserDetails&lt;/code&gt; service&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;A common point of integration with security is to define a &lt;code&gt;UserDetailsService&lt;/code&gt;. This is the way to connect your user&amp;#8217;s data store into a Spring Security interface. Spring Security needs a way to look up users for security checks, and this is the bridge. Thankfully with Spring Data, the effort is quite minimal:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Component&#xD;
-public class SpringDataJpaUserDetailsService implements UserDetailsService {&#xD;
-&#xD;
-	private final ManagerRepository repository;&#xD;
-&#xD;
-	@Autowired&#xD;
-	public SpringDataJpaUserDetailsService(ManagerRepository repository) {&#xD;
-		this.repository = repository;&#xD;
-	}&#xD;
-&#xD;
-	@Override&#xD;
-	public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {&#xD;
-		Manager manager = this.repository.findByName(name);&#xD;
-		return new User(manager.getName(), manager.getPassword(),&#xD;
-				AuthorityUtils.createAuthorityList(manager.getRoles()));&#xD;
-	}&#xD;
-&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;&lt;code&gt;SpringDataJpaUserDetailsService&lt;/code&gt; implements Spring Security&amp;#8217;s &lt;code&gt;UserDetailsService&lt;/code&gt;. The interface has one method: &lt;code&gt;loadByUsername()&lt;/code&gt;. This method is meant to return a &lt;code&gt;UserDetails&lt;/code&gt; object so Spring Security can interrogate the user&amp;#8217;s information.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Because you have a &lt;code&gt;ManagerRepository&lt;/code&gt;, there is no need to write any SQL or JPA expressions to fetch this needed data. In this class, it is autowired by constructor injection.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;&lt;code&gt;loadByUsername()&lt;/code&gt; taps into the custom finder you write a moment ago, &lt;code&gt;findByName()&lt;/code&gt;. It then populates a Spring Security &lt;code&gt;User&lt;/code&gt; instance, which implements the &lt;code&gt;UserDetails&lt;/code&gt; interface. You are also using Spring Securiy&amp;#8217;s &lt;code&gt;AuthorityUtils&lt;/code&gt; to transition from an array of string-based roles into a Java &lt;code&gt;List&lt;/code&gt; of &lt;code&gt;GrantedAuthority&lt;/code&gt;.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_wiring_up_your_security_policy"&gt;Wiring up your security policy&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The &lt;code&gt;@PreAuthorize&lt;/code&gt; expressions applied to your repository are &lt;strong&gt;access rules&lt;/strong&gt;. These rules are for nought without a security policy.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Configuration&#xD;
-@EnableWebSecurity&#xD;
-@EnableGlobalMethodSecurity(prePostEnabled = true)&#xD;
-public class SecurityConfiguration extends WebSecurityConfigurerAdapter {&#xD;
-&#xD;
-	@Autowired&#xD;
-	private SpringDataJpaUserDetailsService userDetailsService;&#xD;
-&#xD;
-	@Override&#xD;
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {&#xD;
-		auth&#xD;
-			.userDetailsService(this.userDetailsService)&#xD;
-				.passwordEncoder(Manager.PASSWORD_ENCODER);&#xD;
-	}&#xD;
-&#xD;
-	@Override&#xD;
-	protected void configure(HttpSecurity http) throws Exception {&#xD;
-		http&#xD;
-			.authorizeRequests()&#xD;
-				.antMatchers("/bower_components/**", "/*.js",&#xD;
-						"/*.jsx", "/main.css").permitAll()&#xD;
-				.anyRequest().authenticated()&#xD;
-				.and()&#xD;
-			.formLogin()&#xD;
-				.defaultSuccessUrl("/", true)&#xD;
-				.permitAll()&#xD;
-				.and()&#xD;
-			.httpBasic()&#xD;
-				.and()&#xD;
-			.csrf().disable()&#xD;
-			.logout()&#xD;
-				.logoutSuccessUrl("/");&#xD;
-	}&#xD;
-&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This code has a lot of complexity in it, so let&amp;#8217;s walk through it, first talking about the annotations and APIs. Then we&amp;#8217;ll discuss the security policy it defines.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="ulist"&gt;&#xD;
-&lt;ul&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;code&gt;@EnableWebSecurity&lt;/code&gt; tells Spring Boot to drop its autoconfigured security policy and use this one instead. For quick demos, autoconfigured security is okay. But for anything real, you should write the policy yourself.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-&lt;code&gt;@EnableGlobalMethodSecurity&lt;/code&gt; turns on method-level security with Spring Security&amp;#8217;s sophisticated &lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#el-pre-post-annotations"&gt;@Pre and @Post annotations&lt;/a&gt;.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-It extends &lt;code&gt;WebSecsurityConfigurerAdapter&lt;/code&gt;, a handy base class to write policy.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-It autowired the &lt;code&gt;SpringDataJpaUserDetailsService&lt;/code&gt; by field inject and then plugs it in via the &lt;code&gt;configure(AuthenticationManagerBuilder)&lt;/code&gt; method. The &lt;code&gt;PASSWORD_ENCODER&lt;/code&gt; from &lt;code&gt;Manager&lt;/code&gt; is also setup.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-The pivotal security policy is written in pure Java with the &lt;code&gt;configure(HttpSecurity)&lt;/code&gt;.&#xD;
-&lt;/li&gt;&#xD;
-&lt;/ul&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The security policy says to authorize all requests using the access rules defined earlier.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="ulist"&gt;&#xD;
-&lt;ul&gt;&#xD;
-&lt;li&gt;&#xD;
-The paths listed in &lt;code&gt;antMatchers()&lt;/code&gt; are granted unconditional access since there is no reason to block static web resources.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-Anything that doesn&amp;#8217;t match that falls into &lt;code&gt;anyRequest().authenticated()&lt;/code&gt; meaning it requires authentication.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-With those access rules setup, Spring Security is told to use form-based authentication, defaulting to "/" upon success, and to grant access to the login page.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-BASIC login is also configured with CSRF disabled. This is mostly for demonstrations and not recommended for production systems without careful analysis.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-Logout is configured to take the user to "/".&#xD;
-&lt;/li&gt;&#xD;
-&lt;/ul&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="admonitionblock warning"&gt;&#xD;
-&lt;table&gt;&#xD;
-&lt;tr&gt;&#xD;
-&lt;td class="icon"&gt;&#xD;
-&lt;div class="title"&gt;Warning&lt;/div&gt;&#xD;
-&lt;/td&gt;&#xD;
-&lt;td class="content"&gt;&#xD;
-BASIC authentication is handy when you are experimenting with curl. Using curl to access a form-based system is daunting. It&amp;#8217;s important to recognize that authenticting with any mechanism over HTTP (not HTTPS) puts you at risk of credentials being sniffed over the wire. CSRF is a good protocol to leave intact. It is simply disabled to make interaction with BASIC and curl easier. In production, it&amp;#8217;s best to leave it on.&#xD;
-&lt;/td&gt;&#xD;
-&lt;/tr&gt;&#xD;
-&lt;/table&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_adding_security_details_automatically"&gt;Adding security details automatically&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;A good user experience is when the application can automatically apply context. In this example, if a logged in manager creates a new employee record, it makes sense for that manager to own it. With Spring Data REST&amp;#8217;s event handlers, there is no need for the user to explicitly link it. It also ensures the user doesn&amp;#8217;t accidentally records to the wrong manager.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Component&#xD;
-@RepositoryEventHandler(Employee.class)&#xD;
-public class SpringDataRestEventHandler {&#xD;
-&#xD;
-	private final ManagerRepository managerRepository;&#xD;
-&#xD;
-	@Autowired&#xD;
-	public SpringDataRestEventHandler(ManagerRepository managerRepository) {&#xD;
-		this.managerRepository = managerRepository;&#xD;
-	}&#xD;
-&#xD;
-	@HandleBeforeCreate&#xD;
-	public void applyUserInformationUsingSecurityContext(Employee employee) {&#xD;
-&#xD;
-		String name = SecurityContextHolder.getContext().getAuthentication().getName();&#xD;
-		Manager manager = this.managerRepository.findByName(name);&#xD;
-		if (manager == null) {&#xD;
-			Manager newManager = new Manager();&#xD;
-			newManager.setName(name);&#xD;
-			newManager.setRoles(new String[]{"ROLE_MANAGER"});&#xD;
-			manager = this.managerRepository.save(newManager);&#xD;
-		}&#xD;
-		employee.setManager(manager);&#xD;
-	}&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;&lt;code&gt;@RepositoryEventHandler(Employee.class)&lt;/code&gt; flags this event handler as only applied to &lt;code&gt;Employee&lt;/code&gt; objects. The &lt;code&gt;@HandleBeforeCreate&lt;/code&gt; annotation gives you a chance to alter the incoming &lt;code&gt;Employee&lt;/code&gt; record before it gets written to the database.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;In this sitation, you lookup the current user&amp;#8217;s security context to get the user&amp;#8217;s name. Then look up the associated manager using &lt;code&gt;findByName()&lt;/code&gt; and apply it to the manager. There is a little extra glue code to create a new manager if he or she doesn&amp;#8217;t exist in the system yet. But that is mostly to support initialization of the database. In a real production system, that code should be removed and instead depend on the DBAs or Security Ops team to properly maintain the user data store.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_pre_loading_manager_data"&gt;Pre-loading manager data&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Loading managers and linking employees to these managers is rather straight forward:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Component&#xD;
-public class DatabaseLoader implements CommandLineRunner {&#xD;
-&#xD;
-	private final EmployeeRepository employees;&#xD;
-	private final ManagerRepository managers;&#xD;
-&#xD;
-	@Autowired&#xD;
-	public DatabaseLoader(EmployeeRepository employeeRepository,&#xD;
-						  ManagerRepository managerRepository) {&#xD;
-&#xD;
-		this.employees = employeeRepository;&#xD;
-		this.managers = managerRepository;&#xD;
-	}&#xD;
-&#xD;
-	@Override&#xD;
-	public void run(String... strings) throws Exception {&#xD;
-&#xD;
-		Manager greg = this.managers.save(new Manager("greg", "turnquist",&#xD;
-							"ROLE_MANAGER"));&#xD;
-		Manager oliver = this.managers.save(new Manager("oliver", "gierke",&#xD;
-							"ROLE_MANAGER"));&#xD;
-&#xD;
-		SecurityContextHolder.getContext().setAuthentication(&#xD;
-			new UsernamePasswordAuthenticationToken("greg", "doesn't matter",&#xD;
-				AuthorityUtils.createAuthorityList("ROLE_MANAGER")));&#xD;
-&#xD;
-		this.employees.save(new Employee("Frodo", "Baggins", "ring bearer", greg));&#xD;
-		this.employees.save(new Employee("Bilbo", "Baggins", "burglar", greg));&#xD;
-		this.employees.save(new Employee("Gandalf", "the Grey", "wizard", greg));&#xD;
-&#xD;
-		SecurityContextHolder.getContext().setAuthentication(&#xD;
-			new UsernamePasswordAuthenticationToken("oliver", "doesn't matter",&#xD;
-				AuthorityUtils.createAuthorityList("ROLE_MANAGER")));&#xD;
-&#xD;
-		this.employees.save(new Employee("Samwise", "Gamgee", "gardener", oliver));&#xD;
-		this.employees.save(new Employee("Merry", "Brandybuck", "pony rider", oliver));&#xD;
-		this.employees.save(new Employee("Peregrin", "Took", "pipe smoker", oliver));&#xD;
-&#xD;
-		SecurityContextHolder.clearContext();&#xD;
-	}&#xD;
-}&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The one wrinkle is that Spring Security is active with access rules in full force when this loader runs. Thus to save employee data, you must use Spring Security&amp;#8217;s &lt;code&gt;setAuthentication()&lt;/code&gt; API to authenticate this loader with the proper name and role. At the end, the security context is cleared out.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_touring_your_secured_rest_service"&gt;Touring your secured REST service&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;With all these mods in place, you can fire up the application (&lt;code&gt;./mvnw spring-boot:run&lt;/code&gt;) and check out the mods using cURL.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre&gt;$ curl -v -u greg:turnquist localhost:8080/api/employees/1&#xD;
-*   Trying ::1...&#xD;
-* Connected to localhost (::1) port 8080 (#0)&#xD;
-* Server auth using Basic with user 'greg'&#xD;
-&amp;gt; GET /api/employees/1 HTTP/1.1&#xD;
-&amp;gt; Host: localhost:8080&#xD;
-&amp;gt; Authorization: Basic Z3JlZzp0dXJucXVpc3Q=&#xD;
-&amp;gt; User-Agent: curl/7.43.0&#xD;
-&amp;gt; Accept: */*&#xD;
-&amp;gt;&#xD;
-&amp;lt; HTTP/1.1 200 OK&#xD;
-&amp;lt; Server: Apache-Coyote/1.1&#xD;
-&amp;lt; X-Content-Type-Options: nosniff&#xD;
-&amp;lt; X-XSS-Protection: 1; mode=block&#xD;
-&amp;lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate&#xD;
-&amp;lt; Pragma: no-cache&#xD;
-&amp;lt; Expires: 0&#xD;
-&amp;lt; X-Frame-Options: DENY&#xD;
-&amp;lt; Set-Cookie: JSESSIONID=E27F929C1836CC5BABBEAB78A548DF8C; Path=/; HttpOnly&#xD;
-&amp;lt; ETag: "0"&#xD;
-&amp;lt; Content-Type: application/hal+json;charset=UTF-8&#xD;
-&amp;lt; Transfer-Encoding: chunked&#xD;
-&amp;lt; Date: Tue, 25 Aug 2015 15:57:34 GMT&#xD;
-&amp;lt;&#xD;
-{&#xD;
-  "firstName" : "Frodo",&#xD;
-  "lastName" : "Baggins",&#xD;
-  "description" : "ring bearer",&#xD;
-  "manager" : {&#xD;
-    "name" : "greg",&#xD;
-    "roles" : [ "ROLE_MANAGER" ]&#xD;
-  },&#xD;
-  "_links" : {&#xD;
-    "self" : {&#xD;
-      "href" : "http://localhost:8080/api/employees/1"&#xD;
-    }&#xD;
-  }&#xD;
-}&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This shows a lot more details than during the first session. First of all, Spring Security turns on several HTTP protocols to protect against various attack vectors (Pragma, Expires, X-Frame-Options, etc.). You are also issuing BASIC credentials with &lt;code&gt;-u greg:turnquist&lt;/code&gt; which renders the Authorization header.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Amidst all the headers, you can see the &lt;strong&gt;ETag&lt;/strong&gt; header from your versioned resource.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Finally, inside the data itself, you can see a new attribute: &lt;strong&gt;manager&lt;/strong&gt;. You can see that it includes the name and roles, but NOT the password. That is due to using &lt;code&gt;@JsonIgnore&lt;/code&gt; on that field. Because Spring Data REST didn&amp;#8217;t export that repository, it&amp;#8217;s values are inlined in this resource. You&amp;#8217;ll put that to good use as you update the UI in the next section.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_displaying_manager_info_on_the_ui"&gt;Displaying manager info on the UI&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;With all these mods in the backend, you can now shift to updating things in the frontend. First of all, show an employee&amp;#8217;s manager inside the `&amp;lt;Employee /&amp;gt; ` React component:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;var Employee = React.createClass({&#xD;
-    handleDelete: function () {&#xD;
-        this.props.onDelete(this.props.employee);&#xD;
-    },&#xD;
-    render: function () {&#xD;
-        return (&#xD;
-            &amp;lt;tr&amp;gt;&#xD;
-                &amp;lt;td&amp;gt;{this.props.employee.entity.firstName}&amp;lt;/td&amp;gt;&#xD;
-                &amp;lt;td&amp;gt;{this.props.employee.entity.lastName}&amp;lt;/td&amp;gt;&#xD;
-                &amp;lt;td&amp;gt;{this.props.employee.entity.description}&amp;lt;/td&amp;gt;&#xD;
-                &amp;lt;td&amp;gt;{this.props.employee.entity.manager.name}&amp;lt;/td&amp;gt;&#xD;
-                &amp;lt;td&amp;gt;&#xD;
-                    &amp;lt;UpdateDialog employee={this.props.employee}&#xD;
-                                  attributes={this.props.attributes}&#xD;
-                                  onUpdate={this.props.onUpdate}/&amp;gt;&#xD;
-                &amp;lt;/td&amp;gt;&#xD;
-                &amp;lt;td&amp;gt;&#xD;
-                    &amp;lt;button onClick={this.handleDelete}&amp;gt;Delete&amp;lt;/button&amp;gt;&#xD;
-                &amp;lt;/td&amp;gt;&#xD;
-            &amp;lt;/tr&amp;gt;&#xD;
-        )&#xD;
-    }&#xD;
-});&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This merely adds a column for &lt;code&gt;this.props.employee.entity.manager.name&lt;/code&gt;.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_filtering_out_json_schema_metadata"&gt;Filtering out JSON Schema metadata&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;If a field is shown in the data output, it is safe to assume it has an entry in the JSON Schema metadata. You can see it in the following excerpt:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre&gt;{&#xD;
-	...&#xD;
-    "manager" : {&#xD;
-      "readOnly" : false,&#xD;
-      "$ref" : "#/descriptors/manager"&#xD;
-    },&#xD;
-    ...&#xD;
-  },&#xD;
-  ...&#xD;
-  "$schema" : "http://json-schema.org/draft-04/schema#"&#xD;
-}&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The manager field isn&amp;#8217;t something you want people to edit directly. Since it&amp;#8217;s inlined, it should be viewed as a read only attribute. To filter it out inlined entries from the &lt;code&gt;CreateDialog&lt;/code&gt; and &lt;code&gt;UpdatDialog&lt;/code&gt;, just delete such entries after fetching the JSON Schema metadata.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;/**&#xD;
- * Filter unneeded JSON Schema properties, like uri references and&#xD;
- * subtypes ($ref).&#xD;
- */&#xD;
-Object.keys(schema.entity.properties).forEach(function (property) {&#xD;
-    if (schema.entity.properties[property].hasOwnProperty('format') &amp;amp;&amp;amp;&#xD;
-        schema.entity.properties[property].format === 'uri') {&#xD;
-        delete schema.entity.properties[property];&#xD;
-    }&#xD;
-    if (schema.entity.properties[property].hasOwnProperty('$ref')) {&#xD;
-        delete schema.entity.properties[property];&#xD;
-    }&#xD;
-});&#xD;
-&#xD;
-this.schema = schema.entity;&#xD;
-this.links = employeeCollection.entity._links;&#xD;
-return employeeCollection;&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This code trims out both URI relations as well as $ref entries.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_trapping_for_unauthorized_access"&gt;Trapping for unauthorized access&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;With security checks configured on the backend, add a handler in case someone tries to update a record without authorization:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;onUpdate: function (employee, updatedEmployee) {&#xD;
-    client({&#xD;
-        method: 'PUT',&#xD;
-        path: employee.entity._links.self.href,&#xD;
-        entity: updatedEmployee,&#xD;
-        headers: {&#xD;
-            'Content-Type': 'application/json',&#xD;
-            'If-Match': employee.headers.Etag&#xD;
-        }&#xD;
-    }).done(response =&amp;gt; {&#xD;
-        /* Let the websocket handler update the state */&#xD;
-    }, response =&amp;gt; {&#xD;
-        if (response.status.code === 403) {&#xD;
-            alert('ACCESS DENIED: You are not authorized to update ' +&#xD;
-                employee.entity._links.self.href);&#xD;
-        }&#xD;
-        if (response.status.code === 412) {&#xD;
-            alert('DENIED: Unable to update ' + employee.entity._links.self.href +&#xD;
-                '. Your copy is stale.');&#xD;
-        }&#xD;
-    });&#xD;
-},&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;You had code to catch an HTTP 412 error. This traps an HTTP 403 status code and provides a suitable alert.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Do the same for delete operations:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;onDelete: function (employee) {&#xD;
-    client({method: 'DELETE', path: employee.entity._links.self.href}&#xD;
-    ).done(response =&amp;gt; {/* let the websocket handle updating the UI */},&#xD;
-    response =&amp;gt; {&#xD;
-        if (response.status.code === 403) {&#xD;
-            alert('ACCESS DENIED: You are not authorized to delete ' +&#xD;
-                employee.entity._links.self.href);&#xD;
-        }&#xD;
-    });&#xD;
-},&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This is coded similarly with a tailored error messages.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_add_some_security_details_to_the_ui"&gt;Add some security details to the UI&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The last thing to crown this version of the app is to display who is logged in as well providing a logout button.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="listingblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;pre class="highlight"&gt;&lt;code class="language-html" data-lang="html"&gt;&amp;lt;div&amp;gt;&#xD;
-    Hello, &amp;lt;span th:text="${#authentication.name}"&amp;gt;user&amp;lt;/span&amp;gt;.&#xD;
-    &amp;lt;form th:action="@{/logout}" method="post"&amp;gt;&#xD;
-        &amp;lt;input type="submit" value="Log Out"/&amp;gt;&#xD;
-    &amp;lt;/form&amp;gt;&#xD;
-&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_putting_it_all_together"&gt;Putting it all together&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;With these changes in the frontend, restart the application and navigate to &lt;a href="http://localhost:8080" class="bare"&gt;http://localhost:8080&lt;/a&gt;.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;You are immediately redirected to a login form. This form is supplied by Spring Security, though you can &lt;a href="https://spring.io/guides/gs/securing-web/"&gt;create your own&lt;/a&gt; if you wish. Login as greg / turnquist.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="imageblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;img src="https://github.com/gregturn/react-and-spring-data-rest/raw/master/security/images/security-1.png" alt="security 1"&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;You can see the newly added manager column. Go through a couple pages until you find employees owned by &lt;strong&gt;oliver&lt;/strong&gt;.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="imageblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;img src="https://github.com/gregturn/react-and-spring-data-rest/raw/master/security/images/security-2.png" alt="security 2"&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Click on &lt;strong&gt;Update&lt;/strong&gt;, make some changes, and then hit &lt;strong&gt;Update&lt;/strong&gt;. It should fail with the following pop-up:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="imageblock"&gt;&#xD;
-&lt;div class="content"&gt;&#xD;
-&lt;img src="https://github.com/gregturn/react-and-spring-data-rest/raw/master/security/images/security-3.png" alt="security 3"&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;If you try &lt;strong&gt;Delete&lt;/strong&gt;, it should fail with a similar message. Create a new employee, and it should be assigned to you.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;&#xD;
-&lt;h2 id="_review"&gt;Review&lt;/h2&gt;&#xD;
-&lt;div class="sectionbody"&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;In this session:&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="ulist"&gt;&#xD;
-&lt;ul&gt;&#xD;
-&lt;li&gt;&#xD;
-You defined the model of manager and linked it to an employee via a 1-to-many relationship.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-You created a repository for managers and told Spring Data REST to not export.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-You wrote a set of access rules for the empoyee repository and also write a security policy.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-You wrote another Spring Data REST event handler to trap creation events before they happen so they current user could be assigned as the employee&amp;#8217;s manager.&#xD;
-&lt;/li&gt;&#xD;
-&lt;li&gt;&#xD;
-You updated the UI to show an employee&amp;#8217;s manager and also display error pop-ups when unauthorized actions are taken.&#xD;
-&lt;/li&gt;&#xD;
-&lt;/ul&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Issues?&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;The webpage has become quite sophisticated. But what about managing relationships and inlined data? The create/update dialogs aren&amp;#8217;t really suited for that. It might require some custom written forms.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Managers have access to employee data. Should employees have access? If you were to add more details like phone numbers and addresses, how would you model it? How would you grant employees access to the system so they could update those specific fields? Are there more hypermedia controls that would be handy to put on the page? I hope you liked this series.&lt;/p&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;&#xD;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring (JavaOne 2015 Edition) - October 27, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/28/this-week-in-spring-javaone-2015-edition-october-27-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-10-28:2287</id>
-    <updated>2015-10-28T00:46:11Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m at JavaOne 2015 in San Francisco along with the rest of the Pivotal team. This week the Pivotal Spring team is out in full force, come stop by and say hi!&lt;/p&gt;
-&lt;p&gt;There are some great new SpringOne2GX 2015 recordings on line as well as some great community content this week so let&amp;rsquo;s get to it!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Cloud cofounder&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud"&gt;Spencer Gibb and Dr. David Syer&amp;rsquo;s talk&lt;/a&gt; on the Spring Cloud Developer experience from SpringOne2GX 2015!&lt;/li&gt;
-  &lt;li&gt;Spring tools ninja Martin Lippert &lt;a href="http://spring.io/blog/2015/10/22/the-spring-boot-dashboard-in-sts-part-3-spring-boot-devtools-reloaded"&gt;continues his series with this third installment on using Spring Boot Dashboard in STS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Gary Russell has just announced a few &lt;a href="uhttp://spring.io/blog/2015/10/27/spring-integration-maintenance-releases-available"&gt;new maintenance releases of Spring Integration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Check out this upcoming IntelliJ IDEA webinar on the &lt;a href="http://info.jetbrains.com/IDEA-Webinar-November2015-registration.html"&gt;new Spring framework and Spring Boot support in IntelliJ IDEA with Spring ninja Stéphane Nicoll&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;this post by Rajith Delantha walks through &lt;a href="http://www.javacodegeeks.com/2015/10/spring-boot-oauth2-security.html"&gt;using Spring Security OAuth with Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;My article on the &lt;a href="https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"&gt;The Power, Patterns, and Pains of Microservices of microservices is now up on DZone&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Giau Ngo has a good example mapping on using JPA many-to-many relationship mapping &lt;a href="http://hellokoding.com/jpa-many-to-many-relationship-mapping-example-with-spring-boot-maven-and-mysql/"&gt;with Spring Boot, MySQL and Maven&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Papo Reto has a nice in Portguese-language video - I&amp;rsquo;m pretty sure - &lt;a href="https://www.youtube.com/watch?v=ROw92pLEYmA"&gt;on using Spring Boot on Heroku&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Dan Vega&amp;rsquo;s got a really cool look at using &lt;a href="http://therealdanvega.com/blog/2015/10/23/spring-boot-application-annotation"&gt;the &lt;code&gt;@SpringBootApplication&lt;/code&gt; on annotation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Do you &lt;a href="http://docs.stormpath.com/java/spring-boot-web/quickstart.html"&gt;want to get Stormpath working with Spring Boot&lt;/a&gt;? Check out this handy getting-started example!&lt;/li&gt;
-  &lt;li&gt;I thought this was a cool &lt;a href="http://www.haydonryan.com/category/cloudfoundry/"&gt;blog on using Cloud Watch with Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Roberto Venanzi of &lt;em&gt;The Spring Side blog&lt;/em&gt; has an interesting Italian-language post on &lt;a href="http://www.thespringside.com/?p=19"&gt;using Spring Boot with JSF&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Integration Maintenance Releases Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/27/spring-integration-maintenance-releases-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Gary Russell</name>
-    </author>
-    <id>tag:spring.io,2015-10-27:2286</id>
-    <updated>2015-10-27T21:03:28Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce the following release versions are now available. These versions include important bug fixes and users should upgrade as soon as possible. Click the version to see the appropriate JIRA release notes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=15324"&gt;4.2.1.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=15242"&gt;4.1.7.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=14991"&gt;4.0.8.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=14992"&gt;3.0.8.RELEASE&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Please note that, unless some compelling reason arises, it is anticipated that the 4.1.7 and 4.0.8 releases will be the last in those lines; 4.x users are encouraged to upgrade to 4.2.1, which is the current release for the 4.x line.&lt;/p&gt;
-&lt;p&gt;We expect to continue to make available further 3.0.x releases to address important bug fixes, as necessary, at least through the end of 2016.&lt;/p&gt;
-&lt;p&gt;Please refer to the &lt;a href="http://projects.spring.io/spring-integration/"&gt;project page&lt;/a&gt; for links to documentation, downloads etc.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Developer Experience with Spring Cloud</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-22:2285</id>
-    <updated>2015-10-22T14:48:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Dr. Dave Syer, Spencer Gibb&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/developer-experience-with-spring-cloud"&gt;http://www.slideshare.net/SpringCentral/developer-experience-with-spring-cloud&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;p&gt;So you&amp;rsquo;ve decided to go cloud native. You&amp;rsquo;ve got a number of microservices that your company builds and runs. They interact with each other in various ways. You&amp;rsquo;ve got testing and staging and production environments that may have taken a lot of effort to get right. How does an individual developer work on just one of those services without stomping on other developers using a shared environment? In this session we will explore a range of options for development, starting with deploying everything locally, through stubbing, to local development solution that allows a developer to run their service in their IDE and have the whole system interact on their local machine!&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oqYzySDiLWI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>The Spring Boot Dashboard in STS - Part 3:  Spring Boot Devtools reloaded</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/22/the-spring-boot-dashboard-in-sts-part-3-spring-boot-devtools-reloaded" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2015-10-08:2253</id>
-    <updated>2015-10-22T08:00:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome back Spring community,&lt;/p&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;to this final part of our series about the new Spring Boot Dashboard in the Spring Tool Suite. In this final part we will take a deeper look at using the &lt;a href="https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3"&gt;Spring Boot Devtools&lt;/a&gt; in combination with the boot dashboard. Again, this feature is new with Spring Boot 1.3, so you need to be on that version in order to use the following features.&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;h2&gt;Quickly deploy code changes&lt;/h2&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;For local apps, using the Spring Boot Devtools is extremely easy and straightforward. As soon as you add the Spring Boot Devtools to your project as a dependency (there is an easy menu option for that in the Spring category of your context menu) and start your app, it will listen for local changes to configuration and class files and kick a restart of the app for you automatically. You don’t even need to restart the app yourself, the Spring Boot Devtools will do that for you automatically. Since STS/Eclipse produces and updates class files whenever you save a file, all this happens automatically for you when working within STS.&lt;/p&gt;&#xD;
-&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/17-enable-devtools.png"/&gt;&lt;/p&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This story gets more interesting if you run your Spring Boot apps on a remote runtime like Cloud Foundry. In principle, you can use the Spring Boot Devtools in such a remote setting as well, but it requires a bit more work. The good news is that the Spring Boot Dashboard helps you with that.&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;As soon as you deploy or restart (and therefore update) a Spring Boot app on Cloud Foundry (using the boot dashboard) that has the Spring Boot Devtools on its classpath, the boot dashboard will configure the boot app on CF for the remote usage of the devtools automatically. This includes primarily the setting of a remote secret - to allow remote devtools access to it.&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Once the devtools-enabled boot app is running on Cloud Foundry, you can easily start the boot devtools remote client application for it. This client application runs locally on your machine and connects to the remote application on Cloud Foundry. It watches for file changes, uploads them to the app on Cloud Foundry and triggers a restart of the app on Cloud Foundry.&lt;/p&gt;&#xD;
-&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/18-devtools-client.png"/&gt;&lt;/p&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;Since the remote client app will watch for file changes within the project on your local machine, you can continue to work within your IDE as usual. Changed files are automatically updated to the Cloud Foundry version of the app by the remote client app. The counterpart on Cloud Foundry will restart the boot app once those changed files are stored to the app on Cloud Foundry. This works for newly compiled source code as well as for changed resource files.&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This allows you to achieve quick turnaround cycles when working on your project even if it is deployed to a remote cloud runtime.&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;h2&gt;Debugging in the cloud&lt;/h2&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;In addition to the automatic restart feature, the Spring Boot Devtools also enable full debugging of remote apps on a cloud runtime. This is supported by the Spring Boot Dashboard in STS, too. If you have the Spring Boot Devtools on the classpath of your application, you can press the (re)debug button for the Cloud Foundry instance of the app. This will restart the app on Cloud Foundry in debug mode, automatically start the corresponding remote client app on your machine, and hook up the Eclipse debugger to it.&lt;/p&gt;&#xD;
-&lt;/div&gt;&lt;p&gt;&lt;img src="http://docs.spring.io/sts/nan/v371/img/blog-series/19-debugging.png"/&gt;&lt;/p&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;You can debug the application that is running on the cloud runtime in the same way as local applications, including setting breakpoints, inspecting variables, or even hot-swapping code. However, the automatic restart feature is not available for apps running in debug mode (due to technical limitations of the boot devtools at the moment).&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;If you try the remote debugging of apps on Cloud Foundry, you will notice a significant slowdown in debugging. This is caused by the tunneling of the remote debug protocol of the JVM through a HTTP connection, something the remote debug protocol is not designed for. We are working on improving this by using a different transport mechanism. But the remote debugging of the app on Cloud Foundry should be something you rarely do. For more frequent debugging you might want to consider running and debugging the app locally and connecting it up with the rest of your application services via the ngrok tunneling feature that we described in the previous part of this blog series.&lt;/p&gt;&#xD;
-&lt;/div&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;div class="paragraph"&gt;&#xD;
-&lt;p&gt;This concludes the blog series on the Spring Boot Dashboard, a new feature in the Spring Tool Suite since its 3.7.1 release. Let us know about your experiences using the dashboard.&lt;/p&gt;&#xD;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring ( SpringOne2GX replay / Pieter Humphrey edition!) - October 21, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/21/this-week-in-spring-springone2gx-replay-pieter-humphrey-edition-october-21-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-10-21:2284</id>
-    <updated>2015-10-21T08:32:30Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week is the first week (of many) where the &lt;em&gt;crazy awesome&lt;/em&gt; [https://twitter.com/pieterhumphrey](Pieter Humphrey) has released scores of &lt;a href="http://SpringOne2gx.com"&gt;SpringOne2GX&lt;/a&gt; 2015 videos for our binge watching enjoyment! Most of this week&amp;rsquo;s bountiful roundup is thanks to Pieter&amp;rsquo;s meticulous transcoding, uploading and posting videos from SpringOne2GX 2015 - thanks Pieter! So without further ado, let&amp;rsquo;s take a look at some of this week&amp;rsquo;s selection including a LOT of content from SpringOne2GX, including..&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;..&lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-java-component-design-with-spring-framework-4-2"&gt;Juergen Holler and Stephane Nicoll&amp;rsquo;s talk presenting the updates to Spring framework 4.2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..&lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-day-1-keynote-cloud-native-enterprise"&gt;the SpringOne2GX day 1 keynote&lt;/a&gt; featuring James Watters, Dr. David Syer, Scott Frederick, Juergen Hoeller and yours truly&lt;/li&gt;
-  &lt;li&gt;..&lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-day-2-technical-keynote-cloud-native-enterprise"&gt;the SpringOne2GX day 2 keynote&lt;/a&gt; featuring Guillaume LaForge, Graeme Rocher, Dr. David Syer, Mark Fisher, Scott Frederick and yours truly&lt;/li&gt;
-  &lt;li&gt;..the talk that Spring Boot and Spring Cloud co-founder Dr. Dave Syer and I, aided by a &lt;em&gt;VERY&lt;/em&gt; gracious guest appearance by Spring creator and hero &lt;a href="http://twitter.com/springrod"&gt;Dr. Rod Johnson&lt;/a&gt;, gave &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-getting-started-with-spring-cloud"&gt;introducing Spring Cloud&lt;/a&gt; (I&amp;rsquo;ve &lt;em&gt;never been so privileged&lt;/em&gt; as I was to be a part of this talk and I &lt;em&gt;truly&lt;/em&gt; hope you enjoy this one)&lt;/li&gt;
-  &lt;li&gt;..Netflix&amp;rsquo;s Jon Schneider and Taylor Wicksell &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-at-netflix"&gt;showing - live - how they build cloud native applications using Spring Boot and Spring Cloud at Netflix&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..Matt Stine&amp;rsquo;s talk introducing &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-lattice-a-cloud-native-platform-for-your-spring-applications"&gt;some of the powerful new features in Lattice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;.. Grails lead &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-grails-3-x-update"&gt;Graeme Rocher&amp;rsquo;s Grails 3 update&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..Spencer Gibb&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-exploring-alternative-spring-cloud-implementations"&gt;introducing some of the various extensibility planes of Spring Cloud&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..John Field and Shawn McKinney&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-a-how-to-guide-to-security-in-the-paas-cloud"&gt;discussing some of the security concerns when moving applications to a PaaS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..Will Tran&amp;rsquo;s talk on &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-securing-microservices-with-spring-cloud-security"&gt;securing microservices with Spring Cloud Security&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..Google&amp;rsquo;s Ray Tsang introducing how &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-boot-micro-services-containers-and-kubernetes-how-to"&gt;to run Spring Boot-based microservices on Kubernetes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..Nicholas Frankel&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-boot-for-devops"&gt;talk introducing devops with Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..Cornelia Davis&amp;rsquo; talk on &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-12-factor-or-cloud-native-apps-for-spring-developers"&gt;12 factor Spring applications&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..AppDynamics&amp;rsquo;s Dustin Whittle&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-frontend-engineering"&gt;about modern frontend engineering&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..VMWare&amp;rsquo;s Emad Benjamin&amp;rsquo;s talk &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-building-and-tuning-high-performance-java-platforms"&gt;about building and tunng high performance Java platforms&lt;/a&gt; in a world of virtual machines and the cloud&lt;/li&gt;
-  &lt;li&gt;..Colin Harrington&amp;rsquo;s talk on using Grails to &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-booting-iot-with-grails"&gt;support Internet-of-Things use cases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..the amazing &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-bringing-javax-cache-ing-to-your-application"&gt;incomparable Jeff Brown&amp;rsquo;s talk introducing &lt;code&gt;javax.cache&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..and Jeff&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-restful-grails-3"&gt;talk on RESTful Grails 3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;..and Jeff&amp;rsquo;s talk on building a &lt;a href="http://spring.io/blog/2015/10/19/springone2gx-2015-replay-microservice-architecture-with-grails"&gt;microservice architecture with Grails&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Whew! That&amp;rsquo;s &lt;em&gt;at least&lt;/em&gt; a week&amp;rsquo;s worth of watching! That&amp;rsquo;s all thanks to Pieter Humphrey working overtime to get this all available as early and abundantly as possible. Pieter is &lt;em&gt;also&lt;/em&gt; responsible for working very hard over the last few years to ensure that &lt;em&gt;all&lt;/em&gt; talks are recorded and available so to be able to binge watch everything so quickly after the show is a &lt;em&gt;true&lt;/em&gt; privilege. Thank you, Pieter! We still have some &lt;em&gt;news&lt;/em&gt; to catch up on, as well! So..&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring and Spring Boot ninja Stéphane Nicoll just announced &lt;a href="http://spring.io/blog/2015/10/16/spring-boot-1-2-7-available-now"&gt;that Spring Boot 1.2.7 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data ninja Thomas Risberg just announced &lt;a href="http://spring.io/blog/2015/10/15/spring-for-apache-hadoop-2-3-release-candidate-1-released"&gt;that Spring for Apache Hadoop RC1 has been released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;SN has also just announced &lt;a href="http://spring.io/blog/2015/10/15/spring-framework-4-2-2-4-1-8-and-3-2-15-available-now"&gt;that Spring framework 4.2.2, 4.1.8, and 3.2.15 - complete with lots of bug fixes, are all now available as well&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Martin Lippert&amp;rsquo;s just posted the second part &lt;a href="http://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry"&gt;of his series on using the Spring Boot Dashboard in Spring Tool Suite&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring lead and co-founder Juergen Hoeller put together a nice &lt;a href="http://spring.io/blog/2015/10/14/spring-on-glassfish-4-1-1-and-wildfly-10-undertow-1-3"&gt;post on the compatible Java EE 7 implementations and Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Janne Valkealahti just announced &lt;a href="http://spring.io/blog/2015/10/13/spring-statemachine-1-0-0-released"&gt;Spring Statemachine 1.0.0 has been released&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.3.0.RC1 Available Now</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/21/spring-boot-1-3-0-rc1-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2015-10-21:2283</id>
-    <updated>2015-10-21T04:59:25Z</updated>
-    <content type="html">&lt;p&gt;Spring Boot v1.3.0.RC1 is available now from the &lt;a href="http://repo.springsource.org/milestone/"&gt;Spring milestone repository&lt;/a&gt;. This release closes &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.0.RC1+is%3Aissue+is%3Aclosed"&gt;almost 140 issues&lt;/a&gt; and merges &lt;a href="https://github.com/spring-projects/spring-boot/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+is%3Aclosed+milestone%3A1.3.0.RC1"&gt;53 pull-requests&lt;/a&gt;! Thanks to everyone that has contributed.&lt;/p&gt;&lt;p&gt;We&amp;rsquo;re not planning on having a long release candidate phase, so please do try RC1 and let us know if you find any problems.&lt;/p&gt;&lt;p&gt;For a complete list of changes, and upgrade instructions, see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes"&gt;Spring Boot 1.3 Release Notes&lt;/a&gt; on the wiki and the updated &lt;a href="http://docs.spring.io/spring-boot/docs/1.3.0.RC1/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Modern Java Component Design with Spring Framework 4.2</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-modern-java-component-design-with-spring-framework-4-2" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2282</id>
-    <updated>2015-10-19T19:55:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015&lt;br/&gt;Speakers: Juergen Holler, Stephane Nicoll&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/modern-java-component-design-with-spring-framework-42"&gt;http://www.slideshare.net/SpringCentral/modern-java-component-design-with-spring-framework-42&lt;/a&gt;&lt;br/&gt;Spring&amp;rsquo;s programming and configuration model has a strong design philosophy with respect to application components and configuration artifacts. Spring&amp;rsquo;s annotation-based component story is fine-tuned for source code readability as well as consistency across an entire application&amp;rsquo;s codebase. This session presents selected Spring Framework 4 component model highlights, with a focus on the upcoming Spring Framework 4.2 and a selection of Java 8 enabled features, illustrated with many code examples and noteworthy design considerations.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7uii6osglDg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Spring Cloud *: Exploring Alternative Spring Cloud Implementations</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-exploring-alternative-spring-cloud-implementations" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2281</id>
-    <updated>2015-10-19T19:52:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015&lt;br/&gt;Speaker: Spencer Gibb&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-cloud-alternative-implementations-of-discovery-config-bus"&gt;http://www.slideshare.net/SpringCentral/spring-cloud-alternative-implementations-of-discovery-config-bus&lt;/a&gt;&lt;br/&gt;In this session we will discuss the Spring Cloud abstractions and interfaces that an implementation might choose to implement: DiscoveryClient, LoadBalancerClient, Configuration and Bus. We will compare and contrast some target technologies and discus the tradeoffs and nuances of each, such as: netflix, consul, etcd, zookeeper and lattice. We will then show and demonstrate Spring Cloud implementations of those technologies.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NV6qHLEzteQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
