@@ -7427,3 +7427,9 @@ Binding(ALT+COMMAND+C,
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2015-12-09 10:21:06.577
 !MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-12-09 10:31:33.819
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-12-09 10:31:33.820
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
