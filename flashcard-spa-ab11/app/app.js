@@ -1,1 +1,1 @@
-angular.module('flashcard', []);
+angular.module('flashcard', ['ui.bootstrap']);

@@ -33,12 +33,16 @@ angular.module('flashcard').factory('QuestionnaireRepository', function() {
 			return questionnaires;
 		},
 		add : function(mytitle) {
+			//Ist wie ein Konstruktor
 			var questionnaire = {id:++index, title: mytitle, description: 'Lorem ipsum...'};
 			questionnaires.push(questionnaire);
 		},
 		remove : function(id) {
 			var index = findById(id);
 			questionnaires.splice(index,1);
+		},
+		save : function(questionnaire) {
+			questionnaires.push(questionnaire);
 		}
 	};
 });
