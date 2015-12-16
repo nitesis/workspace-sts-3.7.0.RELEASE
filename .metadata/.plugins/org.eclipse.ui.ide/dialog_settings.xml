@@ -7,7 +7,7 @@
 		<item value="org.cloudfoundry.ide.eclipse.server:1.8.3.201506161740-RELEASE"/>
 		<item value="org.eclipse.aether.maven.feature:3.1.0.20140706-2237"/>
 		<item value="org.eclipse.ajdt:2.2.4.e45x-20150925-0800"/>
-		<item value="org.eclipse.buildship:1.0.5.v20150922-2202"/>
+		<item value="org.eclipse.buildship:1.0.6.v20151126-1638"/>
 		<item value="org.eclipse.datatools.common.doc.user:1.12.0.v201405281819-26-311A16321A3557"/>
 		<item value="org.eclipse.datatools.connectivity.doc.user:1.12.0.v201405281819-37D-7733L3D753L7BBF"/>
 		<item value="org.eclipse.datatools.connectivity.feature:1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8"/>
@@ -39,7 +39,7 @@
 		<item value="org.eclipse.datatools.sqltools.doc.user:1.12.0.v201405281819-37D-7733L3D753L7BBF"/>
 		<item value="org.eclipse.draw2d:3.10.1.201508170204"/>
 		<item value="org.eclipse.egit.mylyn:4.0.1.201506240215-r"/>
-		<item value="org.eclipse.egit:4.1.0.201509280440-r"/>
+		<item value="org.eclipse.egit:4.1.1.201511131810-r"/>
 		<item value="org.eclipse.emf.codegen.ecore.ui:2.11.1.v20150806-0404"/>
 		<item value="org.eclipse.emf.codegen.ecore:2.11.0.v20150806-0404"/>
 		<item value="org.eclipse.emf.codegen.ui:2.8.0.v20150806-0404"/>
@@ -63,7 +63,7 @@
 		<item value="org.eclipse.gef:3.10.1.201508170204"/>
 		<item value="org.eclipse.help:2.1.1.v20150904-0015"/>
 		<item value="org.eclipse.jdt:3.11.1.v20150904-0015"/>
-		<item value="org.eclipse.jgit:4.1.0.201509280440-r"/>
+		<item value="org.eclipse.jgit:4.1.1.201511131810-r"/>
 		<item value="org.eclipse.jpt.common.eclipselink.feature:1.3.101.v201410241959"/>
 		<item value="org.eclipse.jpt.common.feature:1.4.1.v201410241959"/>
 		<item value="org.eclipse.jpt.dbws.eclipselink.feature:1.2.101.v201501152048"/>
@@ -122,20 +122,20 @@
 		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
 		<item value="org.sonatype.m2e.egit.feature:0.14.0.201504071521"/>
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.0.201502101659-signed-20150525172209"/>
-		<item value="org.springframework.ide.eclipse.ajdt.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.aop.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.autowire.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.batch.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.boot.dash.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.data.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.integration.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.maven.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.mylyn.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.security.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springframework.ide.eclipse.webflow.feature:3.7.1.201510041102-RELEASE"/>
-		<item value="org.springsource.sts.package:3.7.1.201510041213-RELEASE-e45"/>
-		<item value="org.springsource.sts:3.7.1.201510041213-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.ajdt.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.aop.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.autowire.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.batch.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.boot.dash.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.data.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.integration.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.maven.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.mylyn.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.security.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.webflow.feature:3.7.2.201511260958-RELEASE"/>
+		<item value="org.springsource.sts.package:3.7.2.201511261048-RELEASE-e45"/>
+		<item value="org.springsource.sts:3.7.2.201511261048-RELEASE"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
@@ -148,6 +148,7 @@
 			<item value="/Users/nitesis/Documents/FHNW/workspace/flashcard-basic"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 11/AB13 Files/flashcard-spa-ab13.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 09/UEB9 Solutions/flashcard-spa-ueb9.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 08/AB10 Files/flashcard-spa-ab10.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 06/AB8-UEB6 Solutions/hello-jsf-ab8-ueb6.zip"/>

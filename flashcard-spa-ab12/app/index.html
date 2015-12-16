@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="flashcard">
+  <head>
+<!--   	<base href="/flashcard-spa/"> -->
+  	<meta charset="utf-8"/>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="questionnaire/questionnaire.css"/>
+    <link rel="stylesheet" href="questionnaire/listelement/listelement.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="col-md-offset-3" ng-controller="QuestionnaireController as ctrl">
+	        <!-- angular templating -->
+	        <!-- this is where content will be injected -->
+	        <div ng-view></div>  
+            <footer>&copy; 2015 The FHNW Team</footer>
+        </div>
+    </div>  
+    <!-- script tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>        
+    <script src="app.js"></script>
+    <script src="questionnaire/listelement/listelement-directives.js"></script>
+    <script src="questionnaire/questionnaire-controller.js"></script>
+<!--     <script src="questionnaire/questionnaire-service.js"></script> -->
+    <script src="questionnaire/questionnaire-factory.js"></script>
+  </body>
+</html>

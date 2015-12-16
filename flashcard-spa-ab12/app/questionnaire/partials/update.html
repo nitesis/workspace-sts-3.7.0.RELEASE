@@ -1,0 +1,29 @@
+<div ng-controller="QuestionnaireUpdateController as dialog">
+	<form class="form-horizontal">
+		<div class="modal-header">
+			<h4 class="modal-title">Update Questionnaire</h4>
+		</div>
+		<div class="modal-body">
+			<div class="form-group">
+				<label class="col-sm-3 control-label" for="title">Title:</label>
+				<div class="col-sm-8">
+					<input type="text" id="title" class="form-control"
+						ng-model="dialog.questionnaire.title" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label" for="description">Description:</label>
+				<div class="col-sm-8">
+					<textarea type="text" id="description" rows="4" class="form-control"
+						ng-model="dialog.questionnaire.description">
+	        	    </textarea>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default"
+				ng-click="dialog.cancel()">Cancel</button>
+			<button type="button" class="btn btn-primary" ng-click="dialog.save()">Save</button>
+		</div>
+	</form>
+</div>

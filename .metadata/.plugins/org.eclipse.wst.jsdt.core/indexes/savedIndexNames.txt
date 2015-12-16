@@ -1,17 +1,8 @@
 INDEX VERSION 1.3+/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.RELEASE/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3225268558.index
-2499140771.index
-3923974762.index
 1287425855.index
 291738638.index
 2707898715.index
-4040976848.index
+1894403024.index
 3209481910.index
-3203007718.index
-1899288562.index
-1334729345.index
-3186595002.index
-4138165943.index
 2609481854.index
 242284375.index
-2665753340.index

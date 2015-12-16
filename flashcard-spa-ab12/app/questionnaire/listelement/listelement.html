@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-md-1 vcenter">{{questionnaire.id}}</div>
+	<div class="col-md-2 vcenter">{{questionnaire.title}}</div>
+	<div class="col-md-5 vcenter">{{questionnaire.description}}</div>
+	<div class="vcenter">
+		<button class="btn-link" ng-click="controller.show(questionnaire.id)">
+			<span class="glyphicon glyphicon-zoom-in"></span>
+		</button>
+		<button class="btn-link" ng-click="controller.remove(questionnaire.id)">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+		<button class="btn-link" ng-click="controller.edit(questionnaire.id)">
+			<span class="glyphicon glyphicon-edit"></span>
+		</button>
+<!-- 		<button class="btn-link" ng-click="controller.openUpdateModalDialog(questionnaire.id)"> -->
+<!-- 			<span class="glyphicon glyphicon-edit"></span> -->
+<!-- 		</button> -->
+	</div>
+</div>

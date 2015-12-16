@@ -1,0 +1,24 @@
+<div ng-controller="QuestionnaireShowController as detail">
+	<form class="form-horizontal" >
+		<div class="modal-header">
+			<h4 class="modal-title">Show Questionnaire</h4>
+		</div>
+		<div class="modal-body">
+			<div class="form-group">
+				<label class="col-sm-2" for="title">Title:</label>
+				<div class="col-sm-9">
+						{{detail.questionnaire.title}}
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2" for="description">Description:</label>
+				<div class="col-sm-9">
+						{{detail.questionnaire.description}}
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" ng-click="detail.back()">Back</button>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,37 @@
+<!-- list.html -->
+<div ng-controller="QuestionnaireController as ctrl">
+	<!-- 
+	<form class="form-inline">
+		<input type="text" class="form-control" ng-model="ctrl.mytitle" />
+		<button class="btn btn-primary" ng-click="ctrl.add()">New</button>
+	</form>
+	 -->
+
+	<form class="form-inline">
+			<button class="btn btn-primary" ng-click="ctrl.openCreateModalDialog()">New</button>
+<!-- 		<button class="btn btn-primary" ng-click="ctrl.go('/create')">New</button> -->
+	</form>
+	<hr />
+	<div ng-repeat="q in ctrl.questionnaires">
+		<div questionnaire-element questionnaire="q" controller="ctrl"></div>
+	</div>
+
+	<!-- 
+		<div class="row">
+			<div class="col-md-1 vcenter">{{questionnaire.id}}</div>
+			<div class="col-md-2 vcenter">{{questionnaire.title}}</div>
+			<div class="col-md-5 vcenter">{{questionnaire.description}}</div>
+			<div class="col-md-2 vcenter">
+				<button href="#" class="btn" ng-click="ctrl.show(questionnaire.id)">
+					'<span class="glyphicon glyphicon-zoom-in"></span>
+				</button>
+				<div class="col-md-2 vcenter">
+					<a href="#" class="btn" ng-click="ctrl.remove(questionnaire.id)">
+						<span class="glyphicon glyphicon-remove"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	 -->
+</div>
