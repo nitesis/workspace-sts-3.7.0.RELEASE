@@ -6,32 +6,7 @@
 angular.module('flashcard').factory('QuestionnaireNetworkService', function() {
 	// Keep 'questionnaires' hidden to the rest of the world.
 
-//	Das hier kann jetzt weg, da mit $http mit Server kommuniziert werden soll
-//	var questionnaires = [
-//		 {id:1, title: 'Q1', description: 'Lorem ipsum...'},
-//		 {id:2, title: 'Q2', description: 'Lorem ipsum...'},
-//		 {id:3, title: 'Q3', description: 'Lorem ipsum...'}
-//	];
-//	
-//	var index = questionnaires.length;
-//	
-//	function findById(id) {
-//		var index = -1;
-////		for (var i=0; i < questionnaires.length; i++) {
-////			var questionnaire = questionnaires[i];
-////			if (questionnaire.id === id) {
-////				index = i;
-////			}
-////		}
-//		questionnaires.forEach(function(questionnaire, i) {
-//			if (questionnaire.id === id) {
-//				index = i;
-//				return;
-//			};
-//		});
-//		return index;
-//	};
-//	
+
 	/*
 	 * Return a function object with public methods. 
 	 * Only these methods have access to the instance variables.
