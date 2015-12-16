@@ -1,19 +1,41 @@
 'use strict';
 
 angular.module('flashcard').controller('QuestionnaireController', 
-		['QuestionnaireRepository', '$uibModal', '$location', function(QuestionnaireRepository, $uibModal, $location) {
-	this.mytitle = '';
+		['QuestionnaireNetworkService', '$uibModal', '$location', function(QuestionnaireNetworkService, $uibModal, $location) {
+//	vm = ViewModel -> geht nur über so eine Variable
+			var vm = this;
+			this.mytitle = '';
 
-	this.questionnaires = QuestionnaireRepository.getAll();
+			var getAll = function() {
+				QuestionnaireNetworkService.getAll()
+				.success(function(data, status, headers, config) {
+					vm.questionnaires = data;
+				})
+				.error(function(data, status, headers, config) {
+					console.log(data);
+				});
+			};
+//			call server to retrieve all questionnaires
+			getAll();
 	
-	this.add = function() {
-		QuestionnaireRepository.add(this.mytitle);
+			this.remove = function(id) {
+				QuestionnaireNetworkService.remove(id)
+				.success(function(data, status, headers, config) {
+					console.log(data);
+					getAll();
+				})
+				error(function(data, status, headers, config) {
+					console.log(data);
+				});
+			};
+			
+			
+			this.add = function() {
+		QuestionnaireNetworkService.add(this.mytitle);
 		this.mytitle = '';
 	};
 	
-	this.remove = function(id) {
-		QuestionnaireRepository.remove(id);
-	};
+	
 	
 	this.show = function(id) {
 		var url = '/show/' + id;
@@ -37,7 +59,7 @@ angular.module('flashcard').controller('QuestionnaireController',
 		    });
 
 		modalInstance.result.then(function (questionnaire) {
-			QuestionnaireRepository.save(questionnaire);
+			QuestionnaireNetworkService.save(questionnaire);
 		}, function (error) {		
 			// something went wrong!;
 		});		
@@ -59,7 +81,7 @@ angular.module('flashcard').controller('QuestionnaireController',
 
 		modalInstance.result.then(function (questionnaire) {
 			// Save updated questionnaire
-			QuestionnaireRepository.update(questionnaire);
+			QuestionnaireNetworkService.update(questionnaire);
 		}, function (error) {		
 			// something went wrong!;
 		});		
@@ -99,7 +121,7 @@ angular.module('flashcard').controller('QuestionnaireDetailUpdateDialogControlle
 }]);
 
 angular.module('flashcard').controller('QuestionnaireCreateController', 
-		[ '$location', 'QuestionnaireRepository', function($location, QuestionnaireRepository) {
+		[ '$location', 'QuestionnaireRepository', function($location, QuestionnaireNetworkService) {
 	// initialize questionnaire
     var questionnaire = {
     		title: null,
@@ -109,7 +131,7 @@ angular.module('flashcard').controller('QuestionnaireCreateController',
     this.questionnaire = questionnaire;
 	
 	this.save = function() {
-		QuestionnaireRepository.save(questionnaire);
+		QuestionnaireNetworkService.save(questionnaire);
 		$location.path('/');
 	};
 
@@ -119,13 +141,13 @@ angular.module('flashcard').controller('QuestionnaireCreateController',
 }]);
 
 angular.module('flashcard').controller('QuestionnaireUpdateController', 
-		[ '$location', '$route', 'QuestionnaireRepository', function($location, $route, QuestionnaireRepository) {
+		[ '$location', '$route', 'QuestionnaireRepository', function($location, $route, QuestionnaireNetworkService) {
 	// 'params.id' is a string -> convert it to a number!
 	var id = parseInt($route.current.params.id);
-	this.questionnaire = QuestionnaireRepository.getById(id);
+	this.questionnaire = QuestionnaireNetworkService.getById(id);
 
 	this.save = function() {
-		QuestionnaireRepository.update(this.questionnaire);
+		QuestionnaireNetworkService.update(this.questionnaire);
 		$location.path('/');
 	};
 
@@ -135,10 +157,10 @@ angular.module('flashcard').controller('QuestionnaireUpdateController',
 }]);
 
 angular.module('flashcard').controller('QuestionnaireShowController', 
-		[ '$location', '$route', 'QuestionnaireRepository', function($location, $route, QuestionnaireRepository) {
+		[ '$location', '$route', 'QuestionnaireRepository', function($location, $route, QuestionnaireNetworkService) {
 	// 'params.id' is a string -> convert it to a number!
     var id = parseInt($route.current.params.id);
-    this.questionnaire = QuestionnaireRepository.getById(id);
+    this.questionnaire = QuestionnaireNetworkService.getById(id);
 
 	this.back = function() {
 		$location.path('/');		

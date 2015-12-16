@@ -7675,3 +7675,15 @@ java.lang.Exception: Debug stacktrace
 !MESSAGE Could not publish server configuration for Tomcat v8.0 Server at localhost.
 !SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-12-16 08:50:31.157
 !MESSAGE Multiple Contexts have a path of "/flashcard-spa".
+
+!ENTRY org.eclipse.core.resources 4 274 2015-12-16 10:04:25.097
+!MESSAGE Resource is out of sync with the file system: '/flashcard-spa-ab12/app/questionnaire/questionnaire-factory.js'.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-12-16 10:05:59.652
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-12-16 10:07:39.378
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-12-16 10:09:23.491
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
