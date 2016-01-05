@@ -6,6 +6,7 @@ angular.module('flashcard').controller('QuestionnaireController',
 			var vm = this;
 			this.mytitle = '';
 
+			// QuestionnaireNetworkService returns promises!
 			var getAll = function() {
 				QuestionnaireNetworkService.getAll()
 				.success(function(data, status, headers, config) {
@@ -24,16 +25,16 @@ angular.module('flashcard').controller('QuestionnaireController',
 					console.log(data);
 					getAll();
 				})
-				error(function(data, status, headers, config) {
+				.error(function(data, status, headers, config) {
 					console.log(data);
 				});
 			};
 			
 			
-			this.add = function() {
-		QuestionnaireNetworkService.add(this.mytitle);
-		this.mytitle = '';
-	};
+//	this.add = function() {
+//		QuestionnaireNetworkService.add(this.mytitle);
+//		this.mytitle = '';
+//	};
 	
 	
 	
@@ -59,9 +60,16 @@ angular.module('flashcard').controller('QuestionnaireController',
 		    });
 
 		modalInstance.result.then(function (questionnaire) {
-			QuestionnaireNetworkService.save(questionnaire);
+			QuestionnaireNetworkService.save(questionnaire)
+			.success (function(data, status, headers, config) {
+				console.log(data);
+				getAll();
+			})
+			.error(function(data, status, headers, config) {
+				console.log(data);
+			});
 		}, function (error) {		
-			// something went wrong!;
+			// something went wrong! That's real life ;-);
 		});		
 	};	
 	
@@ -108,20 +116,9 @@ angular.module('flashcard').controller('QuestionnaireDetailDialogController',
 	};
 }]);
 
-angular.module('flashcard').controller('QuestionnaireDetailUpdateDialogController', 
-		[ '$uibModalInstance', 'questionnaire', function($uibModalInstance, questionnaire) {
-	this.questionnaire = questionnaire;
-	this.ok = function() {
-		$uibModalInstance.close(questionnaire);
-	};
-
-	this.cancel = function() {
-		$uibModalInstance.dismiss();
-	};
-}]);
 
 angular.module('flashcard').controller('QuestionnaireCreateController', 
-		[ '$location', 'QuestionnaireRepository', function($location, QuestionnaireNetworkService) {
+		[ '$location', 'QuestionnaireRepository', function($location, QuestionnaireRepository) {
 	// initialize questionnaire
     var questionnaire = {
     		title: null,
@@ -131,7 +128,7 @@ angular.module('flashcard').controller('QuestionnaireCreateController',
     this.questionnaire = questionnaire;
 	
 	this.save = function() {
-		QuestionnaireNetworkService.save(questionnaire);
+		QuestionnaireRepository.save(questionnaire);
 		$location.path('/');
 	};
 
@@ -141,14 +138,31 @@ angular.module('flashcard').controller('QuestionnaireCreateController',
 }]);
 
 angular.module('flashcard').controller('QuestionnaireUpdateController', 
-		[ '$location', '$route', 'QuestionnaireRepository', function($location, $route, QuestionnaireNetworkService) {
+		[ '$location', '$route', 'QuestionnaireNetworkService', function($location, $route, QuestionnaireNetworkService) {
+	
+	var vm = this;
+	
 	// 'params.id' is a string -> convert it to a number!
 	var id = parseInt($route.current.params.id);
-	this.questionnaire = QuestionnaireNetworkService.getById(id);
+	this.questionnaire = QuestionnaireNetworkService.getById(id)
+	.success(function(data, status, headers, config) {
+		vm.questionnaire = data;
+	})
+	.error(function(data, status, headers, config) {
+		console.log(data);
+	});
 
 	this.save = function() {
-		QuestionnaireNetworkService.update(this.questionnaire);
-		$location.path('/');
+//		QuestionnaireRepository.update(this.questionnaire);
+		QuestionnaireNetworkService.update(vm.questionnaire)
+		.success(function(data, status, headers, config) {
+			console.log(data);
+			$location.path('/');
+		})
+		.error(function(data, status, headers, config) {
+			console.log(data);
+			$location.path('/');
+		});		
 	};
 
 	this.cancel = function() {
@@ -158,9 +172,17 @@ angular.module('flashcard').controller('QuestionnaireUpdateController',
 
 angular.module('flashcard').controller('QuestionnaireShowController', 
 		[ '$location', '$route', 'QuestionnaireRepository', function($location, $route, QuestionnaireNetworkService) {
+	
+	var vm = this;		
 	// 'params.id' is a string -> convert it to a number!
     var id = parseInt($route.current.params.id);
-    this.questionnaire = QuestionnaireNetworkService.getById(id);
+    this.questionnaire = QuestionnaireNetworkService.getById(id)
+    .success(function(data, status, headers, config) {
+    	vm.questionnaire = data;
+    })
+    .error(function(data, status, headers, config) {
+    	console.log(data);
+    });
 
 	this.back = function() {
 		$location.path('/');		

@@ -7687,3 +7687,389 @@ java.lang.Exception: Debug stacktrace
 
 !ENTRY org.eclipse.wst.server.core 4 0 2015-12-16 10:09:23.491
 !MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2015-12-16 15:50:21.734
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io: unknown error. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2015-12-16 15:50:22.050
+!MESSAGE Connection to http://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com: unknown error. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-01-05 20:21:32.050 -----------------------------------------------
+eclipse.buildId=3.7.0.201506290652-RELEASE-e45
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/nitesis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-01-05 20:21:37.437
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-01-05 20:21:47.037
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-01-05 20:21:47.037
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7fd7085d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@69cc3370,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2016-01-05 20:22:33.269
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/Enide/eclipse-p2-composite-repository/master/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2016-01-05 20:22:41.450
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeContent.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2016-01-05 20:23:19.514
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2016-01-05 20:23:19.514
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.core,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.ide,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.ui,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.core,3.18.0.v20151019-2227
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.identity.core,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.net,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.core,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.feed,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.ui,1.10.0.v20151102-1814
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.core,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.ui,1.10.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.screenshots,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.ui,3.18.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.workbench,3.18.0.v20151102-1813
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.xmlrpc,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.core,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.tasks.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.ui,3.18.0.v20151014-2324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.debug.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.core,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.ui,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.help.ui,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ant,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.tasks,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.core,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.ui,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.resources.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.bugs,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.core,3.18.0.v20151202-0115
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.core,3.18.0.v20151012-1647
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.ui,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.search,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.ui,3.18.0.v20151211-2235
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.514
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.team.ui,3.18.0.v20151120-2228
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.confluence.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.confluence.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.context.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.core,2.7.0.v20151015-1452
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.core.ant,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.core.osgi,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.help.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.html.core,2.7.0.v20151015-1452
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.markdown.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.markdown.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.mediawiki.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.mediawiki.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.tasks.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.textile.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.textile.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.tracwiki.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.tracwiki.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.twiki.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.twiki.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.bugzilla_feature,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons,3.18.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.identity,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.notifications,1.10.0.v20151102-1814
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.repositories,1.10.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.context_feature,3.18.0.v20151014-2324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.discovery,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.ide_feature,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.java_feature,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.monitor,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.tasks.ide,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.team_feature,3.18.0.v20151120-2228
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.wikitext_feature,2.7.0.v20151015-1452
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.515
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn_feature,3.18.0.v20151211-2235
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2016-01-05 20:23:19.517
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2016-01-05 20:23:19.517
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.core,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.ide,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.ui,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.core,3.18.0.v20151019-2227
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.identity.core,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.net,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.core,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.feed,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.517
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.ui,1.10.0.v20151102-1814
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.core,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.ui,1.10.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.screenshots,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.ui,3.18.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.workbench,3.18.0.v20151102-1813
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.xmlrpc,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.core,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.tasks.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.ui,3.18.0.v20151014-2324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.debug.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.core,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.ui,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.help.ui,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ant,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.tasks,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.core,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.ui,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.resources.ui,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.bugs,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.core,3.18.0.v20151202-0115
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.core,3.18.0.v20151012-1647
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.ui,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.search,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.ui,3.18.0.v20151211-2235
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.team.ui,3.18.0.v20151120-2228
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.confluence.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.confluence.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.context.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.core,2.7.0.v20151015-1452
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.core.ant,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.core.osgi,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.help.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.html.core,2.7.0.v20151015-1452
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.markdown.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.markdown.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.mediawiki.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.mediawiki.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.tasks.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.textile.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.textile.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.tracwiki.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.tracwiki.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.twiki.core,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.twiki.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.wikitext.ui,2.7.0.v20151009-1723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.bugzilla_feature,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons,3.18.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.identity,1.10.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.notifications,1.10.0.v20151102-1814
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.repositories,1.10.0.v20151116-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.context_feature,3.18.0.v20151014-2324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.discovery,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.ide_feature,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.java_feature,3.18.0.v20151013-1847
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.monitor,3.18.0.v20151009-1724
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.tasks.ide,3.18.0.v20151009-2340
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.team_feature,3.18.0.v20151120-2228
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.wikitext_feature,2.7.0.v20151015-1452
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2016-01-05 20:23:19.518
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn_feature,3.18.0.v20151211-2235
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-01-05 20:23:44.659
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-01-05 20:23:44.659
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-01-05 20:24:38.208
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.

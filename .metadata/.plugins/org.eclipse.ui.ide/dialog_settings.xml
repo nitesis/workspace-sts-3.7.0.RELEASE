@@ -7,7 +7,7 @@
 		<item value="org.cloudfoundry.ide.eclipse.server:1.8.3.201506161740-RELEASE"/>
 		<item value="org.eclipse.aether.maven.feature:3.1.0.20140706-2237"/>
 		<item value="org.eclipse.ajdt:2.2.4.e45x-20150925-0800"/>
-		<item value="org.eclipse.buildship:1.0.6.v20151126-1638"/>
+		<item value="org.eclipse.buildship:1.0.7.v20151214-0917"/>
 		<item value="org.eclipse.datatools.common.doc.user:1.12.0.v201405281819-26-311A16321A3557"/>
 		<item value="org.eclipse.datatools.connectivity.doc.user:1.12.0.v201405281819-37D-7733L3D753L7BBF"/>
 		<item value="org.eclipse.datatools.connectivity.feature:1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8"/>
@@ -148,6 +148,8 @@
 			<item value="/Users/nitesis/Documents/FHNW/workspace/flashcard-basic"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 12/AB14 Files/flashcard-spa-ueb10.zip"/>
+			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 12/AB14 Files/flashcard-spa-ab13.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 11/AB13 Files/flashcard-spa-ab13.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 09/UEB9 Solutions/flashcard-spa-ueb9.zip"/>
 			<item value="/Users/nitesis/Documents/FHNW/HS2015/webfr/__remotecopy/Lektion 08/AB10 Files/flashcard-spa-ab10.zip"/>
