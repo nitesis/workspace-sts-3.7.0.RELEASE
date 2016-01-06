@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/flashcard-spa-ab12" path="/flashcard-spa" reloadable="true" source="org.eclipse.jst.jee.server:flashcard-spa-ab12"/><Context docBase="/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/flashcard-spa-ab13" path="/flashcard-server" reloadable="true" source="org.eclipse.jst.jee.server:flashcard-spa-ab13"/></Host>
+      <Context docBase="/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/nitesis/Documents/FHNW/workspace/workspace-sts-3.7.0.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/flashcard-spa-ab14" path="/flashcard-spa" reloadable="true" source="org.eclipse.jst.jee.server:flashcard-spa-ab14"/></Host>
     </Engine>
   </Service>
 </Server>

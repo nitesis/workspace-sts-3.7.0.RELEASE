@@ -1,0 +1,10 @@
+<!-- list.html -->
+<div ng-controller="QuestionnaireController as ctrl">
+	<form class="form-inline">
+			<button class="btn btn-primary" ng-click="ctrl.openCreateModalDialog()">New</button>
+	</form>
+	<hr />
+	<div ng-repeat="q in ctrl.questionnaires">
+		<div questionnaire-element questionnaire="q" controller="ctrl"></div>
+	</div>
+</div>

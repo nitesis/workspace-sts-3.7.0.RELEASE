@@ -1,3 +1,2 @@
 #Tomcat publish data
-#Tue Jan 05 22:29:23 CET 2016
-org.eclipse.jst.jee.server\:/binary\:/Users/nitesis/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.7.RELEASE/2d9245006b788d7d6afeec85a43e4bfe2e46340a/spring-web-4.1.7.RELEASE.jar=WEB-INF/lib/spring-web-4.1.7.RELEASE.jar
+#Wed Jan 06 09:24:20 CET 2016
