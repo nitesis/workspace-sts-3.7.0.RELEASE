@@ -10,7 +10,6 @@
   "moduleType": [
     "node"
   ],
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -19,8 +18,9 @@
     "tests"
   ],
   "dependencies": {
-  "angular": "1.4.7",
-  "angular-bootstrap": "0.14.3",
-  "angular-route": "1.4.7"
+    "angular-bootstrap": "0.14.3",
+    "angular-route": "1.4.7",
+    "angular": "1.4.7",
+    "angular-mocks": "1.4.7"
   }
 }
