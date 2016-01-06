@@ -1,0 +1,26 @@
+{
+  "name": "flashcard-spa",
+  "description": "webfr module",
+  "main": "",
+  "authors": [
+    "nitesis <viviane.bendjus@students.fhnw.ch>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nitesis/workspace-sts-3.7.0.RELEASE",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  "angular": "1.4.7",
+  "angular-bootstrap": "0.14.3",
+  "angular-route": "1.4.7"
+  }
+}
