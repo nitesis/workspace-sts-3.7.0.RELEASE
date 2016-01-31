@@ -13,8 +13,8 @@
                 <button class="btn btn-primary" ng-click="ctrl.add()">New</button>
             </form>
             <hr/>
-            <div ng-repeat = "questionnaire in ctrl.quest">
-                <div questionnaire-element q="questionnaire"></div>
+            <div ng-repeat = "q in ctrl.quest">
+                <div questionnaire-element questionnaire="q" controller="ctrl"></div>
             </div>
             <footer>&copy; 2015 The FHNW Team</footer>
         </div>

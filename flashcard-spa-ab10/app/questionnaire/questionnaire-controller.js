@@ -12,4 +12,8 @@ angular.module('flashcard').controller('QuestionnaireController', ['Questionnair
 			QuestionnaireRepository.add(this.mytitle);
 			this.mytitle = '';
 		};
+		
+		this.remove = function(id) {
+			QuestionnaireRepository.remove(id);
+		};
 }]);
