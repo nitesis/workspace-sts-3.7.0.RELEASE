@@ -9,8 +9,8 @@
     <div class="container-fluid">
         <div class="col-md-offset-3" ng-controller = "QuestionnaireController as ctrl">
             <form class="form-inline" >
-                <input type="text" class="form-control" ng-model="ctrl.mytitle"/>
-                <button class="btn btn-primary" ng-click="ctrl.add()">New</button>
+                <!--  input type="text" class="form-control" ng-model="ctrl.mytitle"/-->
+                <button class="btn btn-primary" ng-click="ctrl.openModal()">New</button>
             </form>
             <hr/>
             <div ng-repeat = "q in ctrl.quest">
