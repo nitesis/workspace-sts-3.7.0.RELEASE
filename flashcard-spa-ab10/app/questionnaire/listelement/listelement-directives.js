@@ -3,7 +3,7 @@
  */
 angular.module('flashcard').directive('questionnaireElement', function() {
 	return {
-		restrict : 'EA',
+		restrict : 'A',
 		scope: {
 			questionnaire: '=questionnaire',
 			controller: '=controller'
