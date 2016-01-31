@@ -15,7 +15,16 @@ angular.module('flashcard').factory('QuestionnaireRepository', function() {
 	
 	var index = questionnaires.length;
 
-	
+	function findById(id) {
+		var index = -1;
+		questionnaires.forEach(function(questionnaire, i) {
+			if (questionnaire.id === id) {
+				index = i;
+				return;
+			};
+		});
+		return index;
+	};
 	/*
 	 * Return a function object with public methods. 
 	 * Only these methods have access to the instance variables.
@@ -28,6 +37,10 @@ angular.module('flashcard').factory('QuestionnaireRepository', function() {
 		add : function(mytitle) {
 			var questionnaire = {id:++index, title: mytitle, description: 'Lorem ipsum...'};
 			questionnaires.push(questionnaire);
+		},
+		remove : function(id) {
+			var index = findById(id);
+			questionnaires.splice(index,1);
 		}
 	};
 });
