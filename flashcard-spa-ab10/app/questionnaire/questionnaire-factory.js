@@ -45,6 +45,6 @@ angular.module('flashcard').factory('QuestionnaireRepository', function() {
 		save : function(questionnaire) {
 			questionnaire.id = ++index;
 			questionnaires.push(questionnaire);
-		},
+		}
 	};
 });
