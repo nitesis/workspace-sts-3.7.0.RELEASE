@@ -3,9 +3,8 @@
  */
 'use strict';
 
-// Alternative implementation. No changes on the client-side are needed!
-// Create the factory as Closure!
-angular.module('flashcard').factory('QuestionnaireRepository', function() {
+// Create the service as Closure!
+angular.module('flashcard').service('QuestionnaireRepository', function() {
 	// Keep 'questionnaires' hidden to the rest of the world.
 	var questionnaires = [
 		 {id:1, title: 'Q1', description: 'Lorem ipsum...'},
@@ -13,21 +12,16 @@ angular.module('flashcard').factory('QuestionnaireRepository', function() {
 		 {id:3, title: 'Q3', description: 'Lorem ipsum...'}
 	];
 	
-	var index = questionnaires.length;
-
-	
 	/*
-	 * Return a function object with public methods. 
-	 * Only these methods have access to the instance variables.
-	 * This is the public API!
+	 *  Defines the API.
 	 */
-	return {
-		getAll : function() {
-			return questionnaires;
-		},
-		add : function(mytitle) {
-			var questionnaire = {id:++index, title: mytitle, description: 'Lorem ipsum...'};
-			questionnaires.push(questionnaire);
-		}
+	this.getAll = function() {
+		return questionnaires;
 	};
-});
+	
+	this.add = function(mytitle) {
+		var questionnaire = {id:questionnaires.length+1, title: mytitle, description: 'Lorem ipsum...'};
+		questionnaires.push(questionnaire);
+	};
+	
+});	
