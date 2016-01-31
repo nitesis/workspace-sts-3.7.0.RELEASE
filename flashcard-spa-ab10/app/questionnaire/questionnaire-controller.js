@@ -1,7 +1,7 @@
 /**
  * 
  */
-angular.module('flashcard').controller('QuestionnaireController', ['QuestionnaireRepository', function(QuestionnaireRepository){
+angular.module('flashcard').controller('QuestionnaireController', ['QuestionnaireRepository', '$uibModal', function(QuestionnaireRepository, $uibModal){
 		
 		this.mytitle ='Huhu...!';
 
@@ -30,5 +30,25 @@ angular.module('flashcard').controller('QuestionnaireController', ['Questionnair
 				// something went wrong!;
 			});		
 		};	
+}]);
+
+'use strict';
+
+angular.module('flashcard').controller('QuestionnaireDetailDialogController', 
+		[ '$uibModalInstance', function($uibModalInstance) {
+	// initialize questionnaire
+	var questionnaire = {
+		title: null,
+		description: null
+	};
+	
+	this.questionnaire = questionnaire;
+	this.ok = function() {
+		$uibModalInstance.close(questionnaire);
+	};
+
+	this.cancel = function() {
+		$uibModalInstance.dismiss();
+	};
 }]);
 
