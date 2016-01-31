@@ -6,13 +6,13 @@
   </head>
   <body>
     <div class="container-fluid">
-        <div class="col-md-offset-3" ng-controller = "QuestionnaireController">
+        <div class="col-md-offset-3" ng-controller = "QuestionnaireController as ctrl">
             <form class="form-inline" >
-                <input type="text" class="form-control" ng-model="mytitle"/>
-                <button class="btn btn-primary" ng-click="add()">New</button>
+                <input type="text" class="form-control" ng-model="ctrl.mytitle"/>
+                <button class="btn btn-primary" ng-click="ctrl.add()">New</button>
             </form>
             <hr/>
-            <div ng-repeat = "questionnaire in quest">
+            <div ng-repeat = "questionnaire in ctrl.quest">
                 <dl>
                     <dt>[{{questionnaire.id}}] {{questionnaire.title}}</dt>
                     <dd>{{questionnaire.description}}</dd>
@@ -25,5 +25,6 @@
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
    <script src="app.js"></script>
    <script src="questionnaire/questionnaire-controller.js"></script>
+   <script src="questionnaire/questionnaire-service.js"></script>
   </body>
 </html>

@@ -1,22 +1,15 @@
 /**
  * 
  */
-angular.module('flashcard').controller('QuestionnaireController', function($scope){
+angular.module('flashcard').controller('QuestionnaireController', ['QuestionnaireRepository', function(QuestionnaireRepository){
 		
-		$scope.mytitle ='Huhu...!';
-		
-		var questionnaires = [
-		             {id:1, title: 'Q1', description: 'Lorem ipsum...'},
-		             {id:2, title: 'Q2', description: 'Lorem ipsum...'},
-		             {id:3, title: 'Q3', description: 'Lorem ipsum...'}
-		];
-		
+		this.mytitle ='Huhu...!';
+
 		//Das macht globalen Zugriff möglich
-		$scope.quest = questionnaires;	
+		this.quest = QuestionnaireRepository.getAll();	
 		
-		$scope.add = function() {
-			var questionnaire = {id:questionnaires.length+1, title: $scope.mytitle, description: 'Lorem ipsum...'};
-			questionnaires.push(questionnaire);
-			$scope.mytitle = '';
+		this.add = function() {
+			QuestionnaireRepository.add(this.mytitle);
+			this.mytitle = '';
 		};
-});
+}]);
