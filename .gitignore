@@ -16,7 +16,3 @@ hs_err_pid*
 *.classpath
 
 */bin
-
-.metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.blogs/-549550714.xml
-
-*.index
