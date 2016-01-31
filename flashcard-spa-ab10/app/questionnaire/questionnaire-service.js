@@ -12,6 +12,15 @@ angular.module('flashcard').service('QuestionnaireRepository', function() {
 		 {id:3, title: 'Q3', description: 'Lorem ipsum...'}
 	];
 	
+	function findById(id) {
+		var index = -1;
+		questionnaires.forEach(function(questionnaire, i) {
+			if (questionnaire.id === id) {
+				index = i;
+			}
+		});
+		return index;
+	};
 	/*
 	 *  Defines the API.
 	 */
@@ -22,6 +31,11 @@ angular.module('flashcard').service('QuestionnaireRepository', function() {
 	this.add = function(mytitle) {
 		var questionnaire = {id:questionnaires.length+1, title: mytitle, description: 'Lorem ipsum...'};
 		questionnaires.push(questionnaire);
+	};
+	
+	this.remove = function(id) {
+		var index = findById(id);
+		questionnaires.splice(index,1);
 	};
 	
 });	
