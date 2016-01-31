@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.row:hover {
+	background-color: #F5F5F5;
+}
