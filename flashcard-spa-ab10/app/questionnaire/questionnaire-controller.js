@@ -18,18 +18,19 @@ angular.module('flashcard').controller('QuestionnaireController', ['Questionnair
 		};
 		
 		// put function openModal() into the controller as an alternative to add()
-		this.openModal = function() {
-			var modalInstance = $uibModal.open({
-			      templateUrl: 'questionnaire/overlays/createDialog.html',
-			      controller: 'QuestionnaireDetailDialogController as dialog'	    	  
-			    });
+		this.openModal = function () {
 
-			modalInstance.result.then(function (questionnaire) {
-				QuestionnaireRepository.save(questionnaire);
-			}, function (error) {		
-				// something went wrong!;
-			});		
-		};	
+		    var modalInstance = $uibModal.open({
+		      
+		      templateUrl: 'questionnaire/overlays/createDialog.html',
+		      controller: 'QuestionnaireDetailDialogController as dialog'
+		    });
+		    modalInstance.result.then(function(questionnaire) {
+		    	QuestionnaireRepository.save(questionnaire);
+		    }, function (error) {
+		    	// to do
+		    });
+		};
 }]);
 
 'use strict';
@@ -43,12 +44,14 @@ angular.module('flashcard').controller('QuestionnaireDetailDialogController',
 	};
 	
 	this.questionnaire = questionnaire;
+	
 	this.ok = function() {
 		$uibModalInstance.close(questionnaire);
 	};
 
 	this.cancel = function() {
-		$uibModalInstance.dismiss();
+		$uibModalInstance.dismiss('cancel');
 	};
+
 }]);
 
