@@ -24,7 +24,7 @@ angular.module('flashcard').factory('QuestionnaireNetworkService', function($htt
 		},
 		remove : function(id) {
 			var index = findById(id);
-//			entfernt an Stelle von index 1 Element
+//			entfernt an Stelle von index ein Element
 			questionnaires.splice(index,1);
 			return $http['delete'](baseUrl + '/' + id);
 		},
