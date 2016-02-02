@@ -52,6 +52,11 @@ angular.module('flashcard').controller('QuestionnaireDetailDialogController',
 	this.cancel = function() {
 		$uibModalInstance.dismiss('cancel');
 	};
+	
+	//oder this.save = this.ok
+//	this.save = function() {
+//		$uibModalInstance.close(questionnaire);
+//	};
 
 }]);
 
